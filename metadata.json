@@ -1,0 +1,8 @@
+{
+  "name": "Mandarin Pasti Bisa",
+  "description": "Belajar Bahasa China 200 Halaman dengan suara, pinyin, tata bahasa, goresan hanzi, latihan, kuis dan penerjemah Mandarin-Indonesia oleh Capt.John I.P, SH, S.Si.T, M.Mar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,2362 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mandarin Pasti Bisa — 200 Halaman</title>
+<script src="https://cdn.jsdelivr.net/npm/hanzi-writer@3/dist/hanzi-writer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3/dist/index.js"></script>
+<style>
+:root{--p:#c1272d;--pd:#8b1a1f;--g:#f4a300;--cr:#fdfaf5;--ink:#1a1a1a;--mu:#6b6b6b;--bd:#e8e0d5;--ok:#2d8f4f;--bl:#2b6cb0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--cr);color:var(--ink);line-height:1.65}
+.zh{font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.app{display:grid;grid-template-columns:280px 1fr;min-height:100vh}
+@media(max-width:900px){.app{grid-template-columns:1fr}}
+.sb{background:#fff;border-right:1px solid var(--bd);height:100vh;position:sticky;top:0;overflow-y:auto;display:flex;flex-direction:column;z-index:100}
+.sb-h{padding:14px 16px;border-bottom:1px solid var(--bd);background:#fff;position:sticky;top:0;z-index:5}
+.sb-b{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.sb-m{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--p),var(--pd));color:#fff;display:grid;place-items:center;font-weight:800;font-size:16px}
+.sb-t strong{display:block;font-size:12.5px;line-height:1.2}
+.sb-t small{color:var(--mu);font-size:10px;display:block;margin-top:2px}
+.sb-a{font-size:10px;color:var(--g);font-weight:600;margin-top:3px}
+.sb-p{font-size:11px;color:var(--mu);display:flex;justify-content:space-between;margin-top:6px}
+.sb-bar{height:4px;background:#f0e8db;border-radius:99px;overflow:hidden;margin-top:4px}
+.sb-fill{height:100%;background:linear-gradient(90deg,var(--p),var(--g));transition:width .5s;width:0}
+.toc{padding:6px 0;flex:1}
+.toc-ch{margin-bottom:1px}
+.toc-h{display:flex;align-items:center;gap:10px;padding:8px 16px;cursor:pointer;user-select:none}
+.toc-h:hover{background:#faf5ec}
+.toc-h.on{background:#fdf4e6;border-left:3px solid var(--p);padding-left:13px}
+.toc-n{width:24px;height:24px;border-radius:6px;background:var(--p);color:#fff;display:grid;place-items:center;font-weight:700;font-size:11px;flex-shrink:0}
+.toc-i{flex:1;min-width:0}
+.toc-i strong{font-size:12px;display:block;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.toc-i small{font-size:10px;color:var(--mu);display:block}
+.toc-ps{display:none;padding:2px 0 6px;background:#fdfaf5}
+.toc-ch.open .toc-ps{display:block}
+.toc-pg{padding:5px 16px 5px 50px;font-size:11px;color:var(--mu);cursor:pointer;border-left:2px solid transparent;display:flex;justify-content:space-between;gap:6px}
+.toc-pg:hover{background:#fff;color:var(--ink);border-left-color:var(--g)}
+.toc-pg.on{background:#fff;color:var(--p);font-weight:600;border-left-color:var(--p)}
+.toc-pg .pg{font-size:10px;color:#bbb}
+.main{min-height:100vh;display:flex;flex-direction:column;min-width:0}
+.tb{position:sticky;top:0;z-index:10;background:rgba(253,250,245,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd);padding:10px 18px;display:flex;align-items:center;gap:12px}
+.hb{display:none;width:36px;height:36px;border-radius:9px;border:1px solid var(--bd);background:#fff;color:var(--ink);font-size:15px}
+@media(max-width:900px){.hb{display:grid;place-items:center}}
+.tb-t{flex:1;min-width:0}
+.tb-t strong{font-size:13px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tb-t small{color:var(--mu);font-size:11px}
+.tb-a{display:flex;gap:5px}
+.tb-b{padding:6px 10px;border-radius:8px;border:1px solid var(--bd);background:#fff;font-size:11.5px;color:var(--mu);font-weight:500}
+.tb-b:hover{border-color:var(--p);color:var(--p)}
+.tb-b.on{background:var(--p);color:#fff;border-color:var(--p)}
+.tb-b.pri{background:var(--p);color:#fff;border-color:var(--p);font-weight:600}
+.wrap{flex:1;padding:18px;max-width:960px;margin:0 auto;width:100%}
+.page{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:30px 34px;position:relative;min-height:500px;animation:fi .3s}
+@media(max-width:640px){.page{padding:20px 16px}}
+.page::before{content:"";position:absolute;top:0;left:0;width:100%;height:5px;background:linear-gradient(90deg,var(--p),var(--g))}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.ph{margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--bd)}
+.pk{color:var(--p);font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.pt{font-size:clamp(19px,3vw,26px);font-weight:800;margin-top:4px;line-height:1.2}
+.ps{color:var(--mu);font-size:13px;margin-top:6px}
+.pb-b{position:absolute;top:14px;right:20px;font-size:11px;color:var(--mu);background:#fafaf7;padding:4px 10px;border-radius:99px;border:1px solid var(--bd)}
+.cover{text-align:center;padding:16px 8px}
+.cov-ic{font-size:80px;line-height:1;margin:8px 0 12px}
+.cov-zh{font-size:52px;color:var(--p);font-weight:800;letter-spacing:5px;margin:6px 0 10px}
+.cov-t{font-size:24px;font-weight:800;margin:8px 0}
+.cov-s{color:var(--mu);font-size:14px;max-width:500px;margin:0 auto 16px}
+.cov-g{text-align:left;background:#fafaf7;border-radius:12px;padding:16px;max-width:540px;margin:16px auto}
+.cov-g h4{font-size:13px;margin-bottom:10px;color:var(--p)}
+.cov-g ul{list-style:none}
+.cov-g li{padding:4px 0;font-size:13px;display:flex;gap:8px}
+.cov-g li::before{content:"✓";color:var(--ok);font-weight:700}
+.cov-a{margin-top:20px;padding-top:14px;border-top:1px dashed var(--bd);font-size:12px;color:var(--mu)}
+.cov-a strong{color:var(--p);font-size:13.5px}
+.v-i{background:#fafaf7;border:1px solid var(--bd);border-radius:12px;padding:13px 15px;margin-bottom:10px;display:grid;grid-template-columns:1fr auto;gap:10px}
+.v-hz{font-size:24px;font-weight:700;line-height:1.2;cursor:pointer}
+.v-hz:hover{color:var(--p)}
+.v-py{color:var(--p);font-size:12.5px;font-weight:500;margin-top:2px}
+.v-id{font-size:14px;margin-top:4px;color:#333}
+.v-ex{margin-top:8px;padding-top:8px;border-top:1px dashed var(--bd);font-size:12px;color:var(--mu)}
+.v-ex-hz{color:var(--ink);font-size:14px;margin-bottom:2px;cursor:pointer}
+.v-ex-hz:hover{color:var(--p)}
+.v-btns{display:flex;flex-direction:column;gap:5px;align-items:flex-end}
+.ib{width:32px;height:32px;border-radius:50%;border:1px solid var(--bd);background:#fff;color:var(--p);font-size:13px;display:grid;place-items:center}
+.ib:hover{background:var(--p);color:#fff;border-color:var(--p)}
+.g-c{background:#fff;border:1px solid var(--bd);border-left:4px solid var(--p);border-radius:11px;padding:16px 20px;margin-bottom:14px}
+.g-c h4{font-size:15px;margin-bottom:9px}
+.g-f{background:#fdf6ec;border-radius:8px;padding:9px 13px;font-family:'Courier New',monospace;font-size:13px;font-weight:600;color:var(--pd);margin-bottom:10px;border-left:3px solid var(--g)}
+.g-d{font-size:13px;color:#333;margin-bottom:10px;line-height:1.6}
+.g-ex{display:flex;gap:10px;align-items:center;padding:9px 11px;background:#fafaf7;border-radius:8px;margin-bottom:5px}
+.g-ex-b{flex:1;min-width:0}
+.g-ex-hz{font-size:15px;font-weight:500;cursor:pointer}
+.g-ex-hz:hover{color:var(--p)}
+.g-ex-py{font-size:12px;color:var(--p);margin:2px 0}
+.g-ex-id{font-size:12px;color:var(--mu)}
+.d-sc{background:linear-gradient(135deg,#fdf6ec,#fff);border:1px solid var(--bd);border-radius:12px;padding:14px;margin-bottom:14px;display:flex;gap:14px;align-items:center}
+.d-ic{width:80px;height:80px;border-radius:50%;flex-shrink:0;background:#fff;display:grid;place-items:center;font-size:40px;box-shadow:0 6px 16px rgba(244,163,0,.18)}
+.d-st{flex:1;min-width:0}
+.d-st h4{font-size:14px;margin-bottom:3px}
+.d-st p{font-size:12px;color:var(--mu)}
+.dlg{display:flex;flex-direction:column;gap:10px}
+.dl{display:flex;gap:10px;align-items:flex-start}
+.dl.r{flex-direction:row-reverse}
+.av{width:34px;height:34px;border-radius:50%;background:var(--p);color:#fff;display:grid;place-items:center;font-weight:700;font-size:13px;flex-shrink:0}
+.dl.r .av{background:var(--g)}
+.bub{background:#fff;border:1px solid var(--bd);border-radius:12px;padding:10px 14px;max-width:80%}
+.dl.r .bub{background:#fdf6ec;border-color:#f0e0c0}
+.bub-hz{font-size:16px;font-weight:500;cursor:pointer}
+.bub-hz:hover{color:var(--p)}
+.bub-py{font-size:12px;color:var(--p);margin:3px 0}
+.bub-id{font-size:12px;color:var(--mu)}
+.rd-h{background:linear-gradient(135deg,var(--p),var(--g));border-radius:12px;padding:20px 16px;text-align:center;color:#fff;margin-bottom:16px}
+.rd-ic{font-size:58px;line-height:1}
+.rd-zh{font-size:22px;font-weight:700;margin-top:6px;letter-spacing:2px}
+.rd-t{background:#fafaf7;border-radius:11px;padding:16px;margin-bottom:12px;font-size:14.5px;line-height:2}
+.rd-t .hz{cursor:pointer;padding:1px 2px;border-radius:4px}
+.rd-t .hz:hover{background:#fdf4e6;color:var(--p)}
+.rd-py{color:var(--p);font-size:12px;margin-top:8px;font-style:italic}
+.rd-note{background:#f0f7ff;border-left:4px solid var(--bl);border-radius:9px;padding:12px 16px;font-size:13px;color:#1a365d;margin-top:10px}
+.rd-note strong{display:block;margin-bottom:4px;color:var(--bl)}
+.ex-g{background:#fafaf7;border-radius:11px;padding:16px;margin-bottom:12px}
+.ex-g h4{font-size:13.5px;color:var(--p);margin-bottom:9px}
+.ex-q{font-size:13.5px;margin-bottom:7px;padding-left:20px;position:relative;line-height:1.7}
+.ex-q::before{content:"○";position:absolute;left:0;color:var(--mu)}
+.ex-bl{display:inline-block;min-width:65px;border-bottom:1.5px dashed var(--p);color:var(--p);font-weight:600;text-align:center;padding:0 6px}
+.qz-q{background:#fafaf7;border-radius:11px;padding:14px;margin-bottom:10px}
+.qz-h{font-size:12px;color:var(--p);font-weight:700;margin-bottom:7px}
+.qz-t{font-size:15px;font-weight:600;margin-bottom:9px}
+.qz-zh{font-size:22px;color:var(--p);cursor:pointer;margin-bottom:5px}
+.qz-zh:hover{text-decoration:underline}
+.qz-o{display:grid;gap:7px;margin-top:9px}
+.qz-b{padding:9px 13px;background:#fff;border:1px solid var(--bd);border-radius:8px;font-size:13.5px;text-align:left;color:var(--ink)}
+.qz-b:hover{border-color:var(--p)}
+.qz-b.correct{background:#e6f7ec;border-color:var(--ok);color:#1a5c2e;font-weight:600}
+.qz-b.wrong{background:#fdeaea;border-color:var(--p);color:var(--p)}
+.qz-b:disabled{cursor:default}
+.qz-s{text-align:center;padding:18px;background:#fdf6ec;border-radius:12px;margin-top:14px}
+.qz-s .n{font-size:34px;font-weight:800;color:var(--p)}
+.qz-s p{color:var(--mu);font-size:13px;margin-top:4px}
+.nav{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:14px 18px;max-width:960px;margin:0 auto;width:100%}
+.nav-b{padding:10px 17px;border-radius:10px;border:1px solid var(--bd);background:#fff;font-size:13px;color:var(--ink);font-weight:600}
+.nav-b:hover:not(:disabled){border-color:var(--p);color:var(--p)}
+.nav-b.pri{background:var(--p);color:#fff;border-color:var(--p)}
+.nav-b:disabled{opacity:.4;cursor:not-allowed}
+.nav-i{font-size:12px;color:var(--mu)}
+.st-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(115px,1fr));gap:10px;margin-top:10px}
+.st-i{background:#fafaf7;border:1px solid var(--bd);border-radius:11px;padding:9px;text-align:center}
+.st-box{width:95px;height:95px;margin:0 auto;background:#fff;background-image:linear-gradient(to right,#f0e6d2 1px,transparent 1px),linear-gradient(to bottom,#f0e6d2 1px,transparent 1px);background-size:100% 100%;border:1px dashed #d8cdb9;border-radius:9px;position:relative;display:grid;place-items:center}
+.st-box svg{position:relative;z-index:1}
+.st-fb{font-size:56px;color:var(--p);font-weight:700}
+.st-l{font-size:12.5px;margin-top:5px;font-weight:600}
+.st-p{font-size:10.5px;color:var(--p)}
+.st-b{display:flex;gap:4px;justify-content:center;margin-top:5px}
+.st-b button{border:1px solid var(--bd);background:#fff;border-radius:5px;padding:2px 6px;font-size:10.5px;color:var(--mu)}
+.st-b button:hover{color:var(--p);border-color:var(--p)}
+.py-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(85px,1fr));gap:7px;margin-top:8px}
+.py-c{background:#fafaf7;border:1px solid var(--bd);border-radius:8px;padding:7px 5px;text-align:center;cursor:pointer}
+.py-c:hover{background:#fff;border-color:var(--p)}
+.py-c .p{font-size:15px;font-weight:700;color:var(--p)}
+.py-c .e{font-size:10.5px;color:var(--mu);margin-top:2px}
+.tone-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:10px}
+.tone-c{background:linear-gradient(135deg,#fff,#fdf6ec);border:1px solid var(--bd);border-radius:12px;padding:14px;text-align:center;cursor:pointer}
+.tone-c:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.06)}
+.tone-c .m{font-size:30px;color:var(--p);font-weight:700;line-height:1}
+.tone-c .ex{font-size:24px;margin-top:5px}
+.tone-c .expy{font-size:12px;color:var(--p);margin-top:2px}
+.tone-c .nm{font-size:11px;color:var(--mu);margin-top:5px}
+.tone-c .exid{font-size:11.5px;margin-top:3px;font-weight:600}
+.rad-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(105px,1fr));gap:9px;margin-top:10px}
+.rad{background:#fafaf7;border:1px solid var(--bd);border-radius:9px;padding:11px;text-align:center;cursor:pointer}
+.rad:hover{background:#fff;border-color:var(--p)}
+.rad .rz{font-size:26px;font-weight:700;color:var(--p)}
+.rad .rp{font-size:11px;color:var(--mu);margin-top:3px}
+.rad .ri{font-size:12px;font-weight:600;margin-top:3px}
+.rad .re{font-size:10px;color:var(--mu);margin-top:3px}
+.rules{display:grid;gap:9px;margin-top:10px}
+.rule{display:flex;gap:11px;padding:12px;background:#fafaf7;border-radius:11px;border:1px solid var(--bd)}
+.rule-n{width:26px;height:26px;border-radius:7px;background:var(--p);color:#fff;display:grid;place-items:center;font-weight:700;font-size:13px;flex-shrink:0}
+.rule-b strong{display:block;font-size:13px;margin-bottom:2px}
+.rule-b p{font-size:12px;color:var(--mu);line-height:1.5}
+.rule-b .demo{font-size:18px;color:var(--p);margin-top:5px;font-weight:600}
+.ic{background:#fff;border:1px solid var(--bd);border-radius:12px;padding:16px;margin-bottom:12px}
+.ic h3{font-size:15px;margin-bottom:9px;display:flex;align-items:center;gap:8px}
+.ic h3::before{content:"";width:4px;height:16px;background:var(--p);border-radius:2px}
+.ic p.d{font-size:13px;color:#333;margin-bottom:10px;line-height:1.6}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:99;display:none}
+.ov.on{display:block}
+@media(max-width:900px){.sb{position:fixed;left:0;top:0;width:270px;transform:translateX(-100%);transition:.3s}.sb.open{transform:translateX(0)}}
+.sn{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:10px;font-size:12.5px;z-index:400;transition:.35s;white-space:nowrap;max-width:90%;overflow:hidden;text-overflow:ellipsis}
+.sn.on{transform:translateX(-50%) translateY(0)}
+.foot{text-align:center;padding:26px 18px;color:var(--mu);font-size:11.5px;border-top:1px solid var(--bd);margin-top:16px}
+.foot strong{color:var(--p)}
+
+/* TRANSLATOR — PUTIH BERSIH */
+.tr-ov{position:fixed;inset:0;background:rgba(0,0,0,.35);backdrop-filter:blur(4px);z-index:300;display:none;align-items:center;justify-content:center;padding:16px}
+.tr-ov.on{display:flex}
+.tr-d{background:#fff;border-radius:18px;width:100%;max-width:920px;max-height:94vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 25px 80px rgba(0,0,0,.25)}
+.tr-h{padding:14px 18px;display:flex;align-items:center;gap:11px;background:#fff;color:var(--ink);border-bottom:1px solid var(--bd)}
+.tr-h-ic{width:38px;height:38px;border-radius:10px;background:#fdf6ec;color:var(--p);display:grid;place-items:center;font-size:19px;flex-shrink:0;border:1px solid var(--bd)}
+.tr-h-t{flex:1;min-width:0}
+.tr-h-t h3{font-size:15px;font-weight:700;margin-bottom:2px;color:var(--ink)}
+.tr-h-t p{font-size:11px;color:var(--mu)}
+.tr-c{width:36px;height:36px;border-radius:50%;background:#fff;color:var(--mu);font-size:17px;border:1px solid var(--bd);display:grid;place-items:center}
+.tr-c:hover{background:#fdf6ec;color:var(--p);border-color:var(--p)}
+.tr-l{padding:11px 18px;display:flex;align-items:center;gap:10px;background:#fff;border-bottom:1px solid var(--bd);flex-wrap:wrap}
+.tr-pl{padding:7px 14px;background:#fff;border:1px solid var(--bd);border-radius:99px;font-size:13px;font-weight:600;color:var(--ink)}
+.tr-pl.on{background:var(--p);color:#fff;border-color:var(--p)}
+.tr-sw{width:34px;height:34px;border-radius:50%;border:1px solid var(--bd);background:#fff;color:var(--p);font-size:15px;transition:.3s;display:grid;place-items:center}
+.tr-sw:hover{background:#fdf6ec;transform:rotate(180deg)}
+.tr-b{display:grid;grid-template-columns:1fr 1fr;flex:1;overflow:hidden;min-height:0;background:#fff}
+@media(max-width:720px){.tr-b{grid-template-columns:1fr}}
+.tr-p{padding:14px 16px;display:flex;flex-direction:column;min-height:260px;overflow-y:auto;background:#fff}
+.tr-p:first-child{border-right:1px solid var(--bd)}
+@media(max-width:720px){.tr-p:first-child{border-right:none;border-bottom:1px solid var(--bd)}}
+.tr-lb{font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.05em;margin-bottom:7px}
+.tr-in{width:100%;flex:1;min-height:150px;resize:none;border:none;outline:none;font-family:inherit;font-size:15px;line-height:1.6;color:var(--ink);background:#fff}
+.tr-in::placeholder{color:#bbb}
+.tr-if{display:flex;justify-content:space-between;align-items:center;margin-top:8px;padding-top:8px;border-top:1px solid var(--bd);font-size:11px;color:var(--mu)}
+.tr-acts{display:flex;gap:4px}
+.tr-ab{width:34px;height:34px;border-radius:50%;border:1px solid var(--bd);background:#fff;color:var(--mu);font-size:14px;display:grid;place-items:center}
+.tr-ab:hover{background:#fdf6ec;color:var(--p);border-color:var(--p)}
+.tr-ab.rec{background:var(--p);color:#fff;border-color:var(--p)}
+.tr-em{color:var(--mu);font-size:13px;padding:18px 0;text-align:center;font-style:italic;background:#fff}
+.tr-blk{margin-bottom:14px}
+.tr-bl{font-size:10.5px;font-weight:700;color:var(--p);text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}
+.tr-zh{font-size:26px;font-weight:700;line-height:1.35;padding:10px 12px;background:#fff;border-radius:9px;border:1px solid var(--bd);border-left:3px solid var(--p);cursor:pointer}
+.tr-zh:hover{background:#fdf6ec}
+.tr-py{font-size:13.5px;color:var(--p);margin-top:5px;font-style:italic;padding-left:12px}
+.tr-id{font-size:15.5px;line-height:1.6;padding:10px 12px;background:#fff;border-radius:9px;border:1px solid var(--bd);border-left:3px solid var(--bl)}
+.tr-ba{display:flex;gap:5px;flex-wrap:wrap;margin-top:10px}
+.tr-bn{padding:6px 11px;border:1px solid var(--bd);background:#fff;border-radius:8px;font-size:11.5px;color:var(--ink);font-weight:500}
+.tr-bn:hover{background:#fdf6ec;color:var(--p);border-color:var(--p)}
+.tr-f{padding:12px 18px;background:#fff;border-top:1px solid var(--bd);display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.tr-m{padding:11px 22px;border-radius:10px;background:var(--p);color:#fff;font-size:13.5px;font-weight:600}
+.tr-m:hover:not(:disabled){background:var(--pd)}
+.tr-m:disabled{opacity:.6;cursor:not-allowed}
+.tr-s{padding:11px 16px;border-radius:10px;border:1px solid var(--bd);background:#fff;font-size:12.5px;color:var(--mu)}
+.tr-s:hover{border-color:var(--p);color:var(--p)}
+.tr-av{display:flex;align-items:center;gap:5px;margin-left:auto;font-size:12px;color:var(--mu);cursor:pointer}
+.tr-av input{accent-color:var(--p)}
+.tr-err{padding:9px 13px;background:#fff;border:1px solid #f5c6c6;border-radius:9px;font-size:12.5px;color:var(--p);margin-bottom:9px}
+.tr-load{display:flex;align-items:center;gap:9px;color:var(--mu);font-size:13px;padding:18px 0;justify-content:center;background:#fff}
+.tr-sp{width:16px;height:16px;border:2px solid rgba(193,39,45,.2);border-top-color:var(--p);border-radius:50%;animation:spin .8s linear infinite;display:inline-block}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+
+<div class="ov" id="ov" onclick="toggleSB()"></div>
+
+<div class="app">
+  <aside class="sb" id="sb">
+    <div class="sb-h">
+      <div class="sb-b">
+        <div class="sb-m zh">中</div>
+        <div class="sb-t">
+          <strong>Mandarin Pasti Bisa</strong>
+          <small>200 Halaman · Voice · Bergambar</small>
+          <div class="sb-a">oleh Capt.John I.P, SH, S.Si.T, M.Mar</div>
+        </div>
+      </div>
+      <div class="sb-p"><span id="sbTx">Halaman 1 / 200</span><span id="sbPc">0%</span></div>
+      <div class="sb-bar"><div class="sb-fill" id="sbFl"></div></div>
+    </div>
+    <nav class="toc" id="toc"></nav>
+  </aside>
+
+  <main class="main">
+    <div class="tb">
+      <button class="hb" onclick="toggleSB()">☰</button>
+      <div class="tb-t"><strong id="tbT">Memuat…</strong><small id="tbS">Halaman — / 200</small></div>
+      <div class="tb-a">
+        <button class="tb-b pri" onclick="openTR()">🌐 Terjemah</button>
+        <button class="tb-b" id="avB" onclick="toggleAV()">🔊 Auto</button>
+        <button class="tb-b" onclick="stopSpk()">⏹</button>
+      </div>
+    </div>
+    <div class="wrap"><div class="page" id="pg"></div></div>
+    <div class="nav">
+      <button class="nav-b" id="pvB" onclick="prevPg()">← Sebelumnya</button>
+      <div class="nav-i" id="navI">1 / 200</div>
+      <button class="nav-b pri" id="nxB" onclick="nextPg()">Berikutnya →</button>
+    </div>
+    <div class="foot">
+      <strong>Mandarin Pasti Bisa</strong> · Belajar Bahasa China, Mahir oleh Siapa Pun<br>
+      Dibuat oleh <strong>Capt.John I.P, SH, S.Si.T, M.Mar</strong>
+    </div>
+  </main>
+</div>
+
+<div class="tr-ov" id="trOv" onclick="if(event.target===this)closeTR()">
+  <div class="tr-d" onclick="event.stopPropagation()">
+    <div class="tr-h">
+      <div class="tr-h-ic">🌐</div>
+      <div class="tr-h-t"><h3>Penerjemah Mandarin ↔ Indonesia</h3><p>Hasil ringkas dengan hanzi + pinyin + arti</p></div>
+      <button class="tr-c" onclick="closeTR()">✕</button>
+    </div>
+    <div class="tr-l">
+      <div class="tr-pl on" id="trPF">🇮🇩 Indonesia</div>
+      <button class="tr-sw" onclick="swapTR()">⇄</button>
+      <div class="tr-pl" id="trPT">🇨🇳 Mandarin</div>
+      <div style="flex:1"></div>
+      <span style="font-size:11px;color:var(--mu)" id="trPv">Google · Lingva</span>
+    </div>
+    <div class="tr-b">
+      <div class="tr-p">
+        <div class="tr-lb" id="trIL">✍️ Tulisan Indonesia</div>
+        <textarea class="tr-in" id="trIn" placeholder="Ketik kalimat di sini… atau klik 🎤" oninput="upCC()"></textarea>
+        <div class="tr-if">
+          <span><span id="trCC">0</span> karakter</span>
+          <div class="tr-acts">
+            <button class="tr-ab" id="trMk" onclick="startMic()">🎤</button>
+            <button class="tr-ab" onclick="speakIn()">🔊</button>
+            <button class="tr-ab" onclick="clearIn()">✕</button>
+          </div>
+        </div>
+      </div>
+      <div class="tr-p">
+        <div class="tr-lb">📖 Hasil Terjemahan</div>
+        <div id="trRes" style="flex:1"><div class="tr-em">Terjemahan akan muncul di sini<br><small>Lengkap dengan hanzi, pinyin, dan arti</small></div></div>
+      </div>
+    </div>
+    <div class="tr-f">
+      <button class="tr-m" id="trBtn" onclick="doTR()">🌐 Terjemahkan</button>
+      <button class="tr-s" onclick="clearAllTR()">🗑️ Bersihkan</button>
+      <label class="tr-av"><input type="checkbox" id="trAV" checked> 🔊 Auto-baca</label>
+    </div>
+  </div>
+</div>
+
+<div class="sn" id="sn"></div>
+
+<script>
+var AUTHOR = 'Capt.John I.P, SH, S.Si.T, M.Mar';
+
+/* ============ VOICE ============ */
+var avOn = false, voices = [];
+function loadVoices(){ if('speechSynthesis' in window) voices = window.speechSynthesis.getVoices()||[]; }
+if('speechSynthesis' in window){
+  loadVoices();
+  window.speechSynthesis.onvoiceschanged = loadVoices;
+  setTimeout(loadVoices, 300);
+}
+function speak(text, lang){
+  lang = lang || 'zh-CN';
+  if(!text) return;
+  if(!('speechSynthesis' in window)){ snack('Browser tidak mendukung suara'); return; }
+  try{
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(String(text));
+    u.lang = lang; u.rate = 0.85; u.pitch = 1;
+    var t = lang.split('-')[0], m = null;
+    for(var i=0;i<voices.length;i++){
+      var vl = voices[i].lang.replace(/_/g,'-');
+      if(vl.indexOf(lang)===0){ m=voices[i]; break; }
+      if(!m && vl.indexOf(t)===0) m=voices[i];
+    }
+    if(m) u.voice = m;
+    window.speechSynthesis.speak(u);
+  }catch(e){}
+}
+function stopSpk(){ if('speechSynthesis' in window) window.speechSynthesis.cancel(); }
+function toggleAV(){
+  avOn = !avOn;
+  document.getElementById('avB').classList.toggle('on', avOn);
+  snack(avOn?'🔊 Auto suara: AKTIF':'🔇 Auto suara: MATI');
+  if(avOn){ var el = document.querySelector('#pg .zh'); if(el) setTimeout(function(){ speak(el.textContent.trim()); }, 400); }
+}
+function snack(msg){
+  var el = document.getElementById('sn');
+  el.textContent = msg;
+  el.classList.add('on');
+  clearTimeout(el._t);
+  el._t = setTimeout(function(){ el.classList.remove('on'); }, 2200);
+}
+
+/* ============ UTILS ============ */
+function esc(s){ return String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function escapeHtml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function splitHanzi(text){
+  if(!text) return '';
+  return String(text).split('').map(function(c){
+    if(/[\u4e00-\u9fff]/.test(c)) return '<span class="hz" onclick="speak(\''+esc(c)+'\')">'+c+'</span>';
+    return c;
+  }).join('');
+}
+
+/* ============ DATA FONDASI ============ */
+var INITIALS = [
+  {p:'b',ex:'爸 bà'},{p:'p',ex:'怕 pà'},{p:'m',ex:'妈 mā'},{p:'f',ex:'飞 fēi'},
+  {p:'d',ex:'大 dà'},{p:'t',ex:'他 tā'},{p:'n',ex:'你 nǐ'},{p:'l',ex:'来 lái'},
+  {p:'g',ex:'高 gāo'},{p:'k',ex:'看 kàn'},{p:'h',ex:'好 hǎo'},
+  {p:'j',ex:'家 jiā'},{p:'q',ex:'七 qī'},{p:'x',ex:'西 xī'},
+  {p:'zh',ex:'中 zhōng'},{p:'ch',ex:'吃 chī'},{p:'sh',ex:'是 shì'},{p:'r',ex:'人 rén'},
+  {p:'z',ex:'再 zài'},{p:'c',ex:'菜 cài'},{p:'s',ex:'三 sān'}
+];
+var FINALS = [
+  {p:'a',ex:'妈 mā'},{p:'o',ex:'我 wǒ'},{p:'e',ex:'喝 hē'},{p:'i',ex:'你 nǐ'},
+  {p:'u',ex:'五 wǔ'},{p:'ü',ex:'女 nǚ'},{p:'ai',ex:'爱 ài'},{p:'ei',ex:'妹 mèi'},
+  {p:'ao',ex:'好 hǎo'},{p:'ou',ex:'都 dōu'},{p:'an',ex:'三 sān'},{p:'en',ex:'很 hěn'},
+  {p:'ang',ex:'忙 máng'},{p:'eng',ex:'冷 lěng'},{p:'ong',ex:'中 zhōng'},
+  {p:'ia',ex:'家 jiā'},{p:'ie',ex:'谢 xiè'},{p:'iao',ex:'小 xiǎo'},{p:'iu',ex:'六 liù'},
+  {p:'ian',ex:'天 tiān'},{p:'in',ex:'心 xīn'},{p:'iang',ex:'想 xiǎng'},{p:'ing',ex:'英 yīng'},
+  {p:'ua',ex:'花 huā'},{p:'uo',ex:'说 shuō'},{p:'uai',ex:'快 kuài'},{p:'ui',ex:'水 shuǐ'},
+  {p:'uan',ex:'关 guān'},{p:'un',ex:'云 yún'},{p:'uang',ex:'黄 huáng'},{p:'üe',ex:'月 yuè'}
+];
+var TONES = [
+  {m:'ā',t:'Nada 1',d:'Datar tinggi',ex:'妈',py:'mā',id:'ibu'},
+  {m:'á',t:'Nada 2',d:'Naik',ex:'麻',py:'má',id:'rami'},
+  {m:'ǎ',t:'Nada 3',d:'Turun-naik',ex:'马',py:'mǎ',id:'kuda'},
+  {m:'à',t:'Nada 4',d:'Turun tajam',ex:'骂',py:'mà',id:'memaki'},
+  {m:'a',t:'Netral',d:'Ringan',ex:'吗',py:'ma',id:'(tanya)'}
+];
+var RADICALS = [
+  {h:'人',p:'rén',i:'orang',ex:'你 他'},{h:'口',p:'kǒu',i:'mulut',ex:'吃 喝'},
+  {h:'手',p:'shǒu',i:'tangan',ex:'打 找'},{h:'心',p:'xīn',i:'hati',ex:'想 忘'},
+  {h:'水',p:'shuǐ',i:'air',ex:'河 海'},{h:'火',p:'huǒ',i:'api',ex:'热 烧'},
+  {h:'木',p:'mù',i:'kayu',ex:'树 桌'},{h:'日',p:'rì',i:'matahari',ex:'明 早'},
+  {h:'月',p:'yuè',i:'bulan',ex:'朋 服'},{h:'女',p:'nǚ',i:'perempuan',ex:'妈 姐'},
+  {h:'子',p:'zǐ',i:'anak',ex:'孩 学'},{h:'宀',p:'mián',i:'rumah',ex:'家 安'},
+  {h:'讠',p:'yán',i:'ucapan',ex:'说 话'},{h:'钅',p:'jīn',i:'logam',ex:'钱 银'},
+  {h:'艹',p:'cǎo',i:'tanaman',ex:'花 茶'},{h:'氵',p:'shuǐ',i:'air(var)',ex:'没 法'},
+  {h:'亻',p:'rén',i:'orang(var)',ex:'你 住'},{h:'忄',p:'xīn',i:'hati(var)',ex:'快 怕'},
+  {h:'扌',p:'shǒu',i:'tangan(var)',ex:'打 拉'},{h:'纟',p:'sī',i:'benang',ex:'红 纸'}
+];
+var SRULES = [
+  {n:1,t:'Atas ke bawah',d:'Goresan mulai dari atas.',demo:'三'},
+  {n:2,t:'Kiri ke kanan',d:'Garis horizontal dari kiri.',demo:'十'},
+  {n:3,t:'Horizontal dulu',d:'Garis datar sebelum tegak.',demo:'十'},
+  {n:4,t:'Luar ke dalam',d:'Kerangka luar lalu isi.',demo:'月'},
+  {n:5,t:'Titik kecil dulu',d:'Titik kiri-atas lebih dulu.',demo:'心'},
+  {n:6,t:'Tengah dulu',d:'Karakter simetris mulai tengah.',demo:'小'},
+  {n:7,t:'Tutup akhir',d:'Garis penutup paling akhir.',demo:'国'}
+];
+var STROKES = [
+  {h:'一',p:'yī',i:'satu'},{h:'二',p:'èr',i:'dua'},{h:'三',p:'sān',i:'tiga'},
+  {h:'人',p:'rén',i:'orang'},{h:'大',p:'dà',i:'besar'},{h:'小',p:'xiǎo',i:'kecil'},
+  {h:'中',p:'zhōng',i:'tengah'},{h:'你',p:'nǐ',i:'kamu'},{h:'好',p:'hǎo',i:'baik'},
+  {h:'我',p:'wǒ',i:'saya'},{h:'日',p:'rì',i:'hari'},{h:'月',p:'yuè',i:'bulan'}
+];
+
+/* ============ 20 CHAPTERS × 10 HALAMAN = 200 ============ */
+var CH = [
+{num:1,title:'Fondasi & Salam',zh:'基础与问候',icon:'👋',special:[
+  {type:'cover',zh:'你好，世界！',title:'Fondasi & Salam Pertama',sub:'Mulai dari nol: pinyin, nada, goresan, dan sapaan.',
+   goals:['Mengenal 3 pilar Mandarin','Menghafal inisial & final','Menguasai 4 nada','Mengenal radikal','Memahami goresan','Mengucapkan sapaan dasar']},
+  {type:'pinyin',title:'Pinyin: Inisial & Final',sub:'Klik untuk mendengar.'},
+  {type:'tones',title:'4 Nada + Netral',sub:'Nada mengubah arti.'},
+  {type:'radicals',title:'20 Radikal Dasar',sub:'Komponen pembentuk hanzi.'},
+  {type:'strokes',title:'Urutan Goresan',sub:'7 aturan + animasi.'},
+  {type:'vocab',title:'Sapaan (1)',sub:'Kosakata pembuka.',words:[
+    {h:'你好',p:'nǐ hǎo',i:'halo',e:'你好！我叫Budi。',ei:'Halo! Nama saya Budi.'},
+    {h:'您好',p:'nín hǎo',i:'halo (formal)',e:'您好，老师！',ei:'Halo, guru!'},
+    {h:'早上好',p:'zǎoshang hǎo',i:'selamat pagi',e:'早上好！',ei:'Selamat pagi!'},
+    {h:'下午好',p:'xiàwǔ hǎo',i:'selamat siang',e:'下午好。',ei:'Selamat siang.'},
+    {h:'晚上好',p:'wǎnshang hǎo',i:'selamat malam',e:'晚上好。',ei:'Selamat malam.'},
+    {h:'再见',p:'zàijiàn',i:'selamat tinggal',e:'再见！',ei:'Sampai jumpa!'},
+    {h:'晚安',p:'wǎn ān',i:'selamat malam (tidur)',e:'晚安。',ei:'Selamat malam.'}
+  ]},
+  {type:'vocab',title:'Sapaan (2)',sub:'Ungkapan sopan.',words:[
+    {h:'谢谢',p:'xièxie',i:'terima kasih',e:'谢谢你！',ei:'Terima kasih!'},
+    {h:'不客气',p:'bú kèqi',i:'sama-sama',e:'不客气！',ei:'Sama-sama!'},
+    {h:'对不起',p:'duìbuqǐ',i:'maaf',e:'对不起，我迟到了。',ei:'Maaf, saya terlambat.'},
+    {h:'没关系',p:'méi guānxi',i:'tidak apa-apa',e:'没关系。',ei:'Tidak apa-apa.'},
+    {h:'请问',p:'qǐngwèn',i:'permisi',e:'请问，你叫什么名字？',ei:'Permisi, siapa namamu?'},
+    {h:'好久不见',p:'hǎojiǔ bú jiàn',i:'lama tak jumpa',e:'好久不见！',ei:'Lama tak jumpa!'},
+    {h:'请慢用',p:'qǐng màn yòng',i:'silakan menikmati',e:'请慢用！',ei:'Silakan menikmati!'}
+  ]},
+  {type:'grammar',title:'Grammar Salam',sub:'Pola dasar.',items:[
+    {t:'是 — adalah',f:'Subjek + 是 + Predikat',d:'Menghubungkan subjek dengan identitas.',
+     ex:[{h:'我是学生。',p:'Wǒ shì xuésheng.',i:'Saya siswa.'},{h:'他是老师。',p:'Tā shì lǎoshī.',i:'Dia guru.'},{h:'她是印度尼西亚人。',p:'Tā shì Yìndùníxīyà rén.',i:'Dia orang Indonesia.'}]},
+    {t:'吗 — partikel tanya',f:'Kalimat + 吗？',d:'Ubah pernyataan jadi pertanyaan.',
+     ex:[{h:'你好吗？',p:'Nǐ hǎo ma?',i:'Apa kabar?'},{h:'你是中国人吗？',p:'Nǐ shì Zhōngguó rén ma?',i:'Apakah kamu orang China?'},{h:'他是老师吗？',p:'Tā shì lǎoshī ma?',i:'Apakah dia guru?'}]}
+  ]},
+  {type:'dialog',title:'Dialog: Bertemu Teman',icon:'🤝',sceneTitle:'Di taman kampus',sceneDesc:'Dua teman lama bertemu.',lines:[
+    {s:'A',h:'你好！好久不见。',p:'Nǐ hǎo! Hǎojiǔ bú jiàn.',i:'Halo! Lama tak jumpa.'},
+    {s:'B',h:'你好！你好吗？',p:'Nǐ hǎo! Nǐ hǎo ma?',i:'Halo! Apa kabar?'},
+    {s:'A',h:'我很好，谢谢你。',p:'Wǒ hěn hǎo, xièxie nǐ.',i:'Saya baik, terima kasih.'},
+    {s:'B',h:'太好了！再见！',p:'Tài hǎo le! Zàijiàn!',i:'Bagus! Sampai jumpa!'}
+  ]},
+  {type:'quiz',title:'Kuis Bab 1',sub:'Skor ≥80% lulus.',qs:[
+    {q:'Apa arti 你好?',zh:'你好',opts:['halo','terima kasih','maaf','selamat malam'],ans:0},
+    {q:'Cara baca 谢谢?',zh:'谢谢',opts:['xièxie','xiāoxi','shīshi','xìexìe'],ans:0},
+    {q:'Kata 吗 berfungsi sebagai…',zh:'吗',opts:['penanda pertanyaan','penanda lampau','penanda jamak','penanda sopan'],ans:0},
+    {q:'Nada 3 + Nada 3 menjadi…',zh:'nǐ hǎo',opts:['2 + 3','3 + 3','3 + 2','4 + 3'],ans:0},
+    {q:'"Selamat pagi"…',zh:'早上好',opts:['zǎoshang hǎo','wǎnshang hǎo','xiàwǔ hǎo','wǎn ān'],ans:0}
+  ]}
+]},
+{num:2,title:'Perkenalan Diri',zh:'自我介绍',icon:'🙋',
+ goals:['Menyebutkan nama','Menyebutkan asal','Menyebutkan pekerjaan','Bertanya identitas'],
+ v1:{title:'Kata Ganti & Nama',words:[
+   {h:'我',p:'wǒ',i:'saya',e:'我是Budi。',ei:'Saya Budi.'},
+   {h:'你',p:'nǐ',i:'kamu',e:'你好吗？',ei:'Apa kabar?'},
+   {h:'您',p:'nín',i:'Anda (formal)',e:'您好！',ei:'Halo!'},
+   {h:'他',p:'tā',i:'dia (lk)',e:'他是老师。',ei:'Dia guru.'},
+   {h:'她',p:'tā',i:'dia (pr)',e:'她是我姐姐。',ei:'Dia kakak saya.'},
+   {h:'我们',p:'wǒmen',i:'kami',e:'我们是学生。',ei:'Kami siswa.'},
+   {h:'叫',p:'jiào',i:'dipanggil',e:'我叫Budi。',ei:'Nama saya Budi.'},
+   {h:'姓',p:'xìng',i:'marga',e:'我姓张。',ei:'Marga saya Zhang.'},
+   {h:'名字',p:'míngzi',i:'nama',e:'你叫什么名字？',ei:'Siapa namamu?'}
+ ]},
+ v2:{title:'Asal & Pekerjaan',words:[
+   {h:'是',p:'shì',i:'adalah',e:'我是学生。',ei:'Saya siswa.'},
+   {h:'人',p:'rén',i:'orang',e:'他是中国人。',ei:'Dia orang China.'},
+   {h:'印度尼西亚',p:'Yìndùníxīyà',i:'Indonesia',e:'我来自印度尼西亚。',ei:'Saya dari Indonesia.'},
+   {h:'中国',p:'Zhōngguó',i:'China',e:'中国很大。',ei:'China luas.'},
+   {h:'学生',p:'xuésheng',i:'siswa',e:'我是大学生。',ei:'Saya mahasiswa.'},
+   {h:'老师',p:'lǎoshī',i:'guru',e:'她是老师。',ei:'Dia guru.'},
+   {h:'医生',p:'yīshēng',i:'dokter',e:'我爸爸是医生。',ei:'Ayah saya dokter.'},
+   {h:'来自',p:'láizì',i:'berasal dari',e:'我来自雅加达。',ei:'Saya dari Jakarta.'},
+   {h:'高兴',p:'gāoxìng',i:'senang',e:'很高兴认识你。',ei:'Senang berkenalan.'}
+ ]},
+ g1:{title:'叫 & 姓',items:[
+   {t:'叫 — dipanggil',f:'Subjek + 叫 + Nama',d:'Menyebut nama.',
+    ex:[{h:'我叫Budi。',p:'Wǒ jiào Budi.',i:'Nama saya Budi.'},{h:'你叫什么名字？',p:'Nǐ jiào shénme míngzi?',i:'Siapa namamu?'},{h:'她叫Anna。',p:'Tā jiào Anna.',i:'Namanya Anna.'}]},
+   {t:'姓 — bermarga',f:'Subjek + 姓 + Marga',d:'Menyebut marga.',
+    ex:[{h:'我姓张。',p:'Wǒ xìng Zhāng.',i:'Marga saya Zhang.'},{h:'您贵姓？',p:'Nín guì xìng?',i:'Siapa marga Anda?'},{h:'他姓李。',p:'Tā xìng Lǐ.',i:'Margainya Li.'}]}
+ ]},
+ g2:{title:'来自 & 什么',items:[
+   {t:'来自',f:'Subjek + 来自 + Tempat',d:'Menyatakan asal.',
+    ex:[{h:'我来自印度尼西亚。',p:'Wǒ láizì Yìndùníxīyà.',i:'Saya dari Indonesia.'},{h:'他来自北京。',p:'Tā láizì Běijīng.',i:'Dia dari Beijing.'},{h:'你来自哪儿？',p:'Nǐ láizì nǎr?',i:'Kamu dari mana?'}]},
+   {t:'什么',f:'叫 + 什么 + 名字？',d:'Kata tanya "apa".',
+    ex:[{h:'你叫什么名字？',p:'Nǐ jiào shénme míngzi?',i:'Siapa namamu?'},{h:'这是什么？',p:'Zhè shì shénme?',i:'Ini apa?'},{h:'他是谁？',p:'Tā shì shéi?',i:'Dia siapa?'}]}
+ ]},
+ d1:{title:'Berkenalan di Kampus',icon:'🎓',sceneTitle:'Hari pertama kuliah',sceneDesc:'Mahasiswa baru berkenalan.',lines:[
+   {s:'A',h:'你好！请问你叫什么名字？',p:'Nǐ hǎo! Qǐngwèn nǐ jiào shénme míngzi?',i:'Halo! Siapa namamu?'},
+   {s:'B',h:'我叫李明。你呢？',p:'Wǒ jiào Lǐ Míng. Nǐ ne?',i:'Saya Li Ming. Kamu?'},
+   {s:'A',h:'我叫Budi。我是印度尼西亚人。',p:'Wǒ jiào Budi. Wǒ shì Yìndùníxīyà rén.',i:'Saya Budi. Saya orang Indonesia.'},
+   {s:'B',h:'很高兴认识你！',p:'Hěn gāoxìng rènshi nǐ!',i:'Senang berkenalan!'}
+ ]},
+ d2:{title:'Bertemu Rekan Kerja',icon:'💼',sceneTitle:'Di kantor',sceneDesc:'Percakapan formal.',lines:[
+   {s:'A',h:'您好！请问您贵姓？',p:'Nín hǎo! Qǐngwèn nín guì xìng?',i:'Halo! Siapa marga Anda?'},
+   {s:'B',h:'我姓王，叫王强。',p:'Wǒ xìng Wáng, jiào Wáng Qiáng.',i:'Marga Wang, nama Wang Qiang.'},
+   {s:'A',h:'王先生，您来自哪儿？',p:'Wáng xiānsheng, nín láizì nǎr?',i:'Tuan Wang, dari mana?'},
+   {s:'B',h:'我来自上海。',p:'Wǒ láizì Shànghǎi.',i:'Saya dari Shanghai.'}
+ ]},
+ rd:{title:'Marga China',zh:'中国人的姓',icon:'🏯',
+  text:'中国人的名字是姓在前，名在后。比如"李明"，李是姓，明是名。中国最常见的三个姓是李、王、张。在正式场合，人们会称呼对方的姓加"先生"或"女士"。',
+  py:'Zhōngguó rén de míngzi shì xìng zài qián, míng zài hòu.',
+  id:'Nama orang China: marga di depan, nama di belakang. Contoh "Li Ming" — Li marga, Ming nama. Tiga marga paling umum: Li, Wang, Zhang.',
+  note:'Ada lebih dari 4.000 marga China, tapi 100 marga teratas mencakup 85% populasi.'},
+ ex:{groups:[
+   {t:'A. Lengkapi',qs:[{q:'你叫什么<span class="ex-bl">名字</span>？'},{q:'你<span class="ex-bl">来自</span>哪儿？'},{q:'他<span class="ex-bl">是</span>老师吗？'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Saya orang Indonesia → <span class="ex-bl">我是印度尼西亚人。</span>'},{q:'Siapa namamu? → <span class="ex-bl">你叫什么名字？</span>'},{q:'Senang berkenalan → <span class="ex-bl">很高兴认识你。</span>'}]}
+ ]},
+ qz:[
+   {q:'Tanya nama sopan…',zh:'你叫什么名字？',opts:['你叫什么名字？','你好吗？','你去哪儿？','你是谁？'],ans:0},
+   {q:'姓 berarti…',zh:'姓',opts:['marga','nama lengkap','panggilan','gelar'],ans:0},
+   {q:'"Saya dari Indonesia"…',zh:'我来自印度尼西亚。',opts:['我来自印度尼西亚。','我是印度尼西亚。','我在印度尼西亚。','我去印度尼西亚。'],ans:0},
+   {q:'Arti 很高兴认识你…',zh:'很高兴认识你',opts:['senang berkenalan','apa kabar','selamat datang','sampai jumpa'],ans:0},
+   {q:'Dia (pr)…',zh:'她',opts:['她','他','它','你'],ans:0}
+ ]},
+{num:3,title:'Angka & Waktu',zh:'数字和时间',icon:'🕐',
+ goals:['Menghitung 1–10.000','Menyebutkan jam','Menyebutkan hari','Menyebutkan tanggal'],
+ v1:{title:'Angka Dasar',words:[
+   {h:'一',p:'yī',i:'satu',e:'我有一只猫。',ei:'Saya punya satu kucing.'},
+   {h:'二',p:'èr',i:'dua',e:'二月很冷。',ei:'Februari dingin.'},
+   {h:'三',p:'sān',i:'tiga',e:'现在三点。',ei:'Sekarang jam tiga.'},
+   {h:'十',p:'shí',i:'sepuluh',e:'十个人。',ei:'Sepuluh orang.'},
+   {h:'百',p:'bǎi',i:'ratus',e:'一百块。',ei:'100 yuan.'},
+   {h:'千',p:'qiān',i:'ribu',e:'三千人。',ei:'3000 orang.'},
+   {h:'万',p:'wàn',i:'puluh ribu',e:'一万块。',ei:'10.000 yuan.'},
+   {h:'点',p:'diǎn',i:'jam (titik)',e:'现在几点？',ei:'Jam berapa?'},
+   {h:'分',p:'fēn',i:'menit',e:'三点十五分。',ei:'Jam 3:15.'},
+   {h:'半',p:'bàn',i:'setengah',e:'三点半。',ei:'Jam 3:30.'}
+ ]},
+ v2:{title:'Hari & Tanggal',words:[
+   {h:'今天',p:'jīntiān',i:'hari ini',e:'今天几号？',ei:'Tanggal berapa?'},
+   {h:'明天',p:'míngtiān',i:'besok',e:'明天见！',ei:'Sampai besok!'},
+   {h:'昨天',p:'zuótiān',i:'kemarin',e:'昨天我很忙。',ei:'Kemarin sibuk.'},
+   {h:'年',p:'nián',i:'tahun',e:'今年是二零二五年。',ei:'Tahun ini 2025.'},
+   {h:'月',p:'yuè',i:'bulan',e:'我五月去中国。',ei:'Saya ke China Mei.'},
+   {h:'号',p:'hào',i:'tanggal',e:'今天几号？',ei:'Tanggal berapa?'},
+   {h:'星期',p:'xīngqī',i:'minggu',e:'今天星期几？',ei:'Hari apa?'},
+   {h:'现在',p:'xiànzài',i:'sekarang',e:'现在几点？',ei:'Jam berapa sekarang?'},
+   {h:'上午',p:'shàngwǔ',i:'pagi',e:'上午九点。',ei:'Jam 9 pagi.'},
+   {h:'下午',p:'xiàwǔ',i:'siang/sore',e:'下午三点。',ei:'Jam 3 sore.'}
+ ]},
+ g1:{title:'Angka & Jam',items:[
+   {t:'Angka 11–99',f:'十 + satuan | puluhan + 十 + satuan',d:'Gabungkan angka.',
+    ex:[{h:'十一',p:'shí yī',i:'sebelas'},{h:'二十',p:'èrshí',i:'dua puluh'},{h:'三十五',p:'sānshíwǔ',i:'tiga puluh lima'}]},
+   {t:'Jam',f:'Subjek + 数字 + 点 (+ 分/半)',d:'点=jam, 分=menit.',
+    ex:[{h:'现在三点半。',p:'Xiànzài sān diǎn bàn.',i:'Jam 3:30.'},{h:'七点十五分。',p:'Qī diǎn shíwǔ fēn.',i:'Jam 7:15.'},{h:'上午九点。',p:'Shàngwǔ jiǔ diǎn.',i:'Jam 9 pagi.'}]}
+ ]},
+ g2:{title:'Hari & Tanggal',items:[
+   {t:'今天星期几？',f:'今天 + 星期 + 几？',d:'Menanyakan hari.',
+    ex:[{h:'今天星期几？',p:'Jīntiān xīngqī jǐ?',i:'Hari apa?'},{h:'今天星期一。',p:'Jīntiān xīngqī yī.',i:'Senin.'},{h:'明天星期日。',p:'Míngtiān xīngqī rì.',i:'Besok Minggu.'}]},
+   {t:'今天几号？',f:'今天 + 数字 + 月 + 数字 + 号',d:'Menanyakan tanggal.',
+    ex:[{h:'今天几号？',p:'Jīntiān jǐ hào?',i:'Tanggal berapa?'},{h:'今天五月二十号。',p:'Jīntiān wǔ yuè èrshí hào.',i:'20 Mei.'},{h:'我的生日是三月八号。',p:'Wǒ de shēngrì shì sān yuè bā hào.',i:'Ultah saya 8 Maret.'}]}
+ ]},
+ d1:{title:'Membuat Janji',icon:'⏰',sceneTitle:'Di kantin',sceneDesc:'Membuat janji bertemu.',lines:[
+   {s:'A',h:'现在几点？',p:'Xiànzài jǐ diǎn?',i:'Jam berapa?'},
+   {s:'B',h:'现在三点半。',p:'Xiànzài sān diǎn bàn.',i:'Jam 3:30.'},
+   {s:'A',h:'我们四点见，好吗？',p:'Wǒmen sì diǎn jiàn, hǎo ma?',i:'Bertemu jam 4?'},
+   {s:'B',h:'好，四点半见！',p:'Hǎo, sì diǎn bàn jiàn!',i:'Baik, jam 4:30!'}
+ ]},
+ d2:{title:'Menanyakan Tanggal',icon:'📅',sceneTitle:'Di kelas',sceneDesc:'Membahas jadwal ujian.',lines:[
+   {s:'A',h:'今天几号？星期几？',p:'Jīntiān jǐ hào? Xīngqī jǐ?',i:'Tanggal & hari apa?'},
+   {s:'B',h:'今天五月二十号，星期一。',p:'Jīntiān wǔ yuè èrshí hào, xīngqī yī.',i:'20 Mei, Senin.'},
+   {s:'A',h:'考试是什么时候？',p:'Kǎoshì shì shénme shíhou?',i:'Ujiannya kapan?'},
+   {s:'B',h:'明天上午九点。',p:'Míngtiān shàngwǔ jiǔ diǎn.',i:'Besok jam 9 pagi.'}
+ ]},
+ rd:{title:'Angka Beruntung',zh:'幸运数字',icon:'🍀',
+  text:'在中国文化中，数字有吉凶之分。八（bā）听起来像"发"（发财），所以被认为非常吉利。六（liù）代表顺利。四（sì）听起来像"死"，所以很多人不喜欢。',
+  py:'Zài Zhōngguó wénhuà zhōng, shùzì yǒu jíxiōng zhī fēn.',
+  id:'Dalam budaya China, angka punya makna keberuntungan. 8(bā)=rejeki. 6(liù)=kelancaran. 4(sì) seperti "mati" — tidak disukai. 9(jiǔ)=panjang umur.',
+  note:'Banyak gedung di China tidak memiliki lantai 4, 14, atau 24.'},
+ ex:{groups:[
+   {t:'A. Tulis pinyin',qs:[{q:'十五 → <span class="ex-bl">shí wǔ</span>'},{q:'八十八 → <span class="ex-bl">bāshíbā</span>'},{q:'三点半 → <span class="ex-bl">sān diǎn bàn</span>'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Sekarang jam 5:15 → <span class="ex-bl">现在五点十五分。</span>'},{q:'Hari ini Senin → <span class="ex-bl">今天星期一。</span>'},{q:'Ultah saya 3 Maret → <span class="ex-bl">我的生日是三月三号。</span>'}]}
+ ]},
+ qz:[
+   {q:'"Tiga puluh lima"…',zh:'三十五',opts:['sānshíwǔ','sānshíwǔshí','wǔshísān','sānwǔshí'],ans:0},
+   {q:'Apa arti 星期?',zh:'星期',opts:['minggu','bulan','tahun','jam'],ans:0},
+   {q:'"Jam setengah empat"…',zh:'三点半',opts:['三点半','四点半','三点四','四点三'],ans:0},
+   {q:'今天几号 berarti…',zh:'今天几号',opts:['tanggal berapa','hari apa','jam berapa','tahun berapa'],ans:0},
+   {q:'Angka 11…',zh:'十一',opts:['shí yī','yī shí','shí yī yī','yī yī'],ans:0}
+ ]},
+{num:4,title:'Keluarga',zh:'家人',icon:'👨‍👩‍👧',
+ goals:['Menyebutkan anggota keluarga','Menggunakan 有','Bertanya jumlah','Menyebutkan usia'],
+ v1:{title:'Keluarga Inti',words:[
+   {h:'家',p:'jiā',i:'rumah/keluarga',e:'我家有四口人。',ei:'Keluarga saya 4 orang.'},
+   {h:'爸爸',p:'bàba',i:'ayah',e:'我爸爸是医生。',ei:'Ayah saya dokter.'},
+   {h:'妈妈',p:'māma',i:'ibu',e:'妈妈做饭很好吃。',ei:'Masakan ibu enak.'},
+   {h:'哥哥',p:'gēge',i:'kakak laki-laki',e:'我有一个哥哥。',ei:'Punya satu kakak lk.'},
+   {h:'姐姐',p:'jiějie',i:'kakak perempuan',e:'姐姐在上海工作。',ei:'Kakak kerja di Shanghai.'},
+   {h:'弟弟',p:'dìdi',i:'adik laki-laki',e:'弟弟今年十岁。',ei:'Adik 10 tahun.'},
+   {h:'妹妹',p:'mèimei',i:'adik perempuan',e:'妹妹喜欢唱歌。',ei:'Adik suka menyanyi.'},
+   {h:'儿子',p:'érzi',i:'anak laki-laki',e:'他有两个儿子。',ei:'Dia punya dua anak.'},
+   {h:'女儿',p:'nǚ\'ér',i:'anak perempuan',e:'我女儿很聪明。',ei:'Anak saya pintar.'}
+ ]},
+ v2:{title:'Keluarga Besar',words:[
+   {h:'爷爷',p:'yéye',i:'kakek (dari ayah)',e:'爷爷今年八十岁。',ei:'Kakek 80 tahun.'},
+   {h:'奶奶',p:'nǎinai',i:'nenek (dari ayah)',e:'奶奶喜欢看电视。',ei:'Nenek suka nonton TV.'},
+   {h:'外公',p:'wàigōng',i:'kakek (dari ibu)',e:'外公住在上海。',ei:'Kakek di Shanghai.'},
+   {h:'外婆',p:'wàipó',i:'nenek (dari ibu)',e:'外婆做饭很好吃。',ei:'Masakan nenek enak.'},
+   {h:'丈夫',p:'zhàngfu',i:'suami',e:'她丈夫是老师。',ei:'Suaminya guru.'},
+   {h:'妻子',p:'qīzi',i:'istri',e:'我妻子是医生。',ei:'Istri saya dokter.'},
+   {h:'孩子',p:'háizi',i:'anak',e:'我有两个孩子。',ei:'Saya punya dua anak.'},
+   {h:'岁',p:'suì',i:'tahun (usia)',e:'我今年二十岁。',ei:'Saya 20 tahun.'},
+   {h:'有',p:'yǒu',i:'punya',e:'我有两个姐姐。',ei:'Punya dua kakak pr.'},
+   {h:'口',p:'kǒu',i:'(satuan) jiwa',e:'我家有五口人。',ei:'Keluarga 5 orang.'}
+ ]},
+ g1:{title:'有 & 几',items:[
+   {t:'有',f:'Subjek + 有 + Objek',d:'Negatif: 没有.',
+    ex:[{h:'我有一个哥哥。',p:'Wǒ yǒu yí ge gēge.',i:'Punya satu kakak lk.'},{h:'她没有妹妹。',p:'Tā méiyǒu mèimei.',i:'Dia tidak punya adik pr.'},{h:'你有孩子吗？',p:'Nǐ yǒu háizi ma?',i:'Kamu punya anak?'}]},
+   {t:'几',f:'几 + 量词 + 名词？',d:'Untuk jumlah < 10.',
+    ex:[{h:'你家有几口人？',p:'Nǐ jiā yǒu jǐ kǒu rén?',i:'Keluarga berapa orang?'},{h:'你有几个哥哥？',p:'Nǐ yǒu jǐ ge gēge?',i:'Punya berapa kakak lk?'},{h:'我家有三口人。',p:'Wǒ jiā yǒu sān kǒu rén.',i:'Keluarga 3 orang.'}]}
+ ]},
+ g2:{title:'岁 & 量词',items:[
+   {t:'岁',f:'Subjek + 数字 + 岁',d:'岁 = tahun (usia).',
+    ex:[{h:'我今年二十岁。',p:'Wǒ jīnnián èrshí suì.',i:'Saya 20 tahun.'},{h:'妹妹八岁。',p:'Mèimei bā suì.',i:'Adik 8 tahun.'},{h:'您多大年纪？',p:'Nín duō dà niánjì?',i:'Berapa usia Anda?'}]},
+   {t:'量词 个/口',f:'数字 + 个/口 + 名词',d:'个 = umum, 口 = keluarga.',
+    ex:[{h:'三个孩子',p:'sān ge háizi',i:'tiga anak'},{h:'五口人',p:'wǔ kǒu rén',i:'lima orang keluarga'},{h:'两个姐姐',p:'liǎng ge jiějie',i:'dua kakak pr.'}]}
+ ]},
+ d1:{title:'Keluarga Saya',icon:'👨‍👩‍👦',sceneTitle:'Ruang keluarga',sceneDesc:'Bercerita keluarga.',lines:[
+   {s:'A',h:'你家有几口人？',p:'Nǐ jiā yǒu jǐ kǒu rén?',i:'Keluarga berapa orang?'},
+   {s:'B',h:'我家有五口人。',p:'Wǒ jiā yǒu wǔ kǒu rén.',i:'Keluarga saya 5 orang.'},
+   {s:'A',h:'你有哥哥吗？',p:'Nǐ yǒu gēge ma?',i:'Punya kakak lk?'},
+   {s:'B',h:'没有，我只有两个姐姐。',p:'Méiyǒu, wǒ zhǐ yǒu liǎng ge jiějie.',i:'Tidak, hanya dua kakak pr.'}
+ ]},
+ d2:{title:'Keluarga Besar',icon:'👵',sceneTitle:'Rumah kakek',sceneDesc:'Bercerita kakek-nenek.',lines:[
+   {s:'A',h:'你爷爷多大年纪？',p:'Nǐ yéye duō dà niánjì?',i:'Kakekmu berapa usia?'},
+   {s:'B',h:'他今年八十岁。',p:'Tā jīnnián bāshí suì.',i:'Dia 80 tahun.'},
+   {s:'A',h:'他身体好吗？',p:'Tā shēntǐ hǎo ma?',i:'Kesehatannya?'},
+   {s:'B',h:'很好，他每天去公园。',p:'Hěn hǎo, tā měitiān qù gōngyuán.',i:'Baik, tiap hari ke taman.'}
+ ]},
+ rd:{title:'Keluarga China',zh:'中国家庭',icon:'🏠',
+  text:'传统中国家庭非常重视"家"。三代同堂很常见。中国人称呼亲戚非常具体：爸爸的哥哥叫"伯父"，爸爸的弟弟叫"叔叔"，妈妈的兄弟叫"舅舅"。',
+  py:'Chuántǒng Zhōngguó jiātíng fēicháng zhòngshì "jiā".',
+  id:'Keluarga tradisional China sangat menghargai "rumah/keluarga". Tiga generasi serumah sangat umum. Istilah kerabat sangat spesifik.',
+  note:'Karena itu, mempelajari istilah keluarga Mandarin juga berarti mempelajari struktur sosial China.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'我家有<span class="ex-bl">五</span>口人。'},{q:'我<span class="ex-bl">有</span>一个哥哥。'},{q:'妹妹今年八<span class="ex-bl">岁</span>。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Keluarga saya 4 orang → <span class="ex-bl">我家有四口人。</span>'},{q:'Saya tidak punya kakak lk → <span class="ex-bl">我没有哥哥。</span>'},{q:'Ayah saya dokter → <span class="ex-bl">我爸爸是医生。</span>'}]}
+ ]},
+ qz:[
+   {q:'Arti 姐姐…',zh:'姐姐',opts:['kakak pr.','adik pr.','kakak lk.','ibu'],ans:0},
+   {q:'Negatif 有…',zh:'没有',opts:['没有','不有','无有','未有'],ans:0},
+   {q:'"Keluarga 5 orang"…',zh:'我家有五口人。',opts:['我家有五口人。','我家是五个人。','我家人有五。','我家五个是。'],ans:0},
+   {q:'岁 untuk…',zh:'岁',opts:['usia','jumlah','tanggal','berat'],ans:0},
+   {q:'Kakek (dari ayah)…',zh:'爷爷',opts:['爷爷','外公','奶奶','外婆'],ans:0}
+ ]},
+{num:5,title:'Makanan & Minuman',zh:'饮食',icon:'🍜',
+ goals:['Menyebutkan makanan','Memesan di restoran','Bertanya makanan','Menyatakan suka'],
+ v1:{title:'Makanan Pokok',words:[
+   {h:'吃',p:'chī',i:'makan',e:'我想吃面条。',ei:'Saya mau makan mie.'},
+   {h:'米饭',p:'mǐfàn',i:'nasi',e:'我要一碗米饭。',ei:'Saya mau nasi.'},
+   {h:'面条',p:'miàntiáo',i:'mie',e:'面条很好吃。',ei:'Mienya enak.'},
+   {h:'饺子',p:'jiǎozi',i:'pangsit',e:'春节吃饺子。',ei:'Imlek makan pangsit.'},
+   {h:'菜',p:'cài',i:'sayur/masakan',e:'这个菜很好吃。',ei:'Masakan ini enak.'},
+   {h:'肉',p:'ròu',i:'daging',e:'我不吃肉。',ei:'Saya tidak makan daging.'},
+   {h:'鱼',p:'yú',i:'ikan',e:'这条鱼很新鲜。',ei:'Ikan ini segar.'},
+   {h:'鸡',p:'jī',i:'ayam',e:'我要鸡肉。',ei:'Saya mau ayam.'},
+   {h:'蛋',p:'dàn',i:'telur',e:'我喜欢吃蛋。',ei:'Saya suka telur.'},
+   {h:'汤',p:'tāng',i:'sup',e:'鸡汤很好喝。',ei:'Sup ayam enak.'}
+ ]},
+ v2:{title:'Minuman & Alat',words:[
+   {h:'喝',p:'hē',i:'minum',e:'你要喝什么？',ei:'Mau minum apa?'},
+   {h:'水',p:'shuǐ',i:'air',e:'一杯水，谢谢。',ei:'Segelas air.'},
+   {h:'茶',p:'chá',i:'teh',e:'我喜欢喝茶。',ei:'Saya suka teh.'},
+   {h:'咖啡',p:'kāfēi',i:'kopi',e:'我想喝咖啡。',ei:'Saya mau kopi.'},
+   {h:'牛奶',p:'niúnǎi',i:'susu',e:'我每天喝牛奶。',ei:'Saya minum susu tiap hari.'},
+   {h:'服务员',p:'fúwùyuán',i:'pelayan',e:'服务员，买单！',ei:'Pelayan, bayar!'},
+   {h:'菜单',p:'càidān',i:'menu',e:'请给我菜单。',ei:'Tolong menu.'},
+   {h:'杯',p:'bēi',i:'(satuan) gelas',e:'一杯茶。',ei:'Segelas teh.'},
+   {h:'碗',p:'wǎn',i:'(satuan) mangkuk',e:'两碗米饭。',ei:'Dua mangkuk nasi.'},
+   {h:'好吃',p:'hǎochī',i:'enak',e:'这个菜很好吃。',ei:'Masakan ini enak.'}
+ ]},
+ g1:{title:'想 & 量词',items:[
+   {t:'想',f:'Subjek + 想 + V + Objek',d:'Ingin melakukan.',
+    ex:[{h:'我想吃面条。',p:'Wǒ xiǎng chī miàntiáo.',i:'Saya mau makan mie.'},{h:'你想喝什么？',p:'Nǐ xiǎng hē shénme?',i:'Mau minum apa?'},{h:'我想喝茶。',p:'Wǒ xiǎng hē chá.',i:'Saya mau teh.'}]},
+   {t:'杯/碗',f:'数字 + 杯/碗 + 名词',d:'杯=gelas, 碗=mangkuk.',
+    ex:[{h:'一杯茶',p:'yì bēi chá',i:'secangkir teh'},{h:'两碗米饭',p:'liǎng wǎn mǐfàn',i:'dua mangkuk nasi'},{h:'三杯咖啡',p:'sān bēi kāfēi',i:'tiga gelas kopi'}]}
+ ]},
+ g2:{title:'喜欢 & 好吃',items:[
+   {t:'喜欢',f:'Subjek + 喜欢 + Objek',d:'Suka. Negatif: 不喜欢.',
+    ex:[{h:'我喜欢喝茶。',p:'Wǒ xǐhuan hē chá.',i:'Saya suka teh.'},{h:'他不喜欢辣。',p:'Tā bù xǐhuan là.',i:'Dia tidak suka pedas.'},{h:'你喜欢吃什么？',p:'Nǐ xǐhuan chī shénme?',i:'Kamu suka makan apa?'}]},
+   {t:'好吃/好喝',f:'名词 + 形容词',d:'好吃 (makanan), 好喝 (minuman).',
+    ex:[{h:'这个菜很好吃。',p:'Zhège cài hěn hǎochī.',i:'Masakan ini enak.'},{h:'中国茶很好喝。',p:'Zhōngguó chá hěn hǎohē.',i:'Teh China enak.'},{h:'太辣了！',p:'Tài là le!',i:'Terlalu pedas!'}]}
+ ]},
+ d1:{title:'Di Restoran',icon:'🍽️',sceneTitle:'Restoran China',sceneDesc:'Memesan makanan.',lines:[
+   {s:'A',h:'服务员，我要菜单。',p:'Fúwùyuán, wǒ yào càidān.',i:'Pelayan, saya mau menu.'},
+   {s:'B',h:'好的，这是菜单。',p:'Hǎo de, zhè shì càidān.',i:'Baik, ini menunya.'},
+   {s:'A',h:'我想吃面条和鱼。',p:'Wǒ xiǎng chī miàntiáo hé yú.',i:'Saya mau mie & ikan.'},
+   {s:'B',h:'要喝什么？',p:'Yào hē shénme?',i:'Mau minum apa?'},
+   {s:'A',h:'一杯茶，谢谢。',p:'Yì bēi chá, xièxie.',i:'Segelas teh.'}
+ ]},
+ d2:{title:'Makanan Favorit',icon:'🍜',sceneTitle:'Kantin',sceneDesc:'Ngobrol makanan favorit.',lines:[
+   {s:'A',h:'你最喜欢吃什么？',p:'Nǐ zuì xǐhuan chī shénme?',i:'Suka makan apa?'},
+   {s:'B',h:'我最喜欢吃饺子。你呢？',p:'Wǒ zuì xǐhuan chī jiǎozi. Nǐ ne?',i:'Paling suka pangsit. Kamu?'},
+   {s:'A',h:'我喜欢吃面条。',p:'Wǒ xǐhuan chī miàntiáo.',i:'Saya suka mie.'},
+   {s:'B',h:'我们一起去吃饭吧！',p:'Wǒmen yìqǐ qù chīfàn ba!',i:'Makan bareng yuk!'}
+ ]},
+ rd:{title:'Kuliner China',zh:'中国饮食',icon:'🥢',
+  text:'中国有"八大菜系"，比如川菜（辣）、粤菜（清淡）、鲁菜（咸鲜）。中国人吃饭用筷子。饭桌上长辈先动筷，晚辈才能吃。',
+  py:'Zhōngguó yǒu "bā dà càixì".',
+  id:'China punya "8 aliran masakan besar": Sichuan (pedas), Kanton (ringan), Shandong (asin-gurih). Makan pakai sumpit. Yang lebih tua mulai dulu.',
+  note:'Jangan menusukkan sumpit tegak ke nasi — menyerupai dupa untuk orang meninggal.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'我想<span class="ex-bl">喝</span>一杯咖啡。'},{q:'我要一<span class="ex-bl">碗</span>米饭。'},{q:'这个菜很<span class="ex-bl">好吃</span>。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Saya mau makan mie → <span class="ex-bl">我想吃面条。</span>'},{q:'Kamu mau minum apa? → <span class="ex-bl">你想喝什么？</span>'},{q:'Teh China enak → <span class="ex-bl">中国茶很好喝。</span>'}]}
+ ]},
+ qz:[
+   {q:'Arti 面条?',zh:'面条',opts:['mie','nasi','sup','pangsit'],ans:0},
+   {q:'"Saya mau minum teh"…',zh:'我想喝茶。',opts:['我想喝茶。','我要茶喝。','我茶想喝。','喝我茶想。'],ans:0},
+   {q:'量词 杯 untuk…',zh:'杯',opts:['gelas','mangkuk','piring','kotak'],ans:0},
+   {q:'好吃 untuk…',zh:'好吃',opts:['makanan','minuman','orang','tempat'],ans:0},
+   {q:'"Pelayan, bayar!"…',zh:'服务员，买单！',opts:['服务员，买单！','服务员，来！','服务员，走！','服务员，好的！'],ans:0}
+ ]},
+{num:6,title:'Belanja & Tawar',zh:'购物',icon:'🛍️',
+ goals:['Bertanya harga','Menyebutkan warna','Menawar','Menyatakan mahal/murah'],
+ v1:{title:'Belanja Dasar',words:[
+   {h:'买',p:'mǎi',i:'beli',e:'我要买这个。',ei:'Saya mau beli ini.'},
+   {h:'卖',p:'mài',i:'jual',e:'这里卖水果。',ei:'Di sini jual buah.'},
+   {h:'多少钱',p:'duōshao qián',i:'berapa harganya',e:'这个多少钱？',ei:'Ini berapa?'},
+   {h:'块',p:'kuài',i:'yuan',e:'五十块。',ei:'50 yuan.'},
+   {h:'毛',p:'máo',i:'0,1 yuan',e:'五毛钱。',ei:'0,5 yuan.'},
+   {h:'商店',p:'shāngdiàn',i:'toko',e:'这家商店很大。',ei:'Toko ini besar.'},
+   {h:'超市',p:'chāoshì',i:'supermarket',e:'我去超市买菜。',ei:'Saya ke supermarket.'},
+   {h:'市场',p:'shìchǎng',i:'pasar',e:'市场很热闹。',ei:'Pasarnya ramai.'},
+   {h:'便宜',p:'piányi',i:'murah',e:'便宜一点吧。',ei:'Murahkan sedikit.'},
+   {h:'贵',p:'guì',i:'mahal',e:'太贵了！',ei:'Terlalu mahal!'}
+ ]},
+ v2:{title:'Warna & Pakaian',words:[
+   {h:'颜色',p:'yánsè',i:'warna',e:'你喜欢什么颜色？',ei:'Suka warna apa?'},
+   {h:'红',p:'hóng',i:'merah',e:'我喜欢红色的。',ei:'Saya suka merah.'},
+   {h:'黄',p:'huáng',i:'kuning',e:'黄色的花。',ei:'Bunga kuning.'},
+   {h:'蓝',p:'lán',i:'biru',e:'蓝色的衣服。',ei:'Baju biru.'},
+   {h:'黑',p:'hēi',i:'hitam',e:'黑色的鞋子。',ei:'Sepatu hitam.'},
+   {h:'白',p:'bái',i:'putih',e:'白色衣服。',ei:'Baju putih.'},
+   {h:'衣服',p:'yīfu',i:'pakaian',e:'这件衣服很好看。',ei:'Pakaian ini bagus.'},
+   {h:'鞋子',p:'xiézi',i:'sepatu',e:'我要买鞋子。',ei:'Saya mau sepatu.'},
+   {h:'帽子',p:'màozi',i:'topi',e:'这顶帽子多少钱？',ei:'Topi ini berapa?'},
+   {h:'件',p:'jiàn',i:'(satuan) potong',e:'一件衣服。',ei:'Sebuah baju.'}
+ ]},
+ g1:{title:'Harga & 太…了',items:[
+   {t:'多少钱？',f:'名词 + 多少钱？',d:'Bertanya harga.',
+    ex:[{h:'这个多少钱？',p:'Zhège duōshao qián?',i:'Ini berapa?'},{h:'衣服多少钱？',p:'Yīfu duōshao qián?',i:'Pakaian berapa?'},{h:'苹果多少钱一斤？',p:'Píngguǒ duōshao qián yì jīn?',i:'Apel per setengah kilo?'}]},
+   {t:'太…了',f:'太 + 形容词 + 了',d:'Berlebihan.',
+    ex:[{h:'太贵了！',p:'Tài guì le!',i:'Terlalu mahal!'},{h:'太便宜了！',p:'Tài piányi le!',i:'Terlalu murah!'},{h:'太好了！',p:'Tài hǎo le!',i:'Bagus sekali!'}]}
+ ]},
+ g2:{title:'Menawar',items:[
+   {t:'便宜一点',f:'便宜 + 一点(儿)',d:'一点 = sedikit.',
+    ex:[{h:'便宜一点吧。',p:'Piányi yìdiǎn ba.',i:'Murahkan sedikit.'},{h:'再便宜一点，好吗？',p:'Zài piányi yìdiǎn, hǎo ma?',i:'Murahkan lagi?'},{h:'好，四十五块。',p:'Hǎo, sìshíwǔ kuài.',i:'Baik, 45 yuan.'}]},
+   {t:'可以…吗？',f:'可以 + V + 吗？',d:'Menanyakan izin.',
+    ex:[{h:'可以打折吗？',p:'Kěyǐ dǎzhé ma?',i:'Bisa diskon?'},{h:'可以试穿吗？',p:'Kěyǐ shìchuān ma?',i:'Bisa dicoba?'},{h:'可以刷卡吗？',p:'Kěyǐ shuākǎ ma?',i:'Bisa bayar kartu?'}]}
+ ]},
+ d1:{title:'Menawar di Pasar',icon:'🧺',sceneTitle:'Pasar',sceneDesc:'Beli suvenir & tawar.',lines:[
+   {s:'A',h:'老板，这个多少钱？',p:'Lǎobǎn, zhège duōshao qián?',i:'Bos, ini berapa?'},
+   {s:'B',h:'五十块。',p:'Wǔshí kuài.',i:'50 yuan.'},
+   {s:'A',h:'太贵了！便宜一点吧。',p:'Tài guì le! Piányi yìdiǎn ba.',i:'Mahal! Murahkan.'},
+   {s:'B',h:'好吧，四十五块。',p:'Hǎo ba, sìshíwǔ kuài.',i:'Baik, 45 yuan.'},
+   {s:'A',h:'谢谢！我买了。',p:'Xièxie! Wǒ mǎi le.',i:'Terima kasih! Saya beli.'}
+ ]},
+ d2:{title:'Membeli Pakaian',icon:'👕',sceneTitle:'Toko pakaian',sceneDesc:'Beli baju.',lines:[
+   {s:'A',h:'这件衣服多少钱？',p:'Zhè jiàn yīfu duōshao qián?',i:'Baju ini berapa?'},
+   {s:'B',h:'一百二十块。',p:'Yì bǎi èrshí kuài.',i:'120 yuan.'},
+   {s:'A',h:'有别的颜色吗？',p:'Yǒu biéde yánsè ma?',i:'Ada warna lain?'},
+   {s:'B',h:'有红色和蓝色。',p:'Yǒu hóngsè hé lánsè.',i:'Ada merah dan biru.'},
+   {s:'A',h:'我要红色的。',p:'Wǒ yào hóngsè de.',i:'Saya mau merah.'}
+ ]},
+ rd:{title:'Tawar-menawar',zh:'讨价还价',icon:'💰',
+  text:'在中国，市场和小商店可以讨价还价，但大商场和超市不行。讨价还价时要有礼貌。一般可以砍价20%到30%。',
+  py:'Zài Zhōngguó, shìchǎng hé xiǎo shāngdiàn kěyǐ tǎojià huánjià.',
+  id:'Di China, pasar dan toko kecil bisa ditawar, tapi mall & supermarket tidak. Saat menawar, harus sopan. Biasanya bisa turun 20-30%.',
+  note:'Jangan menawar di restoran atau toko berantai.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'这个<span class="ex-bl">东西</span>多少钱？'},{q:'太<span class="ex-bl">贵</span>了！'},{q:'便宜一<span class="ex-bl">点</span>吧。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Ini berapa? → <span class="ex-bl">这个多少钱？</span>'},{q:'Terlalu mahal! → <span class="ex-bl">太贵了！</span>'},{q:'Bisa diskon? → <span class="ex-bl">可以打折吗？</span>'}]}
+ ]},
+ qz:[
+   {q:'"Berapa harganya?"…',zh:'多少钱？',opts:['多少钱？','什么钱？','几个钱？','几钱？'],ans:0},
+   {q:'太贵了 berarti…',zh:'太贵了',opts:['terlalu mahal','sangat murah','lumayan','bagus'],ans:0},
+   {q:'Warna 红…',zh:'红',opts:['merah','biru','kuning','hitam'],ans:0},
+   {q:'可以打折吗？ berarti…',zh:'可以打折吗',opts:['bisa diskon?','bisa coba?','bisa bayar?','bisa bungkus?'],ans:0},
+   {q:'量词 件 untuk…',zh:'件',opts:['pakaian','kendaraan','buku','orang'],ans:0}
+ ]},
+{num:7,title:'Tempat & Arah',zh:'地点方向',icon:'📍',
+ goals:['Menyebutkan arah','Menggunakan 在','Bertanya "di mana?"','Menyebutkan tempat umum'],
+ v1:{title:'Arah Lokasi',words:[
+   {h:'在',p:'zài',i:'di/berada',e:'我在家。',ei:'Saya di rumah.'},
+   {h:'哪儿',p:'nǎr',i:'di mana',e:'你在哪儿？',ei:'Kamu di mana?'},
+   {h:'这里',p:'zhèlǐ',i:'di sini',e:'请来这里。',ei:'Ke sini.'},
+   {h:'那里',p:'nàlǐ',i:'di sana',e:'那里很漂亮。',ei:'Di sana indah.'},
+   {h:'上面',p:'shàngmiàn',i:'atas',e:'书在桌子上。',ei:'Buku di atas meja.'},
+   {h:'下面',p:'xiàmiàn',i:'bawah',e:'猫在椅子下面。',ei:'Kucing di bawah kursi.'},
+   {h:'左边',p:'zuǒbiān',i:'kiri',e:'银行在左边。',ei:'Bank di kiri.'},
+   {h:'右边',p:'yòubiān',i:'kanan',e:'厕所在右边。',ei:'Toilet di kanan.'},
+   {h:'前面',p:'qiánmiàn',i:'depan',e:'学校在前面。',ei:'Sekolah di depan.'},
+   {h:'后面',p:'hòumiàn',i:'belakang',e:'超市在后面。',ei:'Supermarket di belakang.'}
+ ]},
+ v2:{title:'Tempat Umum',words:[
+   {h:'银行',p:'yínháng',i:'bank',e:'银行在哪儿？',ei:'Bank di mana?'},
+   {h:'学校',p:'xuéxiào',i:'sekolah',e:'我在学校。',ei:'Saya di sekolah.'},
+   {h:'医院',p:'yīyuàn',i:'rumah sakit',e:'医院很大。',ei:'RS-nya besar.'},
+   {h:'洗手间',p:'xǐshǒujiān',i:'toilet',e:'洗手间在哪儿？',ei:'Toilet di mana?'},
+   {h:'商店',p:'shāngdiàn',i:'toko',e:'商店在前面。',ei:'Toko di depan.'},
+   {h:'饭馆',p:'fànguǎn',i:'restoran',e:'这家饭馆很好。',ei:'Restoran ini bagus.'},
+   {h:'公园',p:'gōngyuán',i:'taman',e:'我每天去公园。',ei:'Tiap hari ke taman.'},
+   {h:'机场',p:'jīchǎng',i:'bandara',e:'机场很远。',ei:'Bandara jauh.'},
+   {h:'车站',p:'chēzhàn',i:'stasiun',e:'车站在哪儿？',ei:'Stasiun di mana?'},
+   {h:'附近',p:'fùjìn',i:'dekat',e:'附近有超市吗？',ei:'Ada supermarket dekat?'}
+ ]},
+ g1:{title:'在',items:[
+   {t:'在 — berada',f:'Subjek + 在 + Tempat',d:'在 = berada/preposisi.',
+    ex:[{h:'我在家。',p:'Wǒ zài jiā.',i:'Saya di rumah.'},{h:'他在学校。',p:'Tā zài xuéxiào.',i:'Dia di sekolah.'},{h:'我在家吃饭。',p:'Wǒ zài jiā chīfàn.',i:'Saya makan di rumah.'}]},
+   {t:'在哪儿？',f:'Tempat + 在哪儿？',d:'Bertanya lokasi.',
+    ex:[{h:'洗手间在哪儿？',p:'Xǐshǒujiān zài nǎr?',i:'Toilet di mana?'},{h:'你住在哪儿？',p:'Nǐ zhù zài nǎr?',i:'Kamu tinggal di mana?'},{h:'学校在哪儿？',p:'Xuéxiào zài nǎr?',i:'Sekolah di mana?'}]}
+ ]},
+ g2:{title:'Arah',items:[
+   {t:'A + 在 + B + 旁边/上面/下面',f:'…在…的 + 方向词',d:'Menyatakan posisi.',
+    ex:[{h:'银行在学校旁边。',p:'Yínháng zài xuéxiào pángbiān.',i:'Bank di samping sekolah.'},{h:'书在桌子上面。',p:'Shū zài zhuōzi shàngmiàn.',i:'Buku di atas meja.'},{h:'猫在椅子下面。',p:'Māo zài yǐzi xiàmiàn.',i:'Kucing di bawah kursi.'}]},
+   {t:'怎么走？',f:'去 + Tempat + 怎么走？',d:'Bertanya arah.',
+    ex:[{h:'去银行怎么走？',p:'Qù yínháng zěnme zǒu?',i:'Ke bank bagaimana?'},{h:'一直走，然后左转。',p:'Yìzhí zǒu, ránhòu zuǒ zhuǎn.',i:'Lurus, lalu belok kiri.'},{h:'就在前面。',p:'Jiù zài qiánmiàn.',i:'Tepat di depan.'}]}
+ ]},
+ d1:{title:'Mencari Toilet',icon:'🚻',sceneTitle:'Di mall',sceneDesc:'Cari toilet.',lines:[
+   {s:'A',h:'请问，洗手间在哪儿？',p:'Qǐngwèn, xǐshǒujiān zài nǎr?',i:'Toilet di mana?'},
+   {s:'B',h:'在二楼，右边。',p:'Zài èr lóu, yòubiān.',i:'Lantai 2, kanan.'},
+   {s:'A',h:'谢谢！电梯在哪儿？',p:'Xièxie! Diàntī zài nǎr?',i:'Lift di mana?'},
+   {s:'B',h:'电梯就在左边。',p:'Diàntī jiù zài zuǒbiān.',i:'Lift di kiri.'}
+ ]},
+ d2:{title:'Bertanya Jalan',icon:'🗺️',sceneTitle:'Di jalan',sceneDesc:'Bertanya arah ke bank.',lines:[
+   {s:'A',h:'请问，银行怎么走？',p:'Qǐngwèn, yínháng zěnme zǒu?',i:'Ke bank bagaimana?'},
+   {s:'B',h:'一直走，然后左转。',p:'Yìzhí zǒu, ránhòu zuǒ zhuǎn.',i:'Lurus, belok kiri.'},
+   {s:'A',h:'远吗？',p:'Yuǎn ma?',i:'Jauh?'},
+   {s:'B',h:'不远，走五分钟。',p:'Bù yuǎn, zǒu wǔ fēnzhōng.',i:'Tidak, 5 menit jalan.'}
+ ]},
+ rd:{title:'Alamat China',zh:'中国地址',icon:'📮',
+  text:'中国的地址和西方相反。写法是从大到小：省、市、区、街道、门牌号。比如"北京市朝阳区建国路88号"。',
+  py:'Zhōngguó de dìzhǐ hé xīfāng xiāngfǎn.',
+  id:'Alamat di China terbalik dari Barat. Ditulis dari besar ke kecil: provinsi, kota, distrik, jalan, nomor rumah.',
+  note:'Saat mengirim paket, urutan alamat harus benar.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'我<span class="ex-bl">在</span>家。'},{q:'银行在左边还是<span class="ex-bl">右边</span>？'},{q:'书在桌子<span class="ex-bl">上面</span>。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Toilet di mana? → <span class="ex-bl">洗手间在哪儿？</span>'},{q:'Bank di samping sekolah → <span class="ex-bl">银行在学校旁边。</span>'},{q:'Lurus, lalu belok kanan → <span class="ex-bl">一直走，然后右转。</span>'}]}
+ ]},
+ qz:[
+   {q:'"Di mana toilet?"…',zh:'洗手间在哪儿？',opts:['洗手间在哪儿？','洗手间是什么？','洗手间几号？','洗手间大吗？'],ans:0},
+   {q:'Kata 在 berarti…',zh:'在',opts:['di/berada','ke','dari','dengan'],ans:0},
+   {q:'左边 berarti…',zh:'左边',opts:['kiri','kanan','atas','bawah'],ans:0},
+   {q:'"Lurus, belok kiri"…',zh:'一直走，然后左转。',opts:['一直走，然后左转。','一直走，然后右转。','转弯一直走。','左转弯右走。'],ans:0},
+   {q:'Apa arti 前面?',zh:'前面',opts:['depan','belakang','atas','samping'],ans:0}
+ ]},
+{num:8,title:'Transportasi',zh:'交通',icon:'🚇',
+ goals:['Menyebutkan kendaraan','Menggunakan 坐','Bertanya harga tiket','Menanyakan lama perjalanan'],
+ v1:{title:'Kendaraan',words:[
+   {h:'坐',p:'zuò',i:'naik',e:'我坐地铁去。',ei:'Saya naik MRT.'},
+   {h:'车',p:'chē',i:'kendaraan',e:'车来了。',ei:'Kendaraannya datang.'},
+   {h:'汽车',p:'qìchē',i:'mobil',e:'这是谁的车？',ei:'Ini mobil siapa?'},
+   {h:'出租车',p:'chūzūchē',i:'taksi',e:'我们坐出租车吧。',ei:'Kita taksi saja.'},
+   {h:'公共汽车',p:'gōnggòng qìchē',i:'bus',e:'公共汽车很慢。',ei:'Bus lambat.'},
+   {h:'地铁',p:'dìtiě',i:'MRT',e:'地铁很快。',ei:'MRT cepat.'},
+   {h:'火车',p:'huǒchē',i:'kereta',e:'坐火车去北京。',ei:'Naik kereta ke Beijing.'},
+   {h:'飞机',p:'fēijī',i:'pesawat',e:'飞机票很贵。',ei:'Tiket pesawat mahal.'},
+   {h:'高铁',p:'gāotiě',i:'kereta cepat',e:'高铁很快。',ei:'Kereta cepat sangat cepat.'},
+   {h:'骑',p:'qí',i:'naik (sepeda)',e:'我骑自行车。',ei:'Saya naik sepeda.'}
+ ]},
+ v2:{title:'Kata Perjalanan',words:[
+   {h:'票',p:'piào',i:'tiket',e:'我要买票。',ei:'Saya mau beli tiket.'},
+   {h:'车站',p:'chēzhàn',i:'stasiun',e:'车站在哪儿？',ei:'Stasiun di mana?'},
+   {h:'机场',p:'jīchǎng',i:'bandara',e:'去机场要多长时间？',ei:'Ke bandara berapa lama?'},
+   {h:'远',p:'yuǎn',i:'jauh',e:'太远了！',ei:'Terlalu jauh!'},
+   {h:'近',p:'jìn',i:'dekat',e:'很近。',ei:'Sangat dekat.'},
+   {h:'快',p:'kuài',i:'cepat',e:'地铁很快。',ei:'MRT cepat.'},
+   {h:'慢',p:'màn',i:'lambat',e:'请慢一点。',ei:'Tolong pelan.'},
+   {h:'多长时间',p:'duō cháng shíjiān',i:'berapa lama',e:'要坐多长时间？',ei:'Berapa lama naiknya?'},
+   {h:'到',p:'dào',i:'sampai',e:'我到了。',ei:'Saya sudah sampai.'},
+   {h:'换',p:'huàn',i:'ganti',e:'在哪儿换车？',ei:'Di mana ganti kendaraan?'}
+ ]},
+ g1:{title:'坐 + Kendaraan',items:[
+   {t:'坐 + Kendaraan + 去',f:'坐 + 交通工具 + 去 + 地点',d:'Naik apa.',
+    ex:[{h:'我坐地铁去。',p:'Wǒ zuò dìtiě qù.',i:'Saya naik MRT.'},{h:'他坐飞机去中国。',p:'Tā zuò fēijī qù Zhōngguó.',i:'Dia naik pesawat ke China.'},{h:'我们坐出租车去吧。',p:'Wǒmen zuò chūzūchē qù ba.',i:'Kita taksi saja.'}]},
+   {t:'怎么去？',f:'去 + Tempat + 怎么去？',d:'Bertanya cara.',
+    ex:[{h:'去学校怎么走？',p:'Qù xuéxiào zěnme zǒu?',i:'Ke sekolah bagaimana?'},{h:'去机场怎么去？',p:'Qù jīchǎng zěnme qù?',i:'Ke bandara bagaimana?'},{h:'坐地铁去，很快。',p:'Zuò dìtiě qù, hěn kuài.',i:'Naik MRT, cepat.'}]}
+ ]},
+ g2:{title:'Durasi & Tiket',items:[
+   {t:'要多长时间？',f:'要 + 多长 + 时间？',d:'Menanyakan durasi.',
+    ex:[{h:'坐飞机要多长时间？',p:'Zuò fēijī yào duō cháng shíjiān?',i:'Naik pesawat berapa lama?'},{h:'要三个小时。',p:'Yào sān ge xiǎoshí.',i:'Tiga jam.'},{h:'很近，十分钟。',p:'Hěn jìn, shí fēnzhōng.',i:'Dekat, 10 menit.'}]},
+   {t:'票',f:'买 + 票 | 一张 + 票',d:'量词 张 untuk tiket.',
+    ex:[{h:'我要一张去北京的票。',p:'Wǒ yào yì zhāng qù Běijīng de piào.',i:'Satu tiket ke Beijing.'},{h:'票多少钱？',p:'Piào duōshao qián?',i:'Tiket berapa?'},{h:'在网上买票更方便。',p:'Zài wǎngshàng mǎi piào gèng fāngbiàn.',i:'Beli tiket online lebih praktis.'}]}
+ ]},
+ d1:{title:'Naik Taksi',icon:'🚕',sceneTitle:'Jalan raya',sceneDesc:'Naik taksi ke bandara.',lines:[
+   {s:'A',h:'师傅，去机场。',p:'Shīfu, qù jīchǎng.',i:'Pak, ke bandara.'},
+   {s:'B',h:'好的。',p:'Hǎo de.',i:'Baik.'},
+   {s:'A',h:'要多长时间？',p:'Yào duō cháng shíjiān?',i:'Berapa lama?'},
+   {s:'B',h:'大概三十分钟。',p:'Dàgài sānshí fēnzhōng.',i:'Sekitar 30 menit.'},
+   {s:'A',h:'多少钱？',p:'Duōshao qián?',i:'Berapa?'},
+   {s:'B',h:'一百块左右。',p:'Yì bǎi kuài zuǒyòu.',i:'Sekitar 100 yuan.'}
+ ]},
+ d2:{title:'Beli Tiket Kereta',icon:'🚄',sceneTitle:'Stasiun',sceneDesc:'Beli tiket kereta cepat.',lines:[
+   {s:'A',h:'你好，我要一张去上海的票。',p:'Nǐ hǎo, wǒ yào yì zhāng qù Shànghǎi de piào.',i:'Halo, satu tiket ke Shanghai.'},
+   {s:'B',h:'什么时间？',p:'Shénme shíjiān?',i:'Jam berapa?'},
+   {s:'A',h:'明天上午十点。',p:'Míngtiān shàngwǔ shí diǎn.',i:'Besok 10 pagi.'},
+   {s:'B',h:'好的，二百块。',p:'Hǎo de, èr bǎi kuài.',i:'Baik, 200 yuan.'}
+ ]},
+ rd:{title:'Transportasi China',zh:'中国交通',icon:'🚄',
+  text:'中国的高铁非常发达，是世界上最长的高铁网络。从北京到上海大约1300公里，高铁只要4.5小时。地铁在大城市很普及。',
+  py:'Zhōngguó de gāotiě fēicháng fādá.',
+  id:'Kereta cepat China sangat maju — jaringan terpanjang di dunia. Beijing ke Shanghai sekitar 1300 km, kereta cepat hanya 4,5 jam.',
+  note:'Kalau naik kereta cepat, tiba di stasiun minimal 30 menit sebelum keberangkatan.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'我<span class="ex-bl">坐</span>地铁去。'},{q:'去机场要多长<span class="ex-bl">时间</span>？'},{q:'我要一<span class="ex-bl">张</span>票。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Saya naik MRT → <span class="ex-bl">我坐地铁。</span>'},{q:'Ke bandara berapa lama? → <span class="ex-bl">去机场要多长时间？</span>'},{q:'Saya mau satu tiket ke Beijing → <span class="ex-bl">我要一张去北京的票。</span>'}]}
+ ]},
+ qz:[
+   {q:'地铁 adalah…',zh:'地铁',opts:['MRT','bus','kereta','pesawat'],ans:0},
+   {q:'"Naik taksi"…',zh:'坐出租车',opts:['坐出租车','骑出租车','开出租车','走出租车'],ans:0},
+   {q:'要多长时间？ berarti…',zh:'要多长时间',opts:['berapa lama','berapa harga','berapa jauh','berapa banyak'],ans:0},
+   {q:'量词 tiket…',zh:'张',opts:['张','个','件','条'],ans:0},
+   {q:'"Saya sudah sampai"…',zh:'我到了。',opts:['我到了。','我来了。','我走了。','我去了。'],ans:0}
+ ]},
+{num:9,title:'Cuaca & Musim',zh:'天气',icon:'☀️',
+ goals:['Menyebutkan cuaca','Menyebutkan 4 musim','Bertanya cuaca','Menyebutkan suhu'],
+ v1:{title:'Kondisi Cuaca',words:[
+   {h:'天气',p:'tiānqì',i:'cuaca',e:'今天天气很好。',ei:'Cuaca hari ini bagus.'},
+   {h:'热',p:'rè',i:'panas',e:'夏天很热。',ei:'Musim panas panas.'},
+   {h:'冷',p:'lěng',i:'dingin',e:'冬天很冷。',ei:'Musim dingin dingin.'},
+   {h:'暖和',p:'nuǎnhuo',i:'hangat',e:'春天很暖和。',ei:'Musim semi hangat.'},
+   {h:'凉快',p:'liángkuai',i:'sejuk',e:'秋天很凉快。',ei:'Musim gugur sejuk.'},
+   {h:'下雨',p:'xià yǔ',i:'hujan',e:'要下雨了。',ei:'Sebentar hujan.'},
+   {h:'下雪',p:'xià xuě',i:'salju',e:'北京冬天下雪。',ei:'Beijing turun salju.'},
+   {h:'刮风',p:'guā fēng',i:'berangin',e:'今天刮风。',ei:'Hari ini berangin.'},
+   {h:'晴',p:'qíng',i:'cerah',e:'今天是晴天。',ei:'Hari ini cerah.'},
+   {h:'阴',p:'yīn',i:'mendung',e:'天阴了。',ei:'Langit mendung.'}
+ ]},
+ v2:{title:'Musim & Pakaian',words:[
+   {h:'春天',p:'chūntiān',i:'musim semi',e:'春天花开了。',ei:'Bunga mekar.'},
+   {h:'夏天',p:'xiàtiān',i:'musim panas',e:'夏天很热。',ei:'Musim panas panas.'},
+   {h:'秋天',p:'qiūtiān',i:'musim gugur',e:'秋天很凉快。',ei:'Musim gugur sejuk.'},
+   {h:'冬天',p:'dōngtiān',i:'musim dingin',e:'冬天下雪。',ei:'Musim dingin turun salju.'},
+   {h:'穿',p:'chuān',i:'memakai',e:'今天要穿外套。',ei:'Pakai jaket.'},
+   {h:'外套',p:'wàitào',i:'jaket',e:'这件外套很暖和。',ei:'Jaket ini hangat.'},
+   {h:'伞',p:'sǎn',i:'payung',e:'带伞了吗？',ei:'Bawa payung?'},
+   {h:'度',p:'dù',i:'derajat',e:'三十五度。',ei:'35 derajat.'},
+   {h:'零下',p:'líng xià',i:'di bawah nol',e:'零下五度。',ei:'Minus 5 derajat.'},
+   {h:'带',p:'dài',i:'membawa',e:'记得带伞。',ei:'Ingat bawa payung.'}
+ ]},
+ g1:{title:'Cuaca',items:[
+   {t:'天气怎么样？',f:'天气 + 怎么样？',d:'Menanyakan cuaca.',
+    ex:[{h:'今天天气怎么样？',p:'Jīntiān tiānqì zěnmeyàng?',i:'Cuaca hari ini?'},{h:'很热。',p:'Hěn rè.',i:'Sangat panas.'},{h:'有点冷。',p:'Yǒudiǎn lěng.',i:'Agak dingin.'}]},
+   {t:'要…了',f:'要 + V + 了',d:'Akan segera terjadi.',
+    ex:[{h:'要下雨了。',p:'Yào xià yǔ le.',i:'Sebentar hujan.'},{h:'要下雪了。',p:'Yào xià xuě le.',i:'Sebentar turun salju.'},{h:'要迟到了。',p:'Yào chídào le.',i:'Sebentar terlambat.'}]}
+ ]},
+ g2:{title:'Suhu & 穿',items:[
+   {t:'数字 + 度',f:'数字 + 度',d:'度 = derajat. 零下 = minus.',
+    ex:[{h:'今天三十五度。',p:'Jīntiān sānshíwǔ dù.',i:'35 derajat.'},{h:'零下五度，很冷。',p:'Líng xià wǔ dù, hěn lěng.',i:'Minus 5, dingin.'},{h:'气温二十度左右。',p:'Qìwēn èrshí dù zuǒyòu.',i:'Suhu sekitar 20 derajat.'}]},
+   {t:'穿 + 衣服',f:'穿 + 服饰',d:'穿 = memakai pakaian.',
+    ex:[{h:'我穿外套。',p:'Wǒ chuān wàitào.',i:'Saya pakai jaket.'},{h:'冬天要穿厚衣服。',p:'Dōngtiān yào chuān hòu yīfu.',i:'Musim dingin pakai tebal.'},{h:'今天不用穿外套。',p:'Jīntiān bú yòng chuān wàitào.',i:'Tidak perlu jaket.'}]}
+ ]},
+ d1:{title:'Cuaca Panas',icon:'🌞',sceneTitle:'Kampus',sceneDesc:'Ngobrol cuaca.',lines:[
+   {s:'A',h:'今天天气怎么样？',p:'Jīntiān tiānqì zěnmeyàng?',i:'Cuaca hari ini?'},
+   {s:'B',h:'很热，三十五度。',p:'Hěn rè, sānshíwǔ dù.',i:'Panas, 35 derajat.'},
+   {s:'A',h:'要下雨了，你带伞了吗？',p:'Yào xià yǔ le, nǐ dài sǎn le ma?',i:'Sebentar hujan, bawa payung?'},
+   {s:'B',h:'带了。',p:'Dài le.',i:'Sudah bawa.'}
+ ]},
+ d2:{title:'Musim Favorit',icon:'🍂',sceneTitle:'Kelas',sceneDesc:'Bicara musim favorit.',lines:[
+   {s:'A',h:'你最喜欢哪个季节？',p:'Nǐ zuì xǐhuan nǎge jìjié?',i:'Paling suka musim apa?'},
+   {s:'B',h:'我最喜欢秋天，很凉快。',p:'Wǒ zuì xǐhuan qiūtiān, hěn liángkuai.',i:'Paling suka gugur, sejuk.'},
+   {s:'A',h:'我喜欢春天。',p:'Wǒ xǐhuan chūntiān.',i:'Saya suka semi.'},
+   {s:'B',h:'冬天我不喜欢，太冷了。',p:'Dōngtiān wǒ bù xǐhuan, tài lěng le.',i:'Dingin tidak suka, terlalu dingin.'}
+ ]},
+ rd:{title:'Musim China',zh:'中国的季节',icon:'🌸',
+  text:'中国很大，南北气候差别大。北京冬天很冷，最冷零下十度，会下雪。广州冬天很暖和，一般不下雪。上海四季分明。',
+  py:'Zhōngguó hěn dà, nánběi qìhòu chābié dà.',
+  id:'China sangat luas, iklim utara-selatan sangat berbeda. Beijing musim dingin sangat dingin, bisa minus 10 derajat, turun salju. Guangzhou hangat, biasanya tidak turun salju.',
+  note:'Kalau bepergian ke China, cek cuaca kota tujuan.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'今天很<span class="ex-bl">热</span>。'},{q:'要下<span class="ex-bl">雨</span>了。'},{q:'我最喜欢<span class="ex-bl">秋天</span>。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Cuaca hari ini bagaimana? → <span class="ex-bl">今天天气怎么样？</span>'},{q:'Sebentar lagi hujan → <span class="ex-bl">要下雨了。</span>'},{q:'Suhu 20 derajat → <span class="ex-bl">气温二十度。</span>'}]}
+ ]},
+ qz:[
+   {q:'下雪 berarti…',zh:'下雪',opts:['turun salju','turun hujan','berangin','cerah'],ans:0},
+   {q:'"Musim semi"…',zh:'春天',opts:['春天','夏天','秋天','冬天'],ans:0},
+   {q:'零下五度 berarti…',zh:'零下五度',opts:['minus 5 derajat','5 derajat','50 derajat','15 derajat'],ans:0},
+   {q:'"Sebentar lagi hujan"…',zh:'要下雨了',opts:['要下雨了','下雨了','下了雨','雨来了'],ans:0},
+   {q:'Kata 冷 berarti…',zh:'冷',opts:['dingin','panas','sejuk','hangat'],ans:0}
+ ]},
+{num:10,title:'Hobi',zh:'爱好',icon:'🎨',
+ goals:['Menyebutkan hobi','Menggunakan 喜欢 + V','Menggunakan 会 & 能','Mengajak'],
+ v1:{title:'Hobi Umum',words:[
+   {h:'爱好',p:'àihào',i:'hobi',e:'你有什么爱好？',ei:'Apa hobimu?'},
+   {h:'喜欢',p:'xǐhuan',i:'suka',e:'我喜欢看书。',ei:'Saya suka baca.'},
+   {h:'看书',p:'kàn shū',i:'baca buku',e:'我喜欢晚上看书。',ei:'Suka baca malam.'},
+   {h:'看电影',p:'kàn diànyǐng',i:'nonton film',e:'我们去看电影吧。',ei:'Nonton film yuk.'},
+   {h:'听音乐',p:'tīng yīnyuè',i:'dengar musik',e:'他喜欢听音乐。',ei:'Dia suka musik.'},
+   {h:'唱歌',p:'chànggē',i:'menyanyi',e:'她唱歌很好听。',ei:'Suaranya bagus.'},
+   {h:'跳舞',p:'tiàowǔ',i:'menari',e:'我喜欢跳舞。',ei:'Saya suka menari.'},
+   {h:'玩游戏',p:'wán yóuxì',i:'main game',e:'弟弟喜欢玩游戏。',ei:'Adik suka game.'},
+   {h:'拍照',p:'pāizhào',i:'foto',e:'我喜欢拍照。',ei:'Saya suka foto.'},
+   {h:'旅游',p:'lǚyóu',i:'jalan-jalan',e:'我喜欢去旅游。',ei:'Saya suka jalan-jalan.'}
+ ]},
+ v2:{title:'Olahraga',words:[
+   {h:'运动',p:'yùndòng',i:'olahraga',e:'运动对身体好。',ei:'Olahraga baik.'},
+   {h:'打球',p:'dǎ qiú',i:'main bola',e:'我喜欢打篮球。',ei:'Suka basket.'},
+   {h:'游泳',p:'yóuyǒng',i:'berenang',e:'夏天去游泳。',ei:'Musim panas berenang.'},
+   {h:'跑步',p:'pǎobù',i:'lari',e:'我每天跑步。',ei:'Lari tiap hari.'},
+   {h:'踢足球',p:'tī zúqiú',i:'sepak bola',e:'他喜欢踢足球。',ei:'Dia suka bola.'},
+   {h:'打篮球',p:'dǎ lánqiú',i:'basket',e:'我打篮球。',ei:'Saya main basket.'},
+   {h:'打羽毛球',p:'dǎ yǔmáoqiú',i:'badminton',e:'我们打羽毛球吧。',ei:'Badminton yuk.'},
+   {h:'瑜伽',p:'yújiā',i:'yoga',e:'她练瑜伽。',ei:'Dia latihan yoga.'},
+   {h:'爬山',p:'pá shān',i:'mendaki',e:'周末去爬山。',ei:'Akhir pekan mendaki.'},
+   {h:'骑自行车',p:'qí zìxíngchē',i:'bersepeda',e:'我喜欢骑自行车。',ei:'Suka bersepeda.'}
+ ]},
+ g1:{title:'喜欢 & 会/能',items:[
+   {t:'喜欢 + V',f:'Subjek + 喜欢 + V',d:'Kegemaran.',
+    ex:[{h:'我喜欢游泳。',p:'Wǒ xǐhuan yóuyǒng.',i:'Saya suka berenang.'},{h:'他喜欢看书。',p:'Tā xǐhuan kàn shū.',i:'Dia suka baca.'},{h:'你喜欢什么？',p:'Nǐ xǐhuan shénme?',i:'Kamu suka apa?'}]},
+   {t:'会 vs 能',f:'Subjek + 会/能 + V',d:'会 = bisa belajar, 能 = bisa kondisi.',
+    ex:[{h:'我会说汉语。',p:'Wǒ huì shuō Hànyǔ.',i:'Saya bisa Mandarin.'},{h:'我能去吗？',p:'Wǒ néng qù ma?',i:'Boleh ikut?'},{h:'他会游泳。',p:'Tā huì yóuyǒng.',i:'Dia bisa berenang.'}]}
+ ]},
+ g2:{title:'Mengajak',items:[
+   {t:'我们…吧',f:'我们 + V + 吧',d:'Ajakan halus.',
+    ex:[{h:'我们去看电影吧。',p:'Wǒmen qù kàn diànyǐng ba.',i:'Nonton film yuk.'},{h:'我们一起去游泳吧。',p:'Wǒmen yìqǐ qù yóuyǒng ba.',i:'Berenang yuk.'},{h:'我们打篮球吧。',p:'Wǒmen dǎ lánqiú ba.',i:'Basket yuk.'}]},
+   {t:'一起 + V',f:'一起 + V',d:'Bersama-sama.',
+    ex:[{h:'我们一起去吧。',p:'Wǒmen yìqǐ qù ba.',i:'Pergi bareng yuk.'},{h:'我们一起吃饭。',p:'Wǒmen yìqǐ chīfàn.',i:'Makan bareng.'},{h:'一起学习汉语吧。',p:'Yìqǐ xuéxí Hànyǔ ba.',i:'Belajar Mandarin yuk.'}]}
+ ]},
+ d1:{title:'Bicara Hobi',icon:'🎨',sceneTitle:'Kafe',sceneDesc:'Ngobrol hobi.',lines:[
+   {s:'A',h:'你有什么爱好？',p:'Nǐ yǒu shénme àihào?',i:'Apa hobimu?'},
+   {s:'B',h:'我喜欢看书和听音乐。你呢？',p:'Wǒ xǐhuan kàn shū hé tīng yīnyuè. Nǐ ne?',i:'Baca & musik. Kamu?'},
+   {s:'A',h:'我喜欢运动，常常去游泳。',p:'Wǒ xǐhuan yùndòng, chángcháng qù yóuyǒng.',i:'Saya suka olahraga, sering berenang.'},
+   {s:'B',h:'太好了！我们一起去吧。',p:'Tài hǎo le! Wǒmen yìqǐ qù ba.',i:'Bagus! Bareng yuk.'}
+ ]},
+ d2:{title:'Akhir Pekan',icon:'⛰️',sceneTitle:'Di rumah',sceneDesc:'Bicara rencana akhir pekan.',lines:[
+   {s:'A',h:'周末你有空吗？',p:'Zhōumò nǐ yǒu kòng ma?',i:'Akhir pekan ada waktu?'},
+   {s:'B',h:'有空。你想做什么？',p:'Yǒu kòng. Nǐ xiǎng zuò shénme?',i:'Ada. Mau apa?'},
+   {s:'A',h:'我们去爬山，怎么样？',p:'Wǒmen qù pá shān, zěnmeyàng?',i:'Mendaki, bagaimana?'},
+   {s:'B',h:'好主意！几点出发？',p:'Hǎo zhǔyi! Jǐ diǎn chūfā?',i:'Ide bagus! Jam berapa?'}
+ ]},
+ rd:{title:'Hobi China',zh:'中国人的爱好',icon:'🀄',
+  text:'很多中国人喜欢打麻将、下象棋、跳广场舞。老年人早上喜欢在公园打太极拳。年轻人喜欢玩游戏、看短视频。喝茶也是一种"慢"的爱好。',
+  py:'Hěn duō Zhōngguó rén xǐhuan dǎ májiàng.',
+  id:'Banyak orang China suka main mahjong, catur China, dansa lapangan. Lansia pagi hari suka tai chi di taman. Anak muda suka main game & nonton video pendek.',
+  note:'广场舞 (dansa lapangan) dilakukan di taman pagi & malam oleh ibu-ibu.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'我<span class="ex-bl">喜欢</span>游泳。'},{q:'我们去看电影<span class="ex-bl">吧</span>。'},{q:'我<span class="ex-bl">会</span>说汉语。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Apa hobimu? → <span class="ex-bl">你有什么爱好？</span>'},{q:'Saya suka berenang → <span class="ex-bl">我喜欢游泳。</span>'},{q:'Nonton film yuk! → <span class="ex-bl">我们去看电影吧！</span>'}]}
+ ]},
+ qz:[
+   {q:'"Apa hobimu?"…',zh:'你有什么爱好？',opts:['你有什么爱好？','你几岁？','你叫什么名字？','你去哪儿？'],ans:0},
+   {q:'会 berarti bisa karena…',zh:'会',opts:['belajar','izin','kondisi','umur'],ans:0},
+   {q:'我们…吧 berarti…',zh:'我们…吧',opts:['ayo kita…','kita tidak…','kita sudah…','kita harus…'],ans:0},
+   {q:'游泳 berarti…',zh:'游泳',opts:['berenang','lari','berjalan','terbang'],ans:0},
+   {q:'量词 buku…',zh:'本',opts:['本','张','个','件'],ans:0}
+ ]},
+{num:11,title:'Sekolah & Pekerjaan',zh:'学校工作',icon:'🎓',
+ goals:['Menyebutkan pendidikan','Menyebutkan jurusan','Menyebutkan pekerjaan','Bicara cita-cita'],
+ v1:{title:'Sekolah',words:[
+   {h:'学生',p:'xuésheng',i:'siswa',e:'我是大学生。',ei:'Saya mahasiswa.'},
+   {h:'老师',p:'lǎoshī',i:'guru',e:'她是汉语老师。',ei:'Dia guru Mandarin.'},
+   {h:'大学',p:'dàxué',i:'universitas',e:'我在大学学习。',ei:'Saya belajar di universitas.'},
+   {h:'专业',p:'zhuānyè',i:'jurusan',e:'我的专业是汉语。',ei:'Jurusan saya Mandarin.'},
+   {h:'学习',p:'xuéxí',i:'belajar',e:'我每天学习汉语。',ei:'Belajar Mandarin tiap hari.'},
+   {h:'毕业',p:'bìyè',i:'lulus',e:'我明年毕业。',ei:'Lulus tahun depan.'},
+   {h:'考试',p:'kǎoshì',i:'ujian',e:'明天有考试。',ei:'Besok ujian.'},
+   {h:'同学',p:'tóngxué',i:'teman sekelas',e:'他是我同学。',ei:'Teman sekelas saya.'},
+   {h:'图书馆',p:'túshūguǎn',i:'perpustakaan',e:'我在图书馆看书。',ei:'Saya baca di perpustakaan.'}
+ ]},
+ v2:{title:'Pekerjaan',words:[
+   {h:'工作',p:'gōngzuò',i:'kerja',e:'你在哪儿工作？',ei:'Kerja di mana?'},
+   {h:'公司',p:'gōngsī',i:'perusahaan',e:'我在一家公司工作。',ei:'Saya kerja di perusahaan.'},
+   {h:'医生',p:'yīshēng',i:'dokter',e:'我想当医生。',ei:'Saya mau jadi dokter.'},
+   {h:'工程师',p:'gōngchéngshī',i:'insinyur',e:'他是工程师。',ei:'Dia insinyur.'},
+   {h:'律师',p:'lǜshī',i:'pengacara',e:'律师工作很忙。',ei:'Pengacara sibuk.'},
+   {h:'商人',p:'shāngrén',i:'pengusaha',e:'他爸爸是商人。',ei:'Ayahnya pengusaha.'},
+   {h:'赚钱',p:'zhuàn qián',i:'cari uang',e:'工作是为了赚钱。',ei:'Kerja untuk cari uang.'},
+   {h:'梦想',p:'mèngxiǎng',i:'cita-cita',e:'我的梦想是当老师。',ei:'Cita saya jadi guru.'},
+   {h:'面试',p:'miànshì',i:'wawancara',e:'明天我去面试。',ei:'Besok wawancara.'}
+ ]},
+ g1:{title:'想当 & 在…工作',items:[
+   {t:'想当',f:'Subjek + 想当 + Profesi',d:'当 = menjadi.',
+    ex:[{h:'我想当医生。',p:'Wǒ xiǎng dāng yīshēng.',i:'Ingin jadi dokter.'},{h:'她想当老师。',p:'Tā xiǎng dāng lǎoshī.',i:'Ingin jadi guru.'},{h:'你想当什么？',p:'Nǐ xiǎng dāng shénme?',i:'Ingin jadi apa?'}]},
+   {t:'在…工作',f:'在 + Tempat + 工作',d:'Tempat kerja.',
+    ex:[{h:'我在公司工作。',p:'Wǒ zài gōngsī gōngzuò.',i:'Kerja di perusahaan.'},{h:'他在大学学习。',p:'Tā zài dàxué xuéxí.',i:'Belajar di universitas.'},{h:'她在医院工作。',p:'Tā zài yīyuàn gōngzuò.',i:'Kerja di RS.'}]}
+ ]},
+ g2:{title:'Jurusan & Masa Depan',items:[
+   {t:'的专业是…',f:'我的 + 专业 + 是 + Jurusan',d:'Menyebut jurusan.',
+    ex:[{h:'我的专业是汉语。',p:'Wǒ de zhuānyè shì Hànyǔ.',i:'Jurusan Mandarin.'},{h:'他的专业是经济。',p:'Tā de zhuānyè shì jīngjì.',i:'Jurusan ekonomi.'},{h:'你的专业是什么？',p:'Nǐ de zhuānyè shì shénme?',i:'Jurusanmu apa?'}]},
+   {t:'毕业以后',f:'毕业 + 以后',d:'以后 = sesudah.',
+    ex:[{h:'毕业以后我想去中国。',p:'Bìyè yǐhòu wǒ xiǎng qù Zhōngguó.',i:'Setelah lulus ke China.'},{h:'以后我想当工程师。',p:'Yǐhòu wǒ xiǎng dāng gōngchéngshī.',i:'Nanti jadi insinyur.'},{h:'你以后想做什么？',p:'Nǐ yǐhòu xiǎng zuò shénme?',i:'Nanti mau jadi apa?'}]}
+ ]},
+ d1:{title:'Bicara Pekerjaan',icon:'💼',sceneTitle:'Kafe',sceneDesc:'Ngobrol kerja.',lines:[
+   {s:'A',h:'你在哪儿工作？',p:'Nǐ zài nǎr gōngzuò?',i:'Kerja di mana?'},
+   {s:'B',h:'我在一家公司工作，我是工程师。',p:'Wǒ zài yì jiā gōngsī gōngzuò, wǒ shì gōngchéngshī.',i:'Kerja di perusahaan, saya insinyur.'},
+   {s:'A',h:'你的梦想是什么？',p:'Nǐ de mèngxiǎng shì shénme?',i:'Cita-citamu?'},
+   {s:'B',h:'我想当老师。',p:'Wǒ xiǎng dāng lǎoshī.',i:'Ingin jadi guru.'}
+ ]},
+ d2:{title:'Bicara Jurusan',icon:'📚',sceneTitle:'Kampus',sceneDesc:'Ngobrol jurusan.',lines:[
+   {s:'A',h:'你的专业是什么？',p:'Nǐ de zhuānyè shì shénme?',i:'Jurusanmu?'},
+   {s:'B',h:'我的专业是汉语。你呢？',p:'Wǒ de zhuānyè shì Hànyǔ. Nǐ ne?',i:'Mandarin. Kamu?'},
+   {s:'A',h:'我是经济专业的。',p:'Wǒ shì jīngjì zhuānyè de.',i:'Saya jurusan ekonomi.'},
+   {s:'B',h:'毕业以后你想做什么？',p:'Bìyè yǐhòu nǐ xiǎng zuò shénme?',i:'Setelah lulus mau apa?'}
+ ]},
+ rd:{title:'Universitas China',zh:'中国的大学',icon:'🎓',
+  text:'中国最著名的大学是清华大学和北京大学，都在北京。中国的高考是全国统一考试，每年六月举行。考上好大学对学生和家庭都非常重要。',
+  py:'Zhōngguó zuì zhùmíng de dàxué shì Qīnghuá Dàxué hé Běijīng Dàxué.',
+  id:'Universitas paling terkenal: Tsinghua & Peking, keduanya di Beijing. Ujian masuk (gaokao) adalah ujian nasional setiap Juni. Masuk universitas bagus sangat penting.',
+  note:'Gaokao adalah ujian paling menentukan dalam hidup pelajar China.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'我<span class="ex-bl">想</span>当医生。'},{q:'我在公司<span class="ex-bl">工作</span>。'},{q:'我的<span class="ex-bl">专业</span>是汉语。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Saya ingin jadi guru → <span class="ex-bl">我想当老师。</span>'},{q:'Jurusan saya Mandarin → <span class="ex-bl">我的专业是汉语。</span>'},{q:'Kerja di mana? → <span class="ex-bl">你在哪儿工作？</span>'}]}
+ ]},
+ qz:[
+   {q:'Apa arti 专业?',zh:'专业',opts:['jurusan','pekerjaan','sekolah','ujian'],ans:0},
+   {q:'"Ingin jadi dokter"…',zh:'想当医生',opts:['想当医生','想做医生','要医生','是医生'],ans:0},
+   {q:'我在公司工作 berarti…',zh:'我在公司工作',opts:['saya kerja di perusahaan','saya ke perusahaan','saya dari perusahaan','saya suka perusahaan'],ans:0},
+   {q:'Kata 毕业 berarti…',zh:'毕业',opts:['lulus','masuk','ujian','belajar'],ans:0},
+   {q:'"Cita saya jadi guru"…',zh:'我的梦想是当老师。',opts:['我的梦想是当老师。','我想是老师。','我是老师。','我要老师。'],ans:0}
+ ]},
+{num:12,title:'Tubuh & Kesehatan',zh:'身体健康',icon:'🏥',
+ goals:['Menyebutkan tubuh','Menyebutkan keluhan','Bertanya kesehatan','Menyebutkan obat'],
+ v1:{title:'Anggota Tubuh',words:[
+   {h:'身体',p:'shēntǐ',i:'tubuh',e:'身体好吗？',ei:'Sehat?'},
+   {h:'头',p:'tóu',i:'kepala',e:'我头疼。',ei:'Kepala sakit.'},
+   {h:'眼睛',p:'yǎnjing',i:'mata',e:'她的眼睛很大。',ei:'Matanya besar.'},
+   {h:'鼻子',p:'bízi',i:'hidung',e:'鼻子不舒服。',ei:'Hidung tidak nyaman.'},
+   {h:'嘴',p:'zuǐ',i:'mulut',e:'张开嘴。',ei:'Buka mulut.'},
+   {h:'耳朵',p:'ěrduo',i:'telinga',e:'耳朵疼。',ei:'Telinga sakit.'},
+   {h:'手',p:'shǒu',i:'tangan',e:'洗手。',ei:'Cuci tangan.'},
+   {h:'脚',p:'jiǎo',i:'kaki',e:'我的脚很累。',ei:'Kaki lelah.'},
+   {h:'肚子',p:'dùzi',i:'perut',e:'我肚子疼。',ei:'Perut sakit.'}
+ ]},
+ v2:{title:'Keluhan & Obat',words:[
+   {h:'生病',p:'shēngbìng',i:'sakit',e:'我生病了。',ei:'Saya sakit.'},
+   {h:'感冒',p:'gǎnmào',i:'flu',e:'我感冒了。',ei:'Saya flu.'},
+   {h:'发烧',p:'fāshāo',i:'demam',e:'他发烧了。',ei:'Dia demam.'},
+   {h:'咳嗽',p:'késou',i:'batuk',e:'我咳嗽。',ei:'Saya batuk.'},
+   {h:'头疼',p:'tóuténg',i:'sakit kepala',e:'我头疼得厉害。',ei:'Sakit sekali.'},
+   {h:'药',p:'yào',i:'obat',e:'吃药了。',ei:'Sudah minum obat.'},
+   {h:'医生',p:'yīshēng',i:'dokter',e:'去看医生吧。',ei:'Ke dokter yuk.'},
+   {h:'医院',p:'yīyuàn',i:'rumah sakit',e:'医院在哪儿？',ei:'RS di mana?'},
+   {h:'休息',p:'xiūxi',i:'istirahat',e:'你要多休息。',ei:'Banyak istirahat.'}
+ ]},
+ g1:{title:'觉得 & 了',items:[
+   {t:'觉得',f:'Subjek + 觉得 + Kalimat',d:'Perasaan.',
+    ex:[{h:'我觉得不舒服。',p:'Wǒ juéde bù shūfu.',i:'Tidak enak badan.'},{h:'你觉得怎么样？',p:'Nǐ juéde zěnmeyàng?',i:'Kamu merasa bagaimana?'},{h:'我觉得好多了。',p:'Wǒ juéde hǎo duō le.',i:'Jauh lebih baik.'}]},
+   {t:'了',f:'Kalimat + 了',d:'Perubahan status.',
+    ex:[{h:'我感冒了。',p:'Wǒ gǎnmào le.',i:'Saya jadi flu.'},{h:'他发烧了。',p:'Tā fāshāo le.',i:'Dia demam.'},{h:'我好多了。',p:'Wǒ hǎo duō le.',i:'Jauh lebih baik.'}]}
+ ]},
+ g2:{title:'Di Dokter',items:[
+   {t:'怎么了？',f:'怎么了？',d:'Menanyakan masalah.',
+    ex:[{h:'你怎么了？',p:'Nǐ zěnme le?',i:'Kamu kenapa?'},{h:'我头疼。',p:'Wǒ tóuténg.',i:'Kepala sakit.'},{h:'没关系吧？',p:'Méi guānxi ba?',i:'Tidak apa-apa kan?'}]},
+   {t:'应该',f:'应该 + V',d:'Saran.',
+    ex:[{h:'你应该去看医生。',p:'Nǐ yīnggāi qù kàn yīshēng.',i:'Sebaiknya ke dokter.'},{h:'应该多休息。',p:'Yīnggāi duō xiūxi.',i:'Banyak istirahat.'},{h:'你不应该喝酒。',p:'Nǐ bù yīnggāi hē jiǔ.',i:'Jangan minum alkohol.'}]}
+ ]},
+ d1:{title:'Di Dokter',icon:'🩺',sceneTitle:'Klinik',sceneDesc:'Budi sakit & ke dokter.',lines:[
+   {s:'A',h:'你怎么了？',p:'Nǐ zěnme le?',i:'Kamu kenapa?'},
+   {s:'B',h:'我头疼，发烧了。',p:'Wǒ tóuténg, fāshāo le.',i:'Kepala sakit, demam.'},
+   {s:'A',h:'你应该去看医生。',p:'Nǐ yīnggāi qù kàn yīshēng.',i:'Sebaiknya ke dokter.'},
+   {s:'B',h:'好，我吃药了。',p:'Hǎo, wǒ chī yào le.',i:'Baik, sudah minum obat.'}
+ ]},
+ d2:{title:'Bicara Kesehatan',icon:'💊',sceneTitle:'Di rumah',sceneDesc:'Bicara kesehatan.',lines:[
+   {s:'A',h:'你身体好吗？',p:'Nǐ shēntǐ hǎo ma?',i:'Kesehatanmu?'},
+   {s:'B',h:'不太好，我感冒了。',p:'Bú tài hǎo, wǒ gǎnmào le.',i:'Kurang baik, flu.'},
+   {s:'A',h:'你要多休息，多喝水。',p:'Nǐ yào duō xiūxi, duō hē shuǐ.',i:'Banyak istirahat, minum air.'},
+   {s:'B',h:'谢谢你！',p:'Xièxie nǐ!',i:'Terima kasih!'}
+ ]},
+ rd:{title:'中医',zh:'中医',icon:'🌿',
+  text:'中国有传统医学叫"中医"。中医用草药、针灸和推拿治病。中医讲究"阴阳平衡"。很多人感冒时会喝中药，或者去做针灸。中医在中国已经有几千年历史。',
+  py:'Zhōngguó yǒu chuántǒng yīxué jiào "zhōngyī".',
+  id:'China punya kedokteran tradisional "中医". Pakai herbal, akupunktur, pijat. Menekankan "keseimbangan yin-yang". Sudah ribuan tahun.',
+  note:'Meskipun kedokteran modern maju, banyak orang China masih memilih 中医 untuk penyakit tertentu.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'我<span class="ex-bl">头</span>疼。'},{q:'我<span class="ex-bl">感冒</span>了。'},{q:'你应该去看<span class="ex-bl">医生</span>。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Kamu kenapa? → <span class="ex-bl">你怎么了？</span>'},{q:'Kepala saya sakit → <span class="ex-bl">我头疼。</span>'},{q:'Sebaiknya banyak istirahat → <span class="ex-bl">应该多休息。</span>'}]}
+ ]},
+ qz:[
+   {q:'Apa arti 头疼?',zh:'头疼',opts:['sakit kepala','sakit perut','sakit gigi','sakit kaki'],ans:0},
+   {q:'"Saya flu"…',zh:'我感冒了。',opts:['我感冒了。','我发烧了。','我咳嗽了。','我生病了。'],ans:0},
+   {q:'应该 berarti…',zh:'应该',opts:['sebaiknya','bisa','harus','mau'],ans:0},
+   {q:'Kata 药 berarti…',zh:'药',opts:['obat','dokter','rumah sakit','istirahat'],ans:0},
+   {q:'"Kamu kenapa?"…',zh:'你怎么了？',opts:['你怎么了？','你是谁？','你去哪儿？','你几岁？'],ans:0}
+ ]},
+{num:13,title:'Rumah & Perabot',zh:'我家',icon:'🏠',
+ goals:['Menyebutkan ruangan','Menyebutkan perabot','Menggunakan 有','Menggunakan 量词 张/把/个'],
+ v1:{title:'Ruangan',words:[
+   {h:'房子',p:'fángzi',i:'rumah',e:'我家的房子很大。',ei:'Rumah saya besar.'},
+   {h:'房间',p:'fángjiān',i:'kamar',e:'你的房间很干净。',ei:'Kamarmu bersih.'},
+   {h:'客厅',p:'kètīng',i:'ruang tamu',e:'客厅有沙发。',ei:'Ruang tamu ada sofa.'},
+   {h:'卧室',p:'wòshì',i:'kamar tidur',e:'卧室里有床。',ei:'Kamar ada kasur.'},
+   {h:'厨房',p:'chúfáng',i:'dapur',e:'妈妈在厨房做饭。',ei:'Ibu masak di dapur.'},
+   {h:'卫生间',p:'wèishēngjiān',i:'kamar mandi',e:'卫生间在哪儿？',ei:'KM di mana?'},
+   {h:'阳台',p:'yángtái',i:'balkon',e:'阳台上有花。',ei:'Balkon ada bunga.'},
+   {h:'车库',p:'chēkù',i:'garasi',e:'车里有车。',ei:'Garasi ada mobil.'},
+   {h:'花园',p:'huāyuán',i:'taman',e:'花园很漂亮。',ei:'Tamannya indah.'}
+ ]},
+ v2:{title:'Perabot',words:[
+   {h:'桌子',p:'zhuōzi',i:'meja',e:'桌子上有书。',ei:'Meja ada buku.'},
+   {h:'椅子',p:'yǐzi',i:'kursi',e:'两把椅子。',ei:'Dua kursi.'},
+   {h:'床',p:'chuáng',i:'tempat tidur',e:'床上有一只猫。',ei:'Kasur ada kucing.'},
+   {h:'沙发',p:'shāfā',i:'sofa',e:'沙发很舒服。',ei:'Sofa nyaman.'},
+   {h:'电视',p:'diànshì',i:'TV',e:'我在看电视。',ei:'Saya nonton TV.'},
+   {h:'冰箱',p:'bīngxiāng',i:'kulkas',e:'冰箱里有水。',ei:'Kulkas ada air.'},
+   {h:'门',p:'mén',i:'pintu',e:'请关门。',ei:'Tutup pintu.'},
+   {h:'窗户',p:'chuānghu',i:'jendela',e:'请开窗户。',ei:'Buka jendela.'},
+   {h:'灯',p:'dēng',i:'lampu',e:'开灯。',ei:'Nyalakan lampu.'}
+ ]},
+ g1:{title:'有 untuk isi ruangan',items:[
+   {t:'Tempat + 有 + Objek',f:'Tempat + 有 + Objek',d:'Menyatakan "ada apa".',
+    ex:[{h:'房间里有一张床。',p:'Fángjiān lǐ yǒu yì zhāng chuáng.',i:'Kamar ada kasur.'},{h:'桌子上有一本书。',p:'Zhuōzi shàng yǒu yì běn shū.',i:'Meja ada buku.'},{h:'客厅有沙发和电视。',p:'Kètīng yǒu shāfā hé diànshì.',i:'Ruang tamu ada sofa & TV.'}]},
+   {t:'量词 张/把/个',f:'数字 + 量词 + 名词',d:'张 benda datar, 把 kursi, 个 umum.',
+    ex:[{h:'一张床',p:'yì zhāng chuáng',i:'satu kasur'},{h:'两把椅子',p:'liǎng bǎ yǐzi',i:'dua kursi'},{h:'三个房间',p:'sān ge fángjiān',i:'tiga kamar'}]}
+ ]},
+ g2:{title:'方位词',items:[
+   {t:'里面/上面/下面',f:'名词 + 里/上/下',d:'Posisi.',
+    ex:[{h:'房间里面有床。',p:'Fángjiān lǐmiàn yǒu chuáng.',i:'Dalam kamar ada kasur.'},{h:'桌子上面有一本书。',p:'Zhuōzi shàngmiàn yǒu yì běn shū.',i:'Atas meja ada buku.'},{h:'椅子下面有一只猫。',p:'Yǐzi xiàmiàn yǒu yì zhī māo.',i:'Bawah kursi ada kucing.'}]},
+   {t:'旁边',f:'名词 + 旁边',d:'Samping.',
+    ex:[{h:'桌子旁边有椅子。',p:'Zhuōzi pángbiān yǒu yǐzi.',i:'Samping meja ada kursi.'},{h:'我家旁边有个公园。',p:'Wǒ jiā pángbiān yǒu ge gōngyuán.',i:'Samping rumah ada taman.'},{h:'银行在学校旁边。',p:'Yínháng zài xuéxiào pángbiān.',i:'Bank di samping sekolah.'}]}
+ ]},
+ d1:{title:'Tentang Rumah',icon:'🏠',sceneTitle:'Ruang tamu',sceneDesc:'Ngobrol rumah.',lines:[
+   {s:'A',h:'你家有几个房间？',p:'Nǐ jiā yǒu jǐ ge fángjiān?',i:'Rumah berapa kamar?'},
+   {s:'B',h:'有三个：客厅、卧室和厨房。',p:'Yǒu sān ge: kètīng, wòshì hé chúfáng.',i:'Tiga: ruang tamu, kamar, dapur.'},
+   {s:'A',h:'你的房间有什么？',p:'Nǐ de fángjiān yǒu shénme?',i:'Kamar kamu ada apa?'},
+   {s:'B',h:'有一张床和一张桌子。',p:'Yǒu yì zhāng chuáng hé yì zhāng zhuōzi.',i:'Kasur dan meja.'}
+ ]},
+ d2:{title:'Cari Rumah',icon:'🔑',sceneTitle:'Agen properti',sceneDesc:'Cari rumah baru.',lines:[
+   {s:'A',h:'我想租一个房子。',p:'Wǒ xiǎng zū yí ge fángzi.',i:'Saya mau sewa rumah.'},
+   {s:'B',h:'要几个房间？',p:'Yào jǐ ge fángjiān?',i:'Mau berapa kamar?'},
+   {s:'A',h:'两个房间，有厨房和卫生间。',p:'Liǎng ge fángjiān, yǒu chúfáng hé wèishēngjiān.',i:'Dua kamar, ada dapur & KM.'},
+   {s:'B',h:'好的，这个房子很好。',p:'Hǎo de, zhège fángzi hěn hǎo.',i:'Baik, rumah ini bagus.'}
+ ]},
+ rd:{title:'Rumah China',zh:'中国的房子',icon:'🏢',
+  text:'在中国大城市，很多人住在公寓楼里，叫"小区"。小区里通常有商店、公园和健身房。房价在大城市非常贵，尤其是北京、上海、深圳。',
+  py:'Zài Zhōngguó dà chéngshì, hěn duō rén zhù zài gōngyù lóu lǐ.',
+  id:'Di kota besar China, banyak orang tinggal di apartemen disebut "小区". Di kompleks biasanya ada toko, taman, dan gym. Harga rumah sangat mahal.',
+  note:'Pembelian rumah di China sering harus tunai besar.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'房间里有<span class="ex-bl">一张</span>床。'},{q:'桌子上<span class="ex-bl">有</span>一本书。'},{q:'两<span class="ex-bl">把</span>椅子。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Rumah saya 3 kamar → <span class="ex-bl">我家有三个房间。</span>'},{q:'Di atas meja ada buku → <span class="ex-bl">桌子上有一本书。</span>'},{q:'Samping rumah ada taman → <span class="ex-bl">我家旁边有个公园。</span>'}]}
+ ]},
+ qz:[
+   {q:'Apa arti 厨房?',zh:'厨房',opts:['dapur','kamar mandi','ruang tamu','kamar tidur'],ans:0},
+   {q:'量词 untuk kursi…',zh:'把',opts:['把','张','个','件'],ans:0},
+   {q:'"Di dalam kamar ada kasur"…',zh:'房间里有一张床。',opts:['房间里有一张床。','床上有一个房间。','房间有一床。','床的房间有。'],ans:0},
+   {q:'Kata 门 berarti…',zh:'门',opts:['pintu','jendela','dinding','atap'],ans:0},
+   {q:'旁边 berarti…',zh:'旁边',opts:['samping','atas','bawah','dalam'],ans:0}
+ ]},
+{num:14,title:'Telepon & Internet',zh:'电话网络',icon:'📱',
+ goals:['Menelepon','Menyebutkan nomor','Bicara internet','Bertukar kontak'],
+ v1:{title:'Telepon & SMS',words:[
+   {h:'打电话',p:'dǎ diànhuà',i:'menelepon',e:'我给妈妈打电话。',ei:'Saya telepon ibu.'},
+   {h:'手机',p:'shǒujī',i:'HP',e:'我的手机没电了。',ei:'HP saya habis baterai.'},
+   {h:'号码',p:'hàomǎ',i:'nomor',e:'你的号码是多少？',ei:'Nomormu berapa?'},
+   {h:'发',p:'fā',i:'kirim',e:'我发短信给你。',ei:'Saya kirim SMS.'},
+   {h:'短信',p:'duǎnxìn',i:'SMS',e:'收到短信了吗？',ei:'Sudah terima SMS?'},
+   {h:'邮件',p:'yóujiàn',i:'email',e:'我发邮件给他了。',ei:'Saya kirim email.'},
+   {h:'回复',p:'huífù',i:'balas',e:'请回复我。',ei:'Tolong balas.'},
+   {h:'接',p:'jiē',i:'angkat',e:'请接电话。',ei:'Tolong angkat.'},
+   {h:'挂',p:'guà',i:'tutup (telp)',e:'他挂了电话。',ei:'Dia menutup telp.'}
+ ]},
+ v2:{title:'Internet & Sosmed',words:[
+   {h:'上网',p:'shàngwǎng',i:'internet',e:'我喜欢上网。',ei:'Saya suka internetan.'},
+   {h:'电脑',p:'diànnǎo',i:'komputer',e:'我用电脑工作。',ei:'Kerja pakai komputer.'},
+   {h:'网站',p:'wǎngzhàn',i:'website',e:'这个网站很好。',ei:'Website ini bagus.'},
+   {h:'微信',p:'Wēixìn',i:'WeChat',e:'我们加微信吧。',ei:'Add WeChat yuk.'},
+   {h:'视频',p:'shìpín',i:'video',e:'我们视频吧。',ei:'Video call yuk.'},
+   {h:'照片',p:'zhàopiàn',i:'foto',e:'这张照片很美。',ei:'Foto ini indah.'},
+   {h:'发消息',p:'fā xiāoxi',i:'kirim pesan',e:'他给我发消息了。',ei:'Dia kirim pesan.'},
+   {h:'点赞',p:'diǎn zàn',i:'like',e:'请点赞。',ei:'Tolong like.'},
+   {h:'关注',p:'guānzhù',i:'follow',e:'请关注我。',ei:'Tolong follow.'}
+ ]},
+ g1:{title:'给…打电话',items:[
+   {t:'给 + Orang + 打电话',f:'给 + Orang + 打电话',d:'Menelepon.',
+    ex:[{h:'我给妈妈打电话。',p:'Wǒ gěi māma dǎ diànhuà.',i:'Saya telepon ibu.'},{h:'他给我打电话了。',p:'Tā gěi wǒ dǎ diànhuà le.',i:'Dia telepon saya.'},{h:'你给谁打电话？',p:'Nǐ gěi shéi dǎ diànhuà?',i:'Telepon siapa?'}]},
+   {t:'给…发…',f:'给 + Orang + 发 + 短信/邮件',d:'Kirim sesuatu.',
+    ex:[{h:'我给你发短信。',p:'Wǒ gěi nǐ fā duǎnxìn.',i:'Saya kirim SMS.'},{h:'他给老师发邮件。',p:'Tā gěi lǎoshī fā yóujiàn.',i:'Dia kirim email ke guru.'},{h:'请给我回复。',p:'Qǐng gěi wǒ huífù.',i:'Tolong balas.'}]}
+ ]},
+ g2:{title:'用 & 号码',items:[
+   {t:'用 + Alat + V',f:'用 + Alat + V',d:'Menggunakan alat.',
+    ex:[{h:'我用手机上网。',p:'Wǒ yòng shǒujī shàngwǎng.',i:'Saya pakai HP internetan.'},{h:'用电脑发邮件。',p:'Yòng diànnǎo fā yóujiàn.',i:'Pakai komputer kirim email.'},{h:'用微信聊天。',p:'Yòng Wēixìn liáotiān.',i:'Pakai WeChat chat.'}]},
+   {t:'号码是多少？',f:'…的号码 + 是多少？',d:'Menanyakan nomor.',
+    ex:[{h:'你的手机号码是多少？',p:'Nǐ de shǒujī hàomǎ shì duōshao?',i:'Nomor HP kamu?'},{h:'我的号码是13812345678。',p:'Wǒ de hàomǎ shì 13812345678.',i:'Nomor saya 13812345678.'},{h:'微信加一下吧。',p:'Wēixìn jiā yíxià ba.',i:'Add WeChat yuk.'}]}
+ ]},
+ d1:{title:'Bertukar Kontak',icon:'📞',sceneTitle:'Kampus',sceneDesc:'Bertukar kontak.',lines:[
+   {s:'A',h:'你的手机号码是多少？',p:'Nǐ de shǒujī hàomǎ shì duōshao?',i:'Nomor HP kamu?'},
+   {s:'B',h:'13812345678。',p:'Yāo sān bā yāo èr sān sì wǔ liù qī bā.',i:'13812345678.'},
+   {s:'A',h:'我们加微信吧。',p:'Wǒmen jiā Wēixìn ba.',i:'Add WeChat yuk.'},
+   {s:'B',h:'好啊，我的微信是Budi123。',p:'Hǎo a, wǒ de Wēixìn shì Budi123.',i:'Boleh, WeChat saya Budi123.'}
+ ]},
+ d2:{title:'Video Call',icon:'📹',sceneTitle:'Di rumah',sceneDesc:'Video call orang tua.',lines:[
+   {s:'A',h:'妈，我们视频吧。',p:'Mā, wǒmen shìpín ba.',i:'Bu, video call yuk.'},
+   {s:'B',h:'好的，等一下。',p:'Hǎo de, děng yíxià.',i:'Baik, tunggu sebentar.'},
+   {s:'A',h:'能看到我吗？',p:'Néng kàndào wǒ ma?',i:'Bisa lihat saya?'},
+   {s:'B',h:'能，很清楚。',p:'Néng, hěn qīngchu.',i:'Bisa, sangat jelas.'}
+ ]},
+ rd:{title:'微信',zh:'微信',icon:'💬',
+  text:'微信是中国最常用的社交软件。除了聊天，微信还可以：发红包、买东西、打车、买票、充话费。中国人出门几乎不带现金，用微信或支付宝支付就够了。',
+  py:'Wēixìn shì Zhōngguó zuì chángyòng de shèjiāo ruǎnjiàn.',
+  id:'WeChat adalah aplikasi sosial paling umum di China. Selain chat, bisa: kirim angpao, belanja, pesan taksi, beli tiket, isi pulsa.',
+  note:'QR code ada di mana-mana: restoran, pasar, taksi, bahkan tukang keliling.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'我给妈妈<span class="ex-bl">打</span>电话。'},{q:'你的手机<span class="ex-bl">号码</span>是多少？'},{q:'我用电脑<span class="ex-bl">发</span>邮件。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Saya menelepon ibu → <span class="ex-bl">我给妈妈打电话。</span>'},{q:'Nomor HP kamu berapa? → <span class="ex-bl">你的手机号码是多少？</span>'},{q:'Saya pakai WeChat chat → <span class="ex-bl">我用微信聊天。</span>'}]}
+ ]},
+ qz:[
+   {q:'Apa arti 手机?',zh:'手机',opts:['HP','komputer','TV','radio'],ans:0},
+   {q:'"Menelepon ibu"…',zh:'给妈妈打电话',opts:['给妈妈打电话','打电话妈妈给','妈妈打电话给','打电话给妈妈'],ans:0},
+   {q:'用 berarti…',zh:'用',opts:['menggunakan','memberi','mengirim','menerima'],ans:0},
+   {q:'Apa arti 微信?',zh:'微信',opts:['WeChat','WhatsApp','Line','Facebook'],ans:0},
+   {q:'"Saya kirim SMS"…',zh:'我发短信。',opts:['我发短信。','我写短信。','我看短信。','我收短信。'],ans:0}
+ ]},
+{num:15,title:'Janji & Acara',zh:'约会活动',icon:'🎉',
+ goals:['Membuat janji','Mengundang','Bicara acara','Bicara pesta'],
+ v1:{title:'Janji & Pertemuan',words:[
+   {h:'约会',p:'yuēhuì',i:'janji/kencan',e:'我今晚有约会。',ei:'Malam ini ada janji.'},
+   {h:'见面',p:'jiànmiàn',i:'bertemu',e:'我们明天见面吧。',ei:'Bertemu besok yuk.'},
+   {h:'邀请',p:'yāoqǐng',i:'mengundang',e:'我邀请你参加聚会。',ei:'Saya undang ke pesta.'},
+   {h:'参加',p:'cānjiā',i:'ikut',e:'你来参加吗？',ei:'Kamu ikut?'},
+   {h:'聚会',p:'jùhuì',i:'pesta',e:'今晚有聚会。',ei:'Malam ini ada pesta.'},
+   {h:'生日',p:'shēngrì',i:'ulang tahun',e:'今天是他的生日。',ei:'Hari ini ultahnya.'},
+   {h:'结婚',p:'jiéhūn',i:'menikah',e:'他们下个月结婚。',ei:'Mereka nikah bulan depan.'},
+   {h:'有空',p:'yǒu kòng',i:'ada waktu',e:'你明天有空吗？',ei:'Besok ada waktu?'},
+   {h:'忙',p:'máng',i:'sibuk',e:'我今天很忙。',ei:'Hari ini sibuk.'}
+ ]},
+ v2:{title:'Waktu & Tempat',words:[
+   {h:'时间',p:'shíjiān',i:'waktu',e:'你有时间吗？',ei:'Punya waktu?'},
+   {h:'地方',p:'dìfang',i:'tempat',e:'在哪儿见面？',ei:'Bertemu di mana?'},
+   {h:'迟到',p:'chídào',i:'terlambat',e:'对不起，我迟到了。',ei:'Maaf, saya terlambat.'},
+   {h:'准时',p:'zhǔnshí',i:'tepat waktu',e:'请准时到。',ei:'Tolong tepat waktu.'},
+   {h:'礼物',p:'lǐwù',i:'hadiah',e:'这是给你的礼物。',ei:'Hadiah untukmu.'},
+   {h:'蛋糕',p:'dàngāo',i:'kue',e:'生日蛋糕很好吃。',ei:'Kue ultah enak.'},
+   {h:'红包',p:'hóngbāo',i:'angpao',e:'春节收到红包。',ei:'Imlek dapat angpao.'},
+   {h:'祝',p:'zhù',i:'mendoakan',e:'祝你生日快乐！',ei:'Selamat ulang tahun!'},
+   {h:'开心',p:'kāixīn',i:'senang',e:'祝你天天开心！',ei:'Semoga bahagia tiap hari!'}
+ ]},
+ g1:{title:'有空 & 请',items:[
+   {t:'有空吗？',f:'Subjek + 有空 + 吗？',d:'Menanyakan waktu luang.',
+    ex:[{h:'你明天有空吗？',p:'Nǐ míngtiān yǒu kòng ma?',i:'Besok ada waktu?'},{h:'我有空。',p:'Wǒ yǒu kòng.',i:'Saya ada waktu.'},{h:'对不起，我没空。',p:'Duìbuqǐ, wǒ méi kòng.',i:'Maaf, tidak ada waktu.'}]},
+   {t:'请 + Orang + V',f:'请 + Orang + V',d:'Mengundang.',
+    ex:[{h:'我想请你吃饭。',p:'Wǒ xiǎng qǐng nǐ chīfàn.',i:'Saya traktir makan.'},{h:'请准时到。',p:'Qǐng zhǔnshí dào.',i:'Tolong tepat waktu.'},{h:'我请你喝咖啡。',p:'Wǒ qǐng nǐ hē kāfēi.',i:'Saya traktir kopi.'}]}
+ ]},
+ g2:{title:'祝 & 的时候',items:[
+   {t:'祝',f:'祝 + Orang + Kata baik',d:'Mendoakan.',
+    ex:[{h:'祝你生日快乐！',p:'Zhù nǐ shēngrì kuàilè!',i:'Selamat ulang tahun!'},{h:'祝你成功！',p:'Zhù nǐ chénggōng!',i:'Semoga sukses!'},{h:'祝你身体健康！',p:'Zhù nǐ shēntǐ jiànkāng!',i:'Semoga sehat!'}]},
+   {t:'在…的时候',f:'在 + Waktu + 的时候',d:'Ketika…',
+    ex:[{h:'在春节的时候，我们吃饺子。',p:'Zài Chūnjié de shíhou, wǒmen chī jiǎozi.',i:'Saat Imlek makan pangsit.'},{h:'在生日的时候，我们吃蛋糕。',p:'Zài shēngrì de shíhou, wǒmen chī dàngāo.',i:'Saat ultah makan kue.'},{h:'小的时候，我住在这儿。',p:'Xiǎo de shíhou, wǒ zhù zài zhèr.',i:'Waktu kecil tinggal di sini.'}]}
+ ]},
+ d1:{title:'Mengundang Makan',icon:'🍽️',sceneTitle:'Kantor',sceneDesc:'Mengundang teman makan.',lines:[
+   {s:'A',h:'你明天有空吗？',p:'Nǐ míngtiān yǒu kòng ma?',i:'Besok ada waktu?'},
+   {s:'B',h:'有啊，怎么了？',p:'Yǒu a, zěnme le?',i:'Ada, kenapa?'},
+   {s:'A',h:'我想请你吃饭，可以吗？',p:'Wǒ xiǎng qǐng nǐ chīfàn, kěyǐ ma?',i:'Saya traktir makan?'},
+   {s:'B',h:'当然可以！几点？',p:'Dāngrán kěyǐ! Jǐ diǎn?',i:'Tentu! Jam berapa?'},
+   {s:'A',h:'晚上七点，怎么样？',p:'Wǎnshang qī diǎn, zěnmeyàng?',i:'Jam 7 malam?'},
+   {s:'B',h:'好，我一定准时到。',p:'Hǎo, wǒ yídìng zhǔnshí dào.',i:'Baik, saya tepat waktu.'}
+ ]},
+ d2:{title:'Ulang Tahun',icon:'🎂',sceneTitle:'Rumah teman',sceneDesc:'Datang ke pesta ultah.',lines:[
+   {s:'A',h:'祝你生日快乐！',p:'Zhù nǐ shēngrì kuàilè!',i:'Selamat ulang tahun!'},
+   {s:'B',h:'谢谢你！请进。',p:'Xièxie nǐ! Qǐng jìn.',i:'Terima kasih! Masuk.'},
+   {s:'A',h:'这是给你的礼物。',p:'Zhè shì gěi nǐ de lǐwù.',i:'Hadiah untukmu.'},
+   {s:'B',h:'你太客气了！',p:'Nǐ tài kèqi le!',i:'Kamu terlalu baik!'}
+ ]},
+ rd:{title:'Hadiah',zh:'中国的礼节',icon:'🎁',
+  text:'中国人送礼有一些讲究。不能送钟（"送钟"和"送终"同音）。不能送伞（"伞"和"散"同音）。红色代表喜庆，所以送礼常用红色包装。',
+  py:'Zhōngguó rén sòng lǐ yǒu yìxiē jiǎngjiu.',
+  id:'Orang China punya aturan dalam memberi hadiah. Tidak boleh memberi jam (berkonotasi kematian). Tidak boleh memberi payung (berkonotasi berpisah). Merah = keberuntungan.',
+  note:'Hindari jam, payung, dan pisau — semuanya punya makna negatif.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'你明天有<span class="ex-bl">空</span>吗？'},{q:'我<span class="ex-bl">请</span>你吃饭。'},{q:'<span class="ex-bl">祝</span>你生日快乐！'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Besok kamu ada waktu? → <span class="ex-bl">你明天有空吗？</span>'},{q:'Selamat ulang tahun! → <span class="ex-bl">祝你生日快乐！</span>'},{q:'Saya traktir kamu kopi → <span class="ex-bl">我请你喝咖啡。</span>'}]}
+ ]},
+ qz:[
+   {q:'Apa arti 有空?',zh:'有空',opts:['ada waktu','sibuk','bosan','lelah'],ans:0},
+   {q:'"Mengundangmu makan"…',zh:'请你吃饭',opts:['请你吃饭','请你喝饭','给你吃饭','要你吃饭'],ans:0},
+   {q:'祝 berarti…',zh:'祝',opts:['mendoakan','mengirim','menerima','menolak'],ans:0},
+   {q:'Apa arti 聚会?',zh:'聚会',opts:['pesta','sekolah','kantor','rumah'],ans:0},
+   {q:'"Tepat waktu"…',zh:'准时',opts:['准时','迟到','早到','晚到'],ans:0}
+ ]},
+{num:16,title:'Pengalaman Lampau',zh:'过去经历',icon:'📖',
+ goals:['Menggunakan 过','Menggunakan 已经','Bercerita pengalaman','Menggunakan 以前'],
+ v1:{title:'Waktu Lampau',words:[
+   {h:'以前',p:'yǐqián',i:'dulu',e:'以前我住在北京。',ei:'Dulu di Beijing.'},
+   {h:'已经',p:'yǐjīng',i:'sudah',e:'他已经走了。',ei:'Dia sudah pergi.'},
+   {h:'过',p:'guo',i:'pernah',e:'我去过中国。',ei:'Saya pernah ke China.'},
+   {h:'曾经',p:'céngjīng',i:'pernah',e:'他曾经是老师。',ei:'Dia pernah jadi guru.'},
+   {h:'那时候',p:'nà shíhou',i:'waktu itu',e:'那时候我很年轻。',ei:'Waktu itu muda.'},
+   {h:'去年',p:'qùnián',i:'tahun lalu',e:'去年我去了日本。',ei:'Tahun lalu ke Jepang.'},
+   {h:'上个月',p:'shàng ge yuè',i:'bulan lalu',e:'上个月我搬家了。',ei:'Bulan lalu pindah.'},
+   {h:'最近',p:'zuìjìn',i:'belakangan ini',e:'最近怎么样？',ei:'Bagaimana belakangan ini?'},
+   {h:'后来',p:'hòulái',i:'kemudian',e:'后来我去了中国。',ei:'Kemudian ke China.'}
+ ]},
+ v2:{title:'Pengalaman',words:[
+   {h:'去过',p:'qù guo',i:'pernah pergi',e:'你去过中国吗？',ei:'Pernah ke China?'},
+   {h:'看过',p:'kàn guo',i:'pernah lihat',e:'我看过那部电影。',ei:'Pernah nonton film itu.'},
+   {h:'吃过',p:'chī guo',i:'pernah makan',e:'我吃过北京烤鸭。',ei:'Pernah makan bebek Beijing.'},
+   {h:'经历',p:'jīnglì',i:'pengalaman',e:'这是一次特别的经历。',ei:'Pengalaman istimewa.'},
+   {h:'故事',p:'gùshi',i:'cerita',e:'给我讲个故事。',ei:'Ceritakan cerita.'},
+   {h:'记得',p:'jìde',i:'ingat',e:'我记得那天。',ei:'Saya ingat hari itu.'},
+   {h:'忘',p:'wàng',i:'lupa',e:'别忘了！',ei:'Jangan lupa!'},
+   {h:'好像',p:'hǎoxiàng',i:'sepertinya',e:'好像见过你。',ei:'Sepertinya pernah ketemu.'},
+   {h:'难忘',p:'nánwàng',i:'sulit dilupakan',e:'那是一次难忘的旅行。',ei:'Perjalanan tak terlupakan.'}
+ ]},
+ g1:{title:'过 & 已经',items:[
+   {t:'V + 过',f:'Subjek + V + 过 + Objek',d:' pernah. Negatif: 没 + V + 过.',
+    ex:[{h:'我去过中国。',p:'Wǒ qù guo Zhōngguó.',i:'Pernah ke China.'},{h:'他没看过这部电影。',p:'Tā méi kàn guo zhè bù diànyǐng.',i:'Belum nonton film ini.'},{h:'你吃过北京烤鸭吗？',p:'Nǐ chī guo Běijīng kǎoyā ma?',i:'Pernah makan bebek Beijing?'}]},
+   {t:'已经…了',f:'已经 + V + 了',d:'Sudah terjadi.',
+    ex:[{h:'他已经走了。',p:'Tā yǐjīng zǒu le.',i:'Dia sudah pergi.'},{h:'我已经吃了。',p:'Wǒ yǐjīng chī le.',i:'Saya sudah makan.'},{h:'已经三点了。',p:'Yǐjīng sān diǎn le.',i:'Sudah jam tiga.'}]}
+ ]},
+ g2:{title:'以前 & 后来',items:[
+   {t:'以前',f:'以前 + Kalimat',d:'以前 = dulu/sebelum.',
+    ex:[{h:'以前我住在北京。',p:'Yǐqián wǒ zhù zài Běijīng.',i:'Dulu di Beijing.'},{h:'以前他是老师。',p:'Yǐqián tā shì lǎoshī.',i:'Dulu dia guru.'},{h:'吃饭以前要洗手。',p:'Chīfàn yǐqián yào xǐshǒu.',i:'Sebelum makan cuci tangan.'}]},
+   {t:'后来',f:'后来 + Kalimat',d:'Kejadian berikutnya.',
+    ex:[{h:'后来我去了中国。',p:'Hòulái wǒ qù le Zhōngguó.',i:'Kemudian ke China.'},{h:'后来我们再也没见面。',p:'Hòulái wǒmen zài yě méi jiànmiàn.',i:'Kemudian tak bertemu lagi.'},{h:'后来怎么样了？',p:'Hòulái zěnmeyàng le?',i:'Kemudian bagaimana?'}]}
+ ]},
+ d1:{title:'Bercerita Pengalaman',icon:'🌏',sceneTitle:'Kafe',sceneDesc:'Cerita pengalaman.',lines:[
+   {s:'A',h:'你去过中国吗？',p:'Nǐ qù guo Zhōngguó ma?',i:'Pernah ke China?'},
+   {s:'B',h:'去过，我去过北京和上海。',p:'Qù guo, wǒ qù guo Běijīng hé Shànghǎi.',i:'Pernah, ke Beijing & Shanghai.'},
+   {s:'A',h:'怎么样？',p:'Zěnmeyàng?',i:'Bagaimana?'},
+   {s:'B',h:'太美了！我很喜欢。',p:'Tài měi le! Wǒ hěn xǐhuan.',i:'Indah! Saya sangat suka.'}
+ ]},
+ d2:{title:'Cerita Masa Lalu',icon:'📷',sceneTitle:'Rumah',sceneDesc:'Lihat foto lama.',lines:[
+   {s:'A',h:'这张照片是什么时候的？',p:'Zhè zhāng zhàopiàn shì shénme shíhou de?',i:'Foto ini kapan?'},
+   {s:'B',h:'是去年在北京拍的。',p:'Shì qùnián zài Běijīng pāi de.',i:'Tahun lalu di Beijing.'},
+   {s:'A',h:'那时候你很年轻。',p:'Nà shíhou nǐ hěn niánqīng.',i:'Waktu itu kamu muda.'},
+   {s:'B',h:'是啊，那是难忘的经历。',p:'Shì a, nà shì nánwàng de jīnglì.',i:'Ya, pengalaman tak terlupakan.'}
+ ]},
+ rd:{title:'Traveling',zh:'旅行的意义',icon:'✈️',
+  text:'很多人说，旅行是最好的老师。你去过的地方，见过的人，都会成为你的一部分。旅行让人变得更开放、更包容。',
+  py:'Hěn duō rén shuō, lǚxíng shì zuì hǎo de lǎoshī.',
+  id:'Banyak orang bilang, perjalanan adalah guru terbaik. Tempat yang pernah kamu kunjungi, orang yang pernah kamu temui, akan menjadi bagian dari dirimu.',
+  note:'Orang China sangat suka traveling saat libur panjang.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'我<span class="ex-bl">去</span>过中国。'},{q:'他<span class="ex-bl">已经</span>走了。'},{q:'<span class="ex-bl">以前</span>我是学生。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Saya pernah ke China → <span class="ex-bl">我去过中国。</span>'},{q:'Dia sudah pergi → <span class="ex-bl">他已经走了。</span>'},{q:'Dulu saya tinggal di Beijing → <span class="ex-bl">以前我住在北京。</span>'}]}
+ ]},
+ qz:[
+   {q:'过 menunjukkan…',zh:'过',opts:['pengalaman','masa depan','sedang','perintah'],ans:0},
+   {q:'"Saya pernah ke China"…',zh:'我去过中国。',opts:['我去过中国。','我去中国了。','我要去中国。','我去中国。'],ans:0},
+   {q:'已经 berarti…',zh:'已经',opts:['sudah','belum','akan','pernah'],ans:0},
+   {q:'Kata 以前 berarti…',zh:'以前',opts:['dulu','sekarang','besok','nanti'],ans:0},
+   {q:'难忘 berarti…',zh:'难忘',opts:['sulit dilupakan','mudah lupa','sedih','senang'],ans:0}
+ ]},
+{num:17,title:'Rencana Masa Depan',zh:'未来计划',icon:'🌟',
+ goals:['Menggunakan 打算','Menggunakan 会','Menggunakan 希望','Bicara target'],
+ v1:{title:'Rencana & Harapan',words:[
+   {h:'以后',p:'yǐhòu',i:'nanti',e:'以后我想去中国。',ei:'Nanti mau ke China.'},
+   {h:'将来',p:'jiānglái',i:'masa depan',e:'将来我要当医生。',ei:'Masa depan jadi dokter.'},
+   {h:'计划',p:'jìhuà',i:'rencana',e:'你有什么计划？',ei:'Apa rencanamu?'},
+   {h:'打算',p:'dǎsuàn',i:'berencana',e:'我打算去留学。',ei:'Berencana belajar ke LN.'},
+   {h:'希望',p:'xīwàng',i:'berharap',e:'我希望你成功。',ei:'Berharap kamu sukses.'},
+   {h:'可能',p:'kěnéng',i:'mungkin',e:'他可能不来了。',ei:'Mungkin tidak datang.'},
+   {h:'一定',p:'yídìng',i:'pasti',e:'我一定去。',ei:'Saya pasti pergi.'},
+   {h:'会',p:'huì',i:'akan',e:'明天会下雨。',ei:'Besok akan hujan.'},
+   {h:'要',p:'yào',i:'akan/mau',e:'我要去中国。',ei:'Saya akan ke China.'}
+ ]},
+ v2:{title:'Target & Usaha',words:[
+   {h:'目标',p:'mùbiāo',i:'target',e:'我的目标是HSK4。',ei:'Target saya HSK4.'},
+   {h:'努力',p:'nǔlì',i:'berusaha',e:'我会努力学习。',ei:'Saya akan belajar giat.'},
+   {h:'成功',p:'chénggōng',i:'sukses',e:'祝你成功！',ei:'Semoga sukses!'},
+   {h:'失败',p:'shībài',i:'gagal',e:'失败是成功之母。',ei:'Gagal ibu sukses.'},
+   {h:'坚持',p:'jiānchí',i:'bertahan',e:'坚持就是胜利。',ei:'Bertahan = menang.'},
+   {h:'将来',p:'jiānglái',i:'masa depan',e:'将来会更好。',ei:'Masa depan lebih baik.'},
+   {h:'毕业',p:'bìyè',i:'lulus',e:'毕业以后我想工作。',ei:'Setelah lulus kerja.'},
+   {h:'留学',p:'liúxué',i:'belajar di LN',e:'我想去中国留学。',ei:'Mau belajar ke China.'},
+   {h:'工作',p:'gōngzuò',i:'kerja',e:'毕业后我要工作。',ei:'Setelah lulus kerja.'}
+ ]},
+ g1:{title:'打算 & 会',items:[
+   {t:'打算 + V',f:'Subjek + 打算 + V',d:'Berencana.',
+    ex:[{h:'我打算去中国留学。',p:'Wǒ dǎsuàn qù Zhōngguó liúxué.',i:'Berencana ke China.'},{h:'你打算做什么？',p:'Nǐ dǎsuàn zuò shénme?',i:'Berencana apa?'},{h:'他打算明年结婚。',p:'Tā dǎsuàn míngnián jiéhūn.',i:'Berencana nikah tahun depan.'}]},
+   {t:'会 untuk masa depan',f:'Subjek + 会 + V',d:'Akan terjadi.',
+    ex:[{h:'明年我会去中国。',p:'Míngnián wǒ huì qù Zhōngguó.',i:'Tahun depan ke China.'},{h:'他会帮你的。',p:'Tā huì bāng nǐ de.',i:'Dia akan bantu.'},{h:'明天会下雨。',p:'Míngtiān huì xià yǔ.',i:'Besok akan hujan.'}]}
+ ]},
+ g2:{title:'希望 & 一定',items:[
+   {t:'希望',f:'希望 + Kalimat',d:'Menyatakan harapan.',
+    ex:[{h:'我希望你成功。',p:'Wǒ xīwàng nǐ chénggōng.',i:'Berharap kamu sukses.'},{h:'希望你天天开心。',p:'Xīwàng nǐ tiāntiān kāixīn.',i:'Semoga bahagia tiap hari.'},{h:'我希望明年去中国。',p:'Wǒ xīwàng míngnián qù Zhōngguó.',i:'Semoga tahun depan ke China.'}]},
+   {t:'一定',f:'一定 + V',d:'Kepastian.',
+    ex:[{h:'我一定去。',p:'Wǒ yídìng qù.',i:'Saya pasti pergi.'},{h:'你一定要来。',p:'Nǐ yídìng yào lái.',i:'Kamu pasti datang.'},{h:'他一定会成功。',p:'Tā yídìng huì chénggōng.',i:'Dia pasti sukses.'}]}
+ ]},
+ d1:{title:'Masa Depan',icon:'🌟',sceneTitle:'Kampus',sceneDesc:'Bicara rencana setelah lulus.',lines:[
+   {s:'A',h:'你以后想做什么？',p:'Nǐ yǐhòu xiǎng zuò shénme?',i:'Nanti mau jadi apa?'},
+   {s:'B',h:'我打算去中国留学。',p:'Wǒ dǎsuàn qù Zhōngguó liúxué.',i:'Berencana ke China.'},
+   {s:'A',h:'太棒了！什么时候去？',p:'Tài bàng le! Shénme shíhou qù?',i:'Keren! Kapan?'},
+   {s:'B',h:'明年九月。',p:'Míngnián jiǔyuè.',i:'September tahun depan.'}
+ ]},
+ d2:{title:'Target Belajar',icon:'🎯',sceneTitle:'Kelas',sceneDesc:'Bicara target belajar.',lines:[
+   {s:'A',h:'你的目标是什么？',p:'Nǐ de mùbiāo shì shénme?',i:'Targetmu?'},
+   {s:'B',h:'我想通过HSK四级考试。',p:'Wǒ xiǎng tōngguò HSK sì jí kǎoshì.',i:'Mau lulus HSK 4.'},
+   {s:'A',h:'你一定可以的！',p:'Nǐ yídìng kěyǐ de!',i:'Kamu pasti bisa!'},
+   {s:'B',h:'谢谢！我会努力的。',p:'Xièxie! Wǒ huì nǔlì de.',i:'Terima kasih! Berusaha.'}
+ ]},
+ rd:{title:'中国梦',zh:'中国梦',icon:'🌈',
+  text:'"中国梦"是一个流行的概念，意思是每个中国人都能实现自己的梦想。很多年轻人的梦想是：找到好工作、买房子、结婚、生孩子、环游世界。',
+  py:'"Zhōngguó mèng" shì yí ge liúxíng de gàiniàn.',
+  id:'"Mimpi China" konsep populer, artinya setiap orang China bisa mewujudkan mimpinya. Banyak anak muda bermimpi: dapat kerja bagus, beli rumah, menikah, punya anak, keliling dunia.',
+  note:'Konsep "中国梦" dipopulerkan pemerintah sebagai motivasi nasional.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'我<span class="ex-bl">打算</span>去中国留学。'},{q:'明年我<span class="ex-bl">会</span>去中国。'},{q:'我<span class="ex-bl">希望</span>你成功。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Saya berencana belajar ke China → <span class="ex-bl">我打算去中国留学。</span>'},{q:'Saya akan berusaha → <span class="ex-bl">我会努力的。</span>'},{q:'Semoga sukses! → <span class="ex-bl">祝你成功！</span>'}]}
+ ]},
+ qz:[
+   {q:'打算 berarti…',zh:'打算',opts:['berencana','sudah','pernah','sedang'],ans:0},
+   {q:'"Saya akan ke China tahun depan"…',zh:'明年我会去中国。',opts:['明年我会去中国。','明年我去中国了。','明年我去中国过。','明年我去中国。'],ans:0},
+   {q:'希望 berarti…',zh:'希望',opts:['berharap','berencana','harus','bisa'],ans:0},
+   {q:'一定 berarti…',zh:'一定',opts:['pasti','mungkin','tidak','jarang'],ans:0},
+   {q:'目标 berarti…',zh:'目标',opts:['target','alasan','hasil','usaha'],ans:0}
+ ]},
+{num:18,title:'Emosi & Opini',zh:'情绪看法',icon:'💭',
+ goals:['Menyebutkan emosi','Mengungkapkan pendapat','Menggunakan 因为…所以','Menyatakan setuju'],
+ v1:{title:'Emosi',words:[
+   {h:'高兴',p:'gāoxìng',i:'senang',e:'我很高兴。',ei:'Saya senang.'},
+   {h:'难过',p:'nánguò',i:'sedih',e:'别难过。',ei:'Jangan sedih.'},
+   {h:'生气',p:'shēngqì',i:'marah',e:'他生气了。',ei:'Dia marah.'},
+   {h:'紧张',p:'jǐnzhāng',i:'gugup',e:'考试前我很紧张。',ei:'Sebelum ujian gugup.'},
+   {h:'累',p:'lèi',i:'lelah',e:'我很累。',ei:'Saya lelah.'},
+   {h:'饿',p:'è',i:'lapar',e:'我饿了。',ei:'Saya lapar.'},
+   {h:'渴',p:'kě',i:'haus',e:'我渴了。',ei:'Saya haus.'},
+   {h:'开心',p:'kāixīn',i:'bahagia',e:'今天很开心。',ei:'Hari ini bahagia.'},
+   {h:'担心',p:'dānxīn',i:'khawatir',e:'别担心。',ei:'Jangan khawatir.'}
+ ]},
+ v2:{title:'Opini',words:[
+   {h:'觉得',p:'juéde',i:'merasa',e:'我觉得很好。',ei:'Saya rasa bagus.'},
+   {h:'认为',p:'rènwéi',i:'berpendapat',e:'我认为你对了。',ei:'Saya rasa kamu benar.'},
+   {h:'同意',p:'tóngyì',i:'setuju',e:'我同意你的意见。',ei:'Saya setuju.'},
+   {h:'反对',p:'fǎnduì',i:'menolak',e:'我反对这个想法。',ei:'Saya tolak ide ini.'},
+   {h:'也许',p:'yěxǔ',i:'mungkin',e:'也许他是对的。',ei:'Mungkin dia benar.'},
+   {h:'当然',p:'dāngrán',i:'tentu saja',e:'当然可以！',ei:'Tentu boleh!'},
+   {h:'真的',p:'zhēn de',i:'sungguh',e:'真的吗？',ei:'Sungguh?'},
+   {h:'有意思',p:'yǒu yìsi',i:'menarik',e:'这本书很有意思。',ei:'Buku ini menarik.'},
+   {h:'无聊',p:'wúliáo',i:'membosankan',e:'这个电影很无聊。',ei:'Film ini membosankan.'}
+ ]},
+ g1:{title:'觉得 & 认为',items:[
+   {t:'觉得',f:'Subjek + 觉得 + Kalimat',d:'Pendapat/perasaan pribadi.',
+    ex:[{h:'我觉得这个很好。',p:'Wǒ juéde zhège hěn hǎo.',i:'Saya rasa ini bagus.'},{h:'你觉得怎么样？',p:'Nǐ juéde zěnmeyàng?',i:'Kamu rasa bagaimana?'},{h:'我觉得有点累。',p:'Wǒ juéde yǒudiǎn lèi.',i:'Saya rasa agak lelah.'}]},
+   {t:'认为',f:'Subjek + 认为 + Kalimat',d:'Lebih formal dari 觉得.',
+    ex:[{h:'我认为他是对的。',p:'Wǒ rènwéi tā shì duì de.',i:'Saya rasa dia benar.'},{h:'我认为这个很重要。',p:'Wǒ rènwéi zhège hěn zhòngyào.',i:'Saya rasa ini penting.'},{h:'你认为呢？',p:'Nǐ rènwéi ne?',i:'Menurutmu?'}]}
+ ]},
+ g2:{title:'因为…所以…',items:[
+   {t:'因为…所以…',f:'因为 + Alasan, 所以 + Hasil',d:'Sebab-akibat.',
+    ex:[{h:'因为下雨，所以我没去。',p:'Yīnwèi xià yǔ, suǒyǐ wǒ méi qù.',i:'Karena hujan, saya tidak pergi.'},{h:'因为忙，所以没回。',p:'Yīnwèi máng, suǒyǐ méi huí.',i:'Karena sibuk, tidak balas.'},{h:'因为他努力，所以成功。',p:'Yīnwèi tā nǔlì, suǒyǐ chénggōng.',i:'Karena berusaha, sukses.'}]},
+   {t:'同意 / 反对',f:'同意/反对 + Objek',d:'Setuju/tidak.',
+    ex:[{h:'我同意你的想法。',p:'Wǒ tóngyì nǐ de xiǎngfǎ.',i:'Saya setuju idemu.'},{h:'我反对这个计划。',p:'Wǒ fǎnduì zhège jìhuà.',i:'Saya tolak rencana ini.'},{h:'你同意吗？',p:'Nǐ tóngyì ma?',i:'Kamu setuju?'}]}
+ ]},
+ d1:{title:'Bertukar Pendapat',icon:'💬',sceneTitle:'Kafe',sceneDesc:'Bertukar pendapat.',lines:[
+   {s:'A',h:'你觉得这本书怎么样？',p:'Nǐ juéde zhè běn shū zěnmeyàng?',i:'Buku ini bagaimana?'},
+   {s:'B',h:'我觉得很有意思。',p:'Wǒ juéde hěn yǒu yìsi.',i:'Menarik.'},
+   {s:'A',h:'我也这么认为。',p:'Wǒ yě zhème rènwéi.',i:'Saya juga rasa begitu.'},
+   {s:'B',h:'那我们一起看吧。',p:'Nà wǒmen yìqǐ kàn ba.',i:'Kita baca bareng yuk.'}
+ ]},
+ d2:{title:'Bicara Perasaan',icon:'😊',sceneTitle:'Di rumah',sceneDesc:'Curhat ke teman.',lines:[
+   {s:'A',h:'你怎么了？看起来不开心。',p:'Nǐ zěnme le? Kàn qǐlái bù kāixīn.',i:'Kamu kenapa? Tidak bahagia.'},
+   {s:'B',h:'我有点累，也有点难过。',p:'Wǒ yǒudiǎn lèi, yě yǒudiǎn nánguò.',i:'Agak lelah & sedih.'},
+   {s:'A',h:'别难过，一切都会好的。',p:'Bié nánguò, yíqiè dōu huì hǎo de.',i:'Jangan sedih, semua akan baik.'},
+   {s:'B',h:'谢谢你。',p:'Xièxie nǐ.',i:'Terima kasih.'}
+ ]},
+ rd:{title:'面子',zh:'面子',icon:'🎭',
+  text:'"面子"是中国人际关系中很重要的概念。在公共场合，不要让别人"没面子"，比如不要当众批评别人。给别人"留面子"是一种智慧。',
+  py:'"Miànzi" shì Zhōngguó rénjì guānxi zhōng hěn zhòngyào de gàiniàn.',
+  id:'"Mianzi"(wajah/martabat) adalah konsep penting dalam hubungan sosial China. Di tempat umum, jangan membuat orang lain "kehilangan muka".',
+  note:'Kritik pribadi sebaiknya dilakukan empat mata.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'我<span class="ex-bl">觉得</span>这本书很好。'},{q:'<span class="ex-bl">因为</span>下雨，所以我没去。'},{q:'我<span class="ex-bl">同意</span>你的意见。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Saya rasa ini bagus → <span class="ex-bl">我觉得这个很好。</span>'},{q:'Saya setuju → <span class="ex-bl">我同意。</span>'},{q:'Karena hujan, saya tidak pergi → <span class="ex-bl">因为下雨，所以我没去。</span>'}]}
+ ]},
+ qz:[
+   {q:'Apa arti 高兴?',zh:'高兴',opts:['senang','sedih','marah','takut'],ans:0},
+   {q:'觉得 berarti…',zh:'觉得',opts:['merasa','melihat','mendengar','berkata'],ans:0},
+   {q:'"Saya setuju"…',zh:'我同意。',opts:['我同意。','我反对。','我知道。','我认为。'],ans:0},
+   {q:'因为…所以… berarti…',zh:'因为…所以…',opts:['karena… maka…','meskipun… tapi…','jika… maka…','dan… dan…'],ans:0},
+   {q:'无聊 berarti…',zh:'无聊',opts:['membosankan','menarik','menyenangkan','menyedihkan'],ans:0}
+ ]},
+{num:19,title:'Budaya & Festival',zh:'文化节日',icon:'🏮',
+ goals:['Menyebutkan 4 festival','Bicara Imlek','Bicara Kue Bulan','Bicara budaya China'],
+ v1:{title:'Festival Utama',words:[
+   {h:'春节',p:'Chūnjié',i:'Tahun Baru Imlek',e:'春节是中国最重要的节日。',ei:'Imlek festival terpenting.'},
+   {h:'中秋节',p:'Zhōngqiūjié',i:'Festival Kue Bulan',e:'中秋节吃月饼。',ei:'Festival Kue Bulan makan kue bulan.'},
+   {h:'端午节',p:'Duānwǔjié',i:'Festival Perahu Naga',e:'端午节赛龙舟。',ei:'Festival Perahu Naga balap perahu.'},
+   {h:'国庆节',p:'Guóqìngjié',i:'Hari Nasional',e:'国庆节放假七天。',ei:'Hari Nasional libur 7 hari.'},
+   {h:'节日',p:'jiérì',i:'hari raya',e:'你最喜欢哪个节日？',ei:'Suka hari raya apa?'},
+   {h:'庆祝',p:'qìngzhù',i:'merayakan',e:'我们庆祝新年。',ei:'Kita rayakan tahun baru.'},
+   {h:'放假',p:'fàngjià',i:'libur',e:'明天放假。',ei:'Besok libur.'},
+   {h:'礼物',p:'lǐwù',i:'hadiah',e:'这是给你的礼物。',ei:'Hadiah untukmu.'},
+   {h:'月饼',p:'yuèbǐng',i:'kue bulan',e:'月饼很好吃。',ei:'Kue bulan enak.'}
+ ]},
+ v2:{title:'Tradisi',words:[
+   {h:'红包',p:'hóngbāo',i:'angpao',e:'春节小朋友收到红包。',ei:'Imlek anak dapat angpao.'},
+   {h:'饺子',p:'jiǎozi',i:'pangsit',e:'春节吃饺子。',ei:'Imlek makan pangsit.'},
+   {h:'舞狮',p:'wǔshī',i:'barongsai',e:'春节有舞狮表演。',ei:'Imlek ada barongsai.'},
+   {h:'龙',p:'lóng',i:'naga',e:'龙是中国的象征。',ei:'Naga simbol China.'},
+   {h:'传统',p:'chuántǒng',i:'tradisi',e:'这是中国的传统。',ei:'Ini tradisi China.'},
+   {h:'文化',p:'wénhuà',i:'budaya',e:'我喜欢中国文化。',ei:'Saya suka budaya China.'},
+   {h:'拜年',p:'bàinián',i:'sungkem',e:'春节要去拜年。',ei:'Imlek harus sungkem.'},
+   {h:'放鞭炮',p:'fàng biānpào',i:'main petasan',e:'春节放鞭炮。',ei:'Imlek main petasan.'},
+   {h:'团圆',p:'tuányuán',i:'berkumpul keluarga',e:'春节要团圆。',ei:'Imlek harus berkumpul.'}
+ ]},
+ g1:{title:'在…的时候 & 给…送',items:[
+   {t:'在…的时候',f:'在 + Waktu + 的时候',d:'Ketika…',
+    ex:[{h:'在春节的时候，我们吃饺子。',p:'Zài Chūnjié de shíhou, wǒmen chī jiǎozi.',i:'Saat Imlek makan pangsit.'},{h:'在夏天的时候，很热。',p:'Zài xiàtiān de shíhou, hěn rè.',i:'Saat musim panas, panas.'},{h:'小的时候，我住在这儿。',p:'Xiǎo de shíhou, wǒ zhù zài zhèr.',i:'Waktu kecil tinggal di sini.'}]},
+   {t:'给…送…',f:'给 + Orang + 送 + Benda',d:'Memberi hadiah.',
+    ex:[{h:'我给朋友送礼物。',p:'Wǒ gěi péngyou sòng lǐwù.',i:'Saya beri hadiah ke teman.'},{h:'他给妈妈送花。',p:'Tā gěi māma sòng huā.',i:'Dia beri bunga ke ibu.'},{h:'我给你送礼物。',p:'Wǒ gěi nǐ sòng lǐwù.',i:'Saya beri hadiah untukmu.'}]}
+ ]},
+ g2:{title:'庆祝 & 放假',items:[
+   {t:'庆祝',f:'庆祝 + Acara',d:'Merayakan sesuatu.',
+    ex:[{h:'我们庆祝春节。',p:'Wǒmen qìngzhù Chūnjié.',i:'Kita rayakan Imlek.'},{h:'怎么庆祝生日？',p:'Zěnme qìngzhù shēngrì?',i:'Bagaimana rayakan ultah?'},{h:'一起庆祝吧！',p:'Yìqǐ qìngzhù ba!',i:'Rayakan bareng yuk!'}]},
+   {t:'放假',f:'放假 / 放 + 数字 + 天假',d:'Hari libur.',
+    ex:[{h:'明天放假。',p:'Míngtiān fàngjià.',i:'Besok libur.'},{h:'国庆节放假七天。',p:'Guóqìngjié fàngjià qī tiān.',i:'Hari Nasional libur 7 hari.'},{h:'放假你做什么？',p:'Fàngjià nǐ zuò shénme?',i:'Libur kamu ngapain?'}]}
+ ]},
+ d1:{title:'Bicara Festival',icon:'🎊',sceneTitle:'Kelas',sceneDesc:'Bicara festival favorit.',lines:[
+   {s:'A',h:'你最喜欢哪个中国节日？',p:'Nǐ zuì xǐhuan nǎge Zhōngguó jiérì?',i:'Suka festival China apa?'},
+   {s:'B',h:'我最喜欢春节。',p:'Wǒ zuì xǐhuan Chūnjié.',i:'Paling suka Imlek.'},
+   {s:'A',h:'为什么？',p:'Wèishénme?',i:'Kenapa?'},
+   {s:'B',h:'因为可以收到红包！',p:'Yīnwèi kěyǐ shōudào hóngbāo!',i:'Karena bisa dapat angpao!'}
+ ]},
+ d2:{title:'Persiapan Imlek',icon:'🧧',sceneTitle:'Rumah',sceneDesc:'Keluarga bersiap Imlek.',lines:[
+   {s:'A',h:'春节快到了，我们要准备什么？',p:'Chūnjié kuài dào le, wǒmen yào zhǔnbèi shénme?',i:'Imlek sebentar lagi, siapkan apa?'},
+   {s:'B',h:'要买年货、贴春联、包饺子。',p:'Yào mǎi niánhuò, tiē chūnlián, bāo jiǎozi.',i:'Beli kebutuhan, pasang couplet, bungkus pangsit.'},
+   {s:'A',h:'还要准备红包。',p:'Hái yào zhǔnbèi hóngbāo.',i:'Juga siapkan angpao.'},
+   {s:'B',h:'对，孩子们最开心了。',p:'Duì, háizimen zuì kāixīn le.',i:'Ya, anak-anak paling senang.'}
+ ]},
+ rd:{title:'春节',zh:'春节',icon:'🏮',
+  text:'春节是中国最重要的节日，也叫"过年"。春节前，家家户户大扫除、贴春联、买年货。除夕夜，一家人吃团圆饭。春节期间，长辈给晚辈发红包，人们互相拜年，说"新年快乐""恭喜发财"。',
+  py:'Chūnjié shì Zhōngguó zuì zhòngyào de jiérì.',
+  id:'Imlek festival terpenting di China. Sebelum Imlek, setiap rumah bersih-bersih, pasang couplet, beli kebutuhan. Malam tahun baru, keluarga makan bersama. Yang tua memberi angpao ke yang muda.',
+  note:'Selama Imlek, kata-kata berkonotasi buruk tidak boleh diucapkan.'},
+ ex:{groups:[
+   {t:'A. Isi rumpang',qs:[{q:'<span class="ex-bl">春节</span>是中国最重要的节日。'},{q:'<span class="ex-bl">中秋节</span>吃月饼。'},{q:'春节的时候，长辈给晚辈发<span class="ex-bl">红包</span>。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Selamat Tahun Baru! → <span class="ex-bl">新年快乐！</span>'},{q:'Saat Imlek, kita makan pangsit → <span class="ex-bl">在春节的时候，我们吃饺子。</span>'},{q:'Saya paling suka Imlek → <span class="ex-bl">我最喜欢春节。</span>'}]}
+ ]},
+ qz:[
+   {q:'春节 adalah…',zh:'春节',opts:['Tahun Baru Imlek','Festival Kue Bulan','Hari Nasional','Festival Perahu Naga'],ans:0},
+   {q:'中秋节 makan…',zh:'中秋节',opts:['月饼','饺子','粽子','年糕'],ans:0},
+   {q:'红包 berarti…',zh:'红包',opts:['angpao','kado','surat','uang kertas'],ans:0},
+   {q:'团圆 berarti…',zh:'团圆',opts:['berkumpul keluarga','berpisah','liburan','pesta'],ans:0},
+   {q:'"Selamat Tahun Baru"…',zh:'新年快乐！',opts:['新年快乐！','生日快乐！','恭喜发财！','万事如意！'],ans:0}
+ ]},
+{num:20,title:'Review & HSK',zh:'复习HSK',icon:'🏆',
+ goals:['Review grammar penting','Latihan HSK Listening','Latihan HSK Reading','Persiapan HSK 1–3'],
+ v1:{title:'Kata Seputar Ujian',words:[
+   {h:'复习',p:'fùxí',i:'mengulang',e:'我们复习一下。',ei:'Kita ulang sebentar.'},
+   {h:'考试',p:'kǎoshì',i:'ujian',e:'明天有考试。',ei:'Besok ujian.'},
+   {h:'练习',p:'liànxí',i:'latihan',e:'多练习就好了。',ei:'Banyak latihan saja.'},
+   {h:'语法',p:'yǔfǎ',i:'grammar',e:'汉语语法不难。',ei:'Grammar Mandarin tidak sulit.'},
+   {h:'词汇',p:'cíhuì',i:'kosakata',e:'多背词汇。',ei:'Hafalkan banyak kosakata.'},
+   {h:'听力',p:'tīnglì',i:'listening',e:'听力很重要。',ei:'Listening penting.'},
+   {h:'口语',p:'kǒuyǔ',i:'speaking',e:'多练口语。',ei:'Latih speaking.'},
+   {h:'阅读',p:'yuèdú',i:'reading',e:'我每天阅读。',ei:'Saya baca tiap hari.'},
+   {h:'写作',p:'xiězuò',i:'writing',e:'写作有点难。',ei:'Writing agak sulit.'}
+ ]},
+ v2:{title:'Motivasi',words:[
+   {h:'通过',p:'tōngguò',i:'lulus',e:'我通过考试了。',ei:'Saya lulus ujian.'},
+   {h:'加油',p:'jiāyóu',i:'semangat',e:'加油！你一定行。',ei:'Semangat! Kamu pasti bisa.'},
+   {h:'坚持',p:'jiānchí',i:'bertahan',e:'坚持就是胜利。',ei:'Bertahan berarti menang.'},
+   {h:'进步',p:'jìnbù',i:'kemajuan',e:'你的汉语进步很快。',ei:'Mandarinmu maju cepat.'},
+   {h:'努力',p:'nǔlì',i:'berusaha',e:'努力学习。',ei:'Belajar giat.'},
+   {h:'信心',p:'xìnxīn',i:'percaya diri',e:'要有信心。',ei:'Harus PD.'},
+   {h:'成功',p:'chénggōng',i:'sukses',e:'祝你成功！',ei:'Semoga sukses!'},
+   {h:'流利',p:'liúlì',i:'lancar',e:'他汉语说得很流利。',ei:'Mandarinnya lancar.'},
+   {h:'标准',p:'biāozhǔn',i:'standar',e:'发音很标准。',ei:'Pelafalan standar.'}
+ ]},
+ g1:{title:'Ringkasan Grammar',items:[
+   {t:'Semua Pola Dasar HSK 1-3',f:'Ringkasan',d:'1) 是 · 2) 有 · 3) 吗 · 4) 什么/哪儿/谁 · 5) 想/要/会 · 6) 过 · 7) 了 · 8) 在 · 9) 太…了 · 10) 因为…所以 · 11) 从…到 · 12) 给…打电话',
+    ex:[{h:'我是学生。',p:'Wǒ shì xuésheng.',i:'Saya siswa.'},{h:'我去过中国。',p:'Wǒ qù guo Zhōngguó.',i:'Saya pernah ke China.'},{h:'因为下雨，所以我没去。',p:'Yīnwèi xià yǔ, suǒyǐ wǒ méi qù.',i:'Karena hujan, saya tidak pergi.'}]}
+ ]},
+ g2:{title:'Tips Ujian HSK',items:[
+   {t:'Listening',f:'听力',d:'Baca pilihan dulu sebelum audio. Catat kata kunci: waktu, tempat, angka.',
+    ex:[{h:'男：你几点去学校？',p:'Nán: Nǐ jǐ diǎn qù xuéxiào?',i:'Pria: Jam berapa ke sekolah?'},{h:'女：八点。',p:'Nǚ: Bā diǎn.',i:'Wanita: Jam 8.'},{h:'问：女的几点去学校？',p:'Wèn: Nǚ de jǐ diǎn qù xuéxiào?',i:'Tanya: Wanita ke sekolah jam berapa?'}]},
+   {t:'Reading',f:'阅读',d:'Cari kata kunci di pertanyaan dulu.',
+    ex:[{h:'今天天气很好，我们去公园吧。',p:'Jīntiān tiānqì hěn hǎo, wǒmen qù gōngyuán ba.',i:'Cuaca bagus, kita ke taman yuk.'},{h:'问：天气怎么样？',p:'Wèn: Tiānqì zěnmeyàng?',i:'Tanya: Cuaca bagaimana?'},{h:'答：很好。',p:'Dá: Hěn hǎo.',i:'Jawab: Bagus.'}]}
+ ]},
+ d1:{title:'Motivasi Terakhir',icon:'💪',sceneTitle:'Kelas',sceneDesc:'Guru memotivasi murid.',lines:[
+   {s:'A',h:'学汉语难吗？',p:'Xué Hànyǔ nán ma?',i:'Belajar Mandarin sulit?'},
+   {s:'B',h:'不难，多练习就好了。',p:'Bù nán, duō liànxí jiù hǎo le.',i:'Tidak, banyak latihan.'},
+   {s:'A',h:'我一定努力学习！',p:'Wǒ yídìng nǔlì xuéxí!',i:'Saya pasti belajar giat!'},
+   {s:'B',h:'加油！你一定行。',p:'Jiāyóu! Nǐ yídìng xíng.',i:'Semangat! Kamu pasti bisa.'}
+ ]},
+ d2:{title:'Selesai Kursus',icon:'🎓',sceneTitle:'Kampus',sceneDesc:'Perpisahan setelah kursus.',lines:[
+   {s:'A',h:'时间过得真快。',p:'Shíjiān guò de zhēn kuài.',i:'Waktu cepat berlalu.'},
+   {s:'B',h:'是啊，我们一起学了半年。',p:'Shì a, wǒmen yìqǐ xué le bàn nián.',i:'Ya, belajar bareng 6 bulan.'},
+   {s:'A',h:'以后我们还要联系。',p:'Yǐhòu wǒmen hái yào liánxì.',i:'Nanti tetap kontak.'},
+   {s:'B',h:'一定要！加油！',p:'Yídìng yào! Jiāyóu!',i:'Pasti! Semangat!'}
+ ]},
+ rd:{title:'Rahasia Belajar',zh:'学习秘诀',icon:'🔑',
+  text:'学汉语没有捷径。最好的方法是：每天练习。听说读写都要练。看电影、听歌、和中国人聊天都是好方法。不要怕犯错，因为错误是最好的老师。坚持一年，你会有很大进步。',
+  py:'Xué Hànyǔ méiyǒu jiéjìng. Zuì hǎo de fāngfǎ shì: měitiān liànxí.',
+  id:'Belajar Mandarin tidak ada jalan pintas. Cara terbaik: latihan setiap hari. Listening, speaking, reading, writing harus dilatih. Jangan takut salah, karena kesalahan adalah guru terbaik.',
+  note:'Konsistensi > intensitas. 15 menit tiap hari lebih baik dari 3 jam sekali seminggu.'},
+ ex:{groups:[
+   {t:'A. Lengkapi pola',qs:[{q:'我<span class="ex-bl">是</span>学生。'},{q:'我去<span class="ex-bl">过</span>中国。'},{q:'<span class="ex-bl">因为</span>下雨，所以我没去。'}]},
+   {t:'B. Terjemahkan',qs:[{q:'Saya pernah ke China → <span class="ex-bl">我去过中国。</span>'},{q:'Semangat! Kamu pasti bisa → <span class="ex-bl">加油！你一定行。</span>'},{q:'Saya setuju → <span class="ex-bl">我同意。</span>'}]}
+ ]},
+ qz:[
+   {q:'"Saya pernah ke China"…',zh:'我去过中国。',opts:['我去过中国。','我去中国了。','我要去中国。','我去中国。'],ans:0},
+   {q:'Karena hujan, saya tidak pergi…',zh:'因为下雨，所以我没去。',opts:['因为下雨，所以我没去。','因为下雨，我没去所以。','下雨因为我没去。','我没去因为所以下雨。'],ans:0},
+   {q:'加油 berarti…',zh:'加油',opts:['semangat','selamat','terima kasih','tolong'],ans:0},
+   {q:'"Saya setuju"…',zh:'我同意。',opts:['我同意。','我反对。','我知道。','我认为。'],ans:0},
+   {q:'Hal terpenting belajar Mandarin…',zh:'学习汉语',opts:['latihan tiap hari','hafal saja','baca saja','dengar saja'],ans:0}
+ ]}
+];
+
+/* ============ BUILD BOOK ============ */
+var BOOK = [];
+for(var ci=0;ci<CH.length;ci++){
+  var ch = CH[ci];
+  var pages = [];
+  if(ch.special){
+    pages = ch.special;
+  } else {
+    pages = [
+      {type:'cover',zh:ch.zh,title:ch.title,sub:ch.title,goals:ch.goals},
+      {type:'vocab',title:ch.v1.title,sub:'Kosakata bagian 1.',words:ch.v1.words},
+      {type:'vocab',title:ch.v2.title,sub:'Kosakata bagian 2.',words:ch.v2.words},
+      {type:'grammar',title:ch.g1.title,sub:'Pola grammar penting.',items:ch.g1.items},
+      {type:'grammar',title:ch.g2.title,sub:'Pola grammar lanjutan.',items:ch.g2.items},
+      {type:'dialog',title:'Dialog: '+ch.d1.title,icon:ch.d1.icon,sceneTitle:ch.d1.sceneTitle,sceneDesc:ch.d1.sceneDesc,lines:ch.d1.lines},
+      {type:'dialog',title:'Dialog: '+ch.d2.title,icon:ch.d2.icon,sceneTitle:ch.d2.sceneTitle,sceneDesc:ch.d2.sceneDesc,lines:ch.d2.lines},
+      {type:'reading',title:'Budaya: '+ch.rd.title,zh:ch.rd.zh,icon:ch.rd.icon,text:ch.rd.text,py:ch.rd.py,id:ch.rd.id,note:ch.rd.note},
+      {type:'exercise',title:'Latihan Bab '+ch.num,sub:'Latihan menyeluruh.',groups:ch.ex.groups},
+      {type:'quiz',title:'Kuis Bab '+ch.num,sub:'Skor ≥80% lulus.',qs:ch.qz}
+    ];
+  }
+  for(var pi=0;pi<pages.length;pi++){
+    var pg = pages[pi];
+    pg.chapterNum = ch.num;
+    pg.chapterTitle = ch.title;
+    pg.chapterIcon = ch.icon;
+    pg.pageInChapter = pi + 1;
+    pg.totalInChapter = pages.length;
+    BOOK.push(pg);
+  }
+}
+var TOTAL = BOOK.length;
+var currentPage = 1;
+var quizState = {};
+
+/* ============ NAVIGATION ============ */
+function goPage(n){
+  if(n<1||n>TOTAL) return;
+  currentPage = n;
+  quizState = {};
+  renderPage();
+  updateNav();
+  updateProgress();
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(avOn){ var el = document.querySelector('#pg .zh'); if(el) setTimeout(function(){ speak(el.textContent.trim()); },400); }
+}
+function nextPg(){ if(currentPage<TOTAL) goPage(currentPage+1); }
+function prevPg(){ if(currentPage>1) goPage(currentPage-1); }
+
+function updateNav(){
+  document.getElementById('pvB').disabled = currentPage<=1;
+  document.getElementById('nxB').disabled = currentPage>=TOTAL;
+  document.getElementById('navI').textContent = currentPage+' / '+TOTAL;
+  var pg = BOOK[currentPage-1];
+  if(!pg) return;
+  document.getElementById('tbT').textContent = 'Bab '+pg.chapterNum+': '+pg.chapterTitle;
+  document.getElementById('tbS').textContent = 'Hal. '+pg.pageInChapter+'/'+pg.totalInChapter+' · '+(pg.title||'');
+  document.getElementById('sbTx').textContent = 'Halaman '+currentPage+' dari '+TOTAL;
+  var tp = document.querySelectorAll('.toc-pg');
+  for(var i=0;i<tp.length;i++) tp[i].classList.toggle('on', parseInt(tp[i].getAttribute('data-page'))===currentPage);
+  var th = document.querySelectorAll('.toc-h');
+  for(var j=0;j<th.length;j++) th[j].classList.toggle('on', parseInt(th[j].getAttribute('data-ch'))===pg.chapterNum);
+  var ac = document.querySelector('.toc-ch[data-ch="'+pg.chapterNum+'"]');
+  if(ac) ac.classList.add('open');
+  var ap = document.querySelector('.toc-pg.on');
+  if(ap) setTimeout(function(){ ap.scrollIntoView({block:'nearest',behavior:'smooth'}); },100);
+}
+
+function updateProgress(){
+  var pct = Math.round((currentPage/TOTAL)*100);
+  document.getElementById('sbFl').style.width = pct+'%';
+  document.getElementById('sbPc').textContent = pct+'%';
+  try{ localStorage.setItem('mandarin_page', String(currentPage)); }catch(e){}
+}
+
+/* ============ RENDER ============ */
+function renderPage(){
+  var pg = BOOK[currentPage-1];
+  if(!pg) return;
+  var html = '';
+  switch(pg.type){
+    case 'cover': html = renderCover(pg); break;
+    case 'vocab': html = pageHead(pg) + renderVocab(pg); break;
+    case 'grammar': html = pageHead(pg) + renderGrammar(pg); break;
+    case 'dialog': html = pageHead(pg) + renderDialog(pg); break;
+    case 'reading': html = pageHead(pg) + renderReading(pg); break;
+    case 'exercise': html = pageHead(pg) + renderExercise(pg); break;
+    case 'quiz': html = pageHead(pg) + renderQuiz(pg); break;
+    case 'pinyin': html = pageHead(pg) + renderPinyin(); break;
+    case 'tones': html = pageHead(pg) + renderTones(); break;
+    case 'radicals': html = pageHead(pg) + renderRadicals(); break;
+    case 'strokes': html = pageHead(pg) + renderStrokes(); break;
+    default: html = pageHead(pg) + '<p>Tipe halaman tidak dikenal.</p>';
+  }
+  document.getElementById('pg').innerHTML = html;
+  if(pg.type==='strokes') setTimeout(initStrokes,200);
+}
+
+function pageHead(pg){
+  return '<div class="pb-b">Hal. '+currentPage+' / '+TOTAL+'</div>' +
+    '<div class="ph"><div class="pk">Bab '+pg.chapterNum+' · Halaman '+pg.pageInChapter+'/'+pg.totalInChapter+'</div>' +
+    '<h1 class="pt">'+(pg.title||'')+'</h1>' +
+    (pg.sub?'<p class="ps">'+pg.sub+'</p>':'') + '</div>';
+}
+
+function renderCover(pg){
+  var ch = null;
+  for(var i=0;i<CH.length;i++) if(CH[i].num===pg.chapterNum){ ch=CH[i]; break; }
+  var icon = ch ? ch.icon : '📖';
+  var g = '';
+  if(pg.goals){
+    g = '<div class="cov-g"><h4>📌 Tujuan Pembelajaran</h4><ul>';
+    for(var j=0;j<pg.goals.length;j++) g += '<li>'+pg.goals[j]+'</li>';
+    g += '</ul></div>';
+  }
+  return '<div class="cover"><div class="cov-ic">'+icon+'</div>' +
+    '<div class="cov-zh zh">'+(pg.zh||'')+'</div>' +
+    '<h1 class="cov-t">'+(pg.title||'')+'</h1>' +
+    '<p class="cov-s">'+(pg.sub||'')+'</p>' + g +
+    '<div class="cov-a"><strong>'+AUTHOR+'</strong><br><span style="font-size:11px">Penulis Buku Mandarin Pasti Bisa</span></div></div>';
+}
+
+function renderVocab(pg){
+  if(!pg.words) return '';
+  var h = '<div>';
+  for(var i=0;i<pg.words.length;i++){
+    var v = pg.words[i];
+    h += '<div class="v-i"><div><div class="v-hz zh" onclick="speak(\''+esc(v.h)+'\')">'+v.h+'</div>' +
+      '<div class="v-py">'+v.p+'</div><div class="v-id">'+v.i+'</div>';
+    if(v.e) h += '<div class="v-ex"><div class="v-ex-hz zh" onclick="speak(\''+esc(v.e)+'\')">'+v.e+'</div><div>'+(v.ei||'')+'</div></div>';
+    h += '</div><div class="v-btns"><button class="ib" onclick="speak(\''+esc(v.h)+'\')">🔊</button>' +
+      (v.e?'<button class="ib" onclick="speak(\''+esc(v.e)+'\')">📢</button>':'') + '</div></div>';
+  }
+  return h + '</div>';
+}
+
+function renderGrammar(pg){
+  if(!pg.items) return '';
+  var h = '';
+  for(var i=0;i<pg.items.length;i++){
+    var g = pg.items[i];
+    h += '<div class="g-c"><h4>'+g.t+'</h4><div class="g-f">'+g.f+'</div><p class="g-d">'+g.d+'</p>';
+    if(g.ex) for(var j=0;j<g.ex.length;j++){
+      var e = g.ex[j];
+      h += '<div class="g-ex"><div class="g-ex-b"><div class="g-ex-hz zh" onclick="speak(\''+esc(e.h)+'\')">'+e.h+'</div>' +
+        '<div class="g-ex-py">'+e.p+'</div><div class="g-ex-id">'+e.i+'</div></div>' +
+        '<button class="ib" onclick="speak(\''+esc(e.h)+'\')">🔊</button></div>';
+    }
+    h += '</div>';
+  }
+  return h;
+}
+
+function renderDialog(pg){
+  var h = '<div class="d-sc"><div class="d-ic">'+(pg.icon||'💬')+'</div>' +
+    '<div class="d-st"><h4>'+(pg.sceneTitle||'')+'</h4><p>'+(pg.sceneDesc||'')+'</p></div></div><div class="dlg">';
+  if(pg.lines) for(var i=0;i<pg.lines.length;i++){
+    var l = pg.lines[i], isR = l.s==='B';
+    h += '<div class="dl'+(isR?' r':'')+'"><div class="av">'+l.s+'</div><div class="bub">' +
+      '<div class="bub-hz zh" onclick="speak(\''+esc(l.h)+'\')">'+l.h+'</div>' +
+      '<div class="bub-py">'+l.p+'</div><div class="bub-id">'+l.i+'</div>' +
+      '<button class="ib" style="margin-top:8px" onclick="speak(\''+esc(l.h)+'\')">🔊</button></div></div>';
+  }
+  return h + '</div>';
+}
+
+function renderReading(pg){
+  var h = '<div class="rd-h"><div class="rd-ic">'+(pg.icon||'📖')+'</div><div class="rd-zh zh">'+(pg.zh||'')+'</div></div>';
+  h += '<div class="rd-t"><div class="zh">'+splitHanzi(pg.text)+'</div>';
+  if(pg.py) h += '<div class="rd-py">'+pg.py+'</div>';
+  h += '</div>';
+  if(pg.id) h += '<div class="ic"><h3>Terjemahan</h3><p class="d">'+pg.id+'</p></div>';
+  if(pg.note) h += '<div class="rd-note"><strong>💡 Catatan Budaya</strong>'+pg.note+'</div>';
+  return h;
+}
+
+function renderExercise(pg){
+  var h = '';
+  if(pg.groups) for(var i=0;i<pg.groups.length;i++){
+    var g = pg.groups[i];
+    h += '<div class="ex-g"><h4>'+g.t+'</h4>';
+    for(var j=0;j<g.qs.length;j++) h += '<div class="ex-q">'+g.qs[j].q+'</div>';
+    h += '</div>';
+  }
+  h += '<div class="ic" style="margin-top:14px"><h3>💡 Tips</h3><p class="d">Kerjakan di buku tulis, lalu klik 🔊 untuk memeriksa pelafalan.</p></div>';
+  return h;
+}
+
+function renderQuiz(pg){
+  if(!pg.qs) return '';
+  var h = '<div>';
+  for(var i=0;i<pg.qs.length;i++){
+    var q = pg.qs[i];
+    h += '<div class="qz-q"><div class="qz-h">Soal '+(i+1)+'</div><div class="qz-t">'+q.q+'</div>';
+    if(q.zh) h += '<div class="qz-zh zh" onclick="speak(\''+esc(q.zh)+'\')">'+q.zh+'</div>';
+    h += '<div class="qz-o">';
+    for(var j=0;j<q.opts.length;j++){
+      h += '<button class="qz-b" data-q="'+i+'" data-o="'+j+'" data-ans="'+q.ans+'" onclick="answerQz(this)">' +
+        String.fromCharCode(65+j)+'. '+q.opts[j]+'</button>';
+    }
+    h += '</div></div>';
+  }
+  h += '<div class="qz-s" id="qzS" style="display:none"><div class="n" id="qzN">0/0</div><p id="qzM"></p></div></div>';
+  return h;
+}
+
+function answerQz(btn){
+  var q = parseInt(btn.getAttribute('data-q'));
+  var o = parseInt(btn.getAttribute('data-o'));
+  var a = parseInt(btn.getAttribute('data-ans'));
+  if(quizState[q]) return;
+  quizState[q] = true;
+  var ok = (o===a);
+  if(ok) btn.classList.add('correct'); else btn.classList.add('wrong');
+  var opts = document.querySelectorAll('.qz-b[data-q="'+q+'"]');
+  for(var i=0;i<opts.length;i++){
+    opts[i].disabled = true;
+    if(parseInt(opts[i].getAttribute('data-o'))===a) opts[i].classList.add('correct');
+  }
+  checkQuiz();
+}
+
+function checkQuiz(){
+  var pg = BOOK[currentPage-1];
+  if(!pg.qs) return;
+  var total = pg.qs.length, ans = 0;
+  for(var k in quizState) if(quizState.hasOwnProperty(k)) ans++;
+  if(ans<total) return;
+  var score = 0;
+  for(var i=0;i<total;i++) if(!document.querySelector('.qz-b[data-q="'+i+'"].wrong')) score++;
+  document.getElementById('qzS').style.display = 'block';
+  document.getElementById('qzN').textContent = score+'/'+total;
+  document.getElementById('qzM').textContent = score>=Math.ceil(total*0.8) ? '🎉 Luar biasa! Anda lulus bab ini.' : '💪 Coba lagi untuk skor lebih baik.';
+}
+
+function renderPinyin(){
+  var h = '<div class="ic"><h3>Inisial (21 buah)</h3><p class="d">Klik untuk mendengar.</p><div class="py-g">';
+  for(var i=0;i<INITIALS.length;i++){
+    var ii = INITIALS[i], s = ii.ex.split(' ')[0];
+    h += '<div class="py-c" onclick="speak(\''+esc(s)+'\')"><div class="p">'+ii.p+'</div><div class="e">'+s+'</div></div>';
+  }
+  h += '</div></div><div class="ic"><h3>Final (32 buah)</h3><div class="py-g">';
+  for(var k=0;k<FINALS.length;k++){
+    var ff = FINALS[k], s2 = ff.ex.split(' ')[0];
+    h += '<div class="py-c" onclick="speak(\''+esc(s2)+'\')"><div class="p">'+ff.p+'</div><div class="e">'+s2+'</div></div>';
+  }
+  h += '</div></div>';
+  h += '<div class="ic"><h3>Cara Membaca</h3><p class="d">Suku kata = <b>Inisial + Final + Nada</b>.</p><div class="rules">' +
+    '<div class="rule"><div class="rule-n">你</div><div class="rule-b"><strong>n + i + nada 3 = nǐ</strong><p>Inisial n, final i, nada turun-naik.</p></div></div>' +
+    '<div class="rule"><div class="rule-n">好</div><div class="rule-b"><strong>h + ao + nada 3 = hǎo</strong><p>Inisial h, final ao, nada turun-naik.</p></div></div>' +
+    '<div class="rule"><div class="rule-n">中</div><div class="rule-b"><strong>zh + ong + nada 1 = zhōng</strong><p>Inisial zh, final ong, nada datar.</p></div></div>' +
+    '</div></div>';
+  return h;
+}
+
+function renderTones(){
+  var h = '<div class="ic"><h3>Apa itu Nada?</h3><p class="d">Nada = tinggi-rendahnya suara. Perubahan nada mengubah <b>arti</b>.</p><div class="tone-g">';
+  for(var i=0;i<TONES.length;i++){
+    var t = TONES[i];
+    h += '<div class="tone-c" onclick="speak(\''+esc(t.ex)+'\')"><div class="m">'+t.m+'</div><div class="ex zh">'+t.ex+'</div>' +
+      '<div class="expy">'+t.py+'</div><div class="nm">'+t.t+' · '+t.d+'</div><div class="exid">'+t.id+'</div></div>';
+  }
+  h += '</div></div>';
+  h += '<div class="ic"><h3>Aturan Nada</h3><div class="rules">' +
+    '<div class="rule"><div class="rule-n">1</div><div class="rule-b"><strong>Nada 3 + 3 → jadi 2 + 3</strong><p>nǐ hǎo dibaca ní hǎo.</p><div class="demo zh">nǐ hǎo → ní hǎo</div></div></div>' +
+    '<div class="rule"><div class="rule-n">2</div><div class="rule-b"><strong>不 + nada 4 → bú</strong><p>不 dibaca "bú" sebelum nada 4.</p><div class="demo zh">bú kèqi</div></div></div>' +
+    '<div class="rule"><div class="rule-n">3</div><div class="rule-b"><strong>一 (yī) berubah nada</strong><p>Sebelum nada 4 → yì.</p><div class="demo zh">yì tiān</div></div></div>' +
+    '<div class="rule"><div class="rule-n">4</div><div class="rule-b"><strong>Nada netral tidak ditandai</strong><p>Dibaca ringan & pendek.</p><div class="demo zh">māma · xièxie</div></div></div>' +
+    '</div></div>';
+  return h;
+}
+
+function renderRadicals(){
+  var h = '<div class="ic"><h3>Apa itu Radikal?</h3><p class="d">Radikal (部首) = komponen dasar pembentuk hanzi yang sering menunjukkan makna. Contoh: 氵 (air) → 河 海 洗.</p></div>';
+  h += '<div class="ic"><h3>20 Radikal Dasar</h3><div class="rad-g">';
+  for(var i=0;i<RADICALS.length;i++){
+    var r = RADICALS[i];
+    h += '<div class="rad" onclick="speak(\''+esc(r.h)+'\')"><div class="rz zh">'+r.h+'</div>' +
+      '<div class="rp">'+r.p+'</div><div class="ri">'+r.i+'</div><div class="re zh">'+r.ex+'</div></div>';
+  }
+  return h + '</div></div>';
+}
+
+function renderStrokes(){
+  var h = '<div class="ic"><h3>7 Aturan Urutan Goresan</h3><div class="rules">';
+  for(var i=0;i<SRULES.length;i++){
+    var r = SRULES[i];
+    h += '<div class="rule"><div class="rule-n">'+r.n+'</div><div class="rule-b"><strong>'+r.t+'</strong><p>'+r.d+'</p>' +
+      '<div class="demo zh" onclick="speak(\''+esc(r.demo)+'\')">'+r.demo+'</div></div></div>';
+  }
+  h += '</div></div><div class="ic"><h3>Animasi Urutan Goresan</h3>' +
+    '<p class="d">Klik ▶ untuk animasi, ✎ untuk latihan, 🔊 untuk suara.</p><div class="st-g">';
+  for(var k=0;k<STROKES.length;k++){
+    var c = STROKES[k];
+    h += '<div class="st-i"><div class="st-box" id="sw-'+k+'"></div>' +
+      '<div class="st-l zh">'+c.h+'</div><div class="st-p">'+c.p+' · '+c.i+'</div>' +
+      '<div class="st-b"><button onclick="animStroke(\'sw-'+k+'\',\''+esc(c.h)+'\')">▶</button>' +
+      '<button onclick="quizStroke(\'sw-'+k+'\',\''+esc(c.h)+'\')">✎</button>' +
+      '<button onclick="speak(\''+esc(c.h)+'\')">🔊</button></div></div>';
+  }
+  return h + '</div></div>';
+}
+
+function initStrokes(){
+  if(!window.HanziWriter){
+    for(var i=0;i<STROKES.length;i++){
+      var el = document.getElementById('sw-'+i);
+      if(el && !el.getAttribute('data-fb')){
+        el.setAttribute('data-fb','1');
+        el.innerHTML = '<div class="st-fb zh">'+STROKES[i].h+'</div>';
+      }
+    }
+    return;
+  }
+  for(var j=0;j<STROKES.length;j++){
+    var el2 = document.getElementById('sw-'+j);
+    if(el2 && !el2.getAttribute('data-done')){
+      el2.setAttribute('data-done','1');
+      try{
+        var w = HanziWriter.create(el2, STROKES[j].h, {
+          width:95, height:95, padding:5,
+          strokeColor:'#c1272d', outlineColor:'#e8e0d5', showOutline:true,
+          strokeAnimationSpeed:1.1, delayBetweenStrokes:160,
+          charDataLoader:function(ch,ok,fail){
+            fetch('https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0/'+ch+'.json')
+              .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+              .then(ok).catch(fail);
+          }
+        });
+        el2._hw = w;
+        w.animateCharacter();
+      }catch(e){ el2.innerHTML = '<div class="st-fb zh">'+STROKES[j].h+'</div>'; }
+    }
+  }
+}
+
+function animStroke(id, char){
+  var el = document.getElementById(id);
+  if(el && el._hw){ try{ el._hw.animateCharacter(); }catch(e){} }
+}
+function quizStroke(id, char){
+  var el = document.getElementById(id);
+  if(el && el._hw){ try{ el._hw.quiz({onComplete:function(){ speak(char); }}); }catch(e){} }
+}
+
+/* ============ TOC ============ */
+function renderToc(){
+  var h = '';
+  for(var i=0;i<CH.length;i++){
+    var ch = CH[i], first = 1;
+    for(var k=0;k<BOOK.length;k++) if(BOOK[k].chapterNum===ch.num){ first=k+1; break; }
+    var pagesCount = ch.special ? ch.special.length : 10;
+    h += '<div class="toc-ch" data-ch="'+ch.num+'">' +
+      '<div class="toc-h" data-ch="'+ch.num+'" onclick="toggleCh('+ch.num+','+first+')">' +
+      '<div class="toc-n">'+ch.num+'</div>' +
+      '<div class="toc-i"><strong>'+ch.title+'</strong><small>'+ch.zh+' · '+pagesCount+' hal.</small></div></div>' +
+      '<div class="toc-ps">';
+    for(var p=0;p<pagesCount;p++){
+      var pn = first + p;
+      var pt = ch.special ? ch.special[p].title : BOOK[first+p-1].title;
+      h += '<div class="toc-pg" data-page="'+pn+'" onclick="goPage('+pn+')"><span>'+(pt||'Halaman '+(p+1))+'</span><span class="pg">'+pn+'</span></div>';
+    }
+    h += '</div></div>';
+  }
+  document.getElementById('toc').innerHTML = h;
+}
+
+function toggleCh(num, firstPage){
+  var el = document.querySelector('.toc-ch[data-ch="'+num+'"]');
+  if(!el) return;
+  el.classList.toggle('open');
+  if(el.classList.contains('open')) goPage(firstPage);
+}
+
+function toggleSB(){
+  document.getElementById('sb').classList.toggle('open');
+  document.getElementById('ov').classList.toggle('on');
+}
+
+/* ============ TRANSLATOR ============ */
+var trDir = 'id2zh';
+var trResult = { chinese:'', pinyin:'', indonesian:'' };
+var trRec = null, trRecording = false;
+
+function openTR(){
+  document.getElementById('trOv').classList.add('on');
+  document.body.style.overflow = 'hidden';
+  setTimeout(function(){ var el = document.getElementById('trIn'); if(el) el.focus(); },100);
+}
+function closeTR(){
+  document.getElementById('trOv').classList.remove('on');
+  document.body.style.overflow = '';
+  stopSpk();
+  if(trRecording && trRec){ try{ trRec.stop(); }catch(e){} }
+}
+
+function swapTR(){
+  trDir = trDir==='id2zh' ? 'zh2id' : 'id2zh';
+  updateTrPills();
+  var inp = document.getElementById('trIn');
+  inp.value = '';
+  inp.placeholder = trDir==='id2zh' ? 'Ketik kalimat Bahasa Indonesia…' : '在此输入中文…';
+  document.getElementById('trCC').textContent = '0';
+  document.getElementById('trRes').innerHTML = '<div class="tr-em">Terjemahan akan muncul di sini<br><small>Lengkap dengan hanzi, pinyin, dan arti</small></div>';
+  trResult = { chinese:'', pinyin:'', indonesian:'' };
+}
+
+function updateTrPills(){
+  var f = document.getElementById('trPF'), t = document.getElementById('trPT'), l = document.getElementById('trIL');
+  if(trDir==='id2zh'){
+    f.textContent = '🇮🇩 Indonesia'; t.textContent = '🇨🇳 Mandarin';
+    f.classList.add('on'); t.classList.remove('on');
+    l.textContent = '✍️ Tulisan Indonesia';
+  } else {
+    f.textContent = '🇨🇳 Mandarin'; t.textContent = '🇮🇩 Indonesia';
+    f.classList.remove('on'); t.classList.add('on');
+    l.textContent = '✍️ Tulisan Mandarin';
+  }
+}
+
+function upCC(){ document.getElementById('trCC').textContent = document.getElementById('trIn').value.length; }
+
+async function doTR(){
+  var input = document.getElementById('trIn').value.trim();
+  if(!input){
+    document.getElementById('trRes').innerHTML = '<div class="tr-err">⚠️ Silakan masukkan teks atau gunakan 🎤 untuk bicara.</div>';
+    return;
+  }
+  if(input.length>800){
+    document.getElementById('trRes').innerHTML = '<div class="tr-err">⚠️ Teks maksimal 800 karakter. Pecah jadi kalimat pendek.</div>';
+    return;
+  }
+  var btn = document.getElementById('trBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="tr-sp"></span> Menerjemahkan…';
+  document.getElementById('trRes').innerHTML = '<div class="tr-load"><span class="tr-sp"></span><span>Menghubungi server…</span></div>';
+
+  try{
+    var result = await callTranslate(input, trDir);
+    var pinyin = '';
+    if(trDir==='id2zh'){
+      pinyin = genPinyin(result);
+      trResult = { chinese: result.trim(), pinyin: pinyin, indonesian: input };
+    } else {
+      pinyin = genPinyin(input);
+      trResult = { chinese: input, pinyin: pinyin, indonesian: result.trim() };
+    }
+    renderTrResult();
+    if(document.getElementById('trAV').checked){
+      setTimeout(function(){ if(trDir==='id2zh') speakTrZh(); else speakTrId(); },400);
+    }
+  } catch(e){
+    document.getElementById('trRes').innerHTML = '<div class="tr-err">❌ '+escapeHtml(e.message)+'.<br><small>Coba lagi atau periksa koneksi internet.</small></div>';
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '🌐 Terjemahkan';
+  }
+}
+
+async function callTranslate(text, direction){
+  text = String(text).trim().replace(/\s+/g,' ');
+  if(!text) throw new Error('Teks kosong');
+
+  var parts = text.split(/(?<=[.!?;])\s+/).filter(function(s){ return s.trim(); });
+  if(parts.length<=1) parts = [text];
+  if(parts.length>6) parts = parts.slice(0,6);
+
+  var results = [];
+  for(var i=0;i<parts.length;i++){
+    var r = await translateOne(parts[i].trim(), direction);
+    if(r) results.push(r);
+  }
+  if(!results.length) throw new Error('Tidak ada hasil');
+  return cleanupTranslation(results.join(' '), direction);
+}
+
+async function translateOne(text, direction){
+  var from = direction==='id2zh' ? 'id' : 'zh';
+  var to = direction==='id2zh' ? 'zh' : 'id';
+
+  try{
+    var r1 = await fetchTimeout('https://lingva.ml/api/v1/'+from+'/'+to+'/'+encodeURIComponent(text), 10000);
+    if(r1.ok){
+      var d1 = await r1.json();
+      var t1 = d1 && d1.translation && d1.translation.trim();
+      if(t1 && !sameText(t1, text)){
+        document.getElementById('trPv').textContent = 'Google · Lingva';
+        return t1;
+      }
+    }
+  }catch(e){}
+
+  var lp = direction==='id2zh' ? 'id|zh-CN' : 'zh-CN|id';
+  try{
+    var r2 = await fetchTimeout('https://api.mymemory.translated.net/get?q='+encodeURIComponent(text)+'&langpair='+encodeURIComponent(lp), 15000);
+    var d2 = await r2.json();
+    var t2 = d2 && d2.responseData && d2.responseData.translatedText;
+    if(t2 && !/MYMEMORY WARNING|QUERY LENGTH LIMIT|INVALID LANGUAGE|PLEASE SELECT/i.test(t2)){
+      t2 = t2.trim();
+      if(!sameText(t2, text)){
+        document.getElementById('trPv').textContent = 'MyMemory';
+        return t2;
+      }
+    }
+    throw new Error('Terjemahan tidak berubah');
+  }catch(e){
+    if(e.name==='AbortError') throw new Error('Server timeout');
+    throw e;
+  }
+}
+
+function fetchTimeout(url, ms){
+  var c = new AbortController();
+  var t = setTimeout(function(){ c.abort(); }, ms);
+  return fetch(url, { signal: c.signal }).finally(function(){ clearTimeout(t); });
+}
+
+function sameText(a, b){
+  return String(a).toLowerCase().replace(/[\s\p{P}]/gu,'') === String(b).toLowerCase().replace(/[\s\p{P}]/gu,'');
+}
+
+function cleanupTranslation(text, direction){
+  if(!text) return '';
+  text = String(text).trim().replace(/\s+/g,' ');
+  text = text.replace(/([.!?。！？])\1+/g, '$1');
+  if(direction==='id2zh'){
+    text = text.replace(/([\u4e00-\u9fff])\s+(?=[\u4e00-\u9fff])/g, '$1');
+    text = text.replace(/([\u4e00-\u9fff])\s+([，。！？、；：])/g, '$1$2');
+    text = text.replace(/([，。！？、；：])\s+/g, '$1');
+  } else {
+    text = text.replace(/\s+([.,!?;:])/g, '$1');
+  }
+  return text.trim();
+}
+
+function genPinyin(text){
+  try{
+    if(window.pinyinPro && typeof window.pinyinPro.pinyin==='function'){
+      var py = window.pinyinPro.pinyin(text, { toneType:'symbol', type:'string', separator:' ' });
+      return py.trim().replace(/\s+/g,' ');
+    }
+  }catch(e){}
+  return '';
+}
+
+function renderTrResult(){
+  var r = trResult;
+  var h = '<div class="tr-blk"><div class="tr-bl">🈶 Tulisan Mandarin</div>' +
+    '<div class="tr-zh zh" onclick="speakTrZh()">'+escapeHtml(r.chinese)+'</div>';
+  if(r.pinyin) h += '<div class="tr-py">'+escapeHtml(r.pinyin)+'</div>';
+  h += '</div>';
+  h += '<div class="tr-blk"><div class="tr-bl">🇮🇩 Arti dalam Bahasa Indonesia</div>' +
+    '<div class="tr-id">'+escapeHtml(r.indonesian)+'</div></div>';
+  h += '<div class="tr-ba">' +
+    '<button class="tr-bn" onclick="speakTrZh()">🔊 Baca Mandarin</button>' +
+    '<button class="tr-bn" onclick="speakTrId()">🔊 Baca Indonesia</button>' +
+    '<button class="tr-bn" onclick="copyTr()">📋 Salin</button></div>';
+  document.getElementById('trRes').innerHTML = h;
+}
+
+function speakTrZh(){ if(trResult.chinese) speak(trResult.chinese, 'zh-CN'); }
+function speakTrId(){ if(trResult.indonesian) speak(trResult.indonesian, 'id-ID'); }
+function speakIn(){
+  var t = document.getElementById('trIn').value.trim();
+  if(!t) return;
+  speak(t, trDir==='id2zh' ? 'id-ID' : 'zh-CN');
+}
+function copyTr(){
+  var text = trResult.chinese+'\n'+trResult.pinyin+'\n\nArti: '+trResult.indonesian;
+  if(navigator.clipboard){
+    navigator.clipboard.writeText(text).then(function(){ snack('✅ Tersalin'); });
+  } else {
+    var ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); snack('✅ Tersalin'); }catch(e){}
+    document.body.removeChild(ta);
+  }
+}
+function clearIn(){
+  document.getElementById('trIn').value = '';
+  document.getElementById('trCC').textContent = '0';
+}
+function clearAllTR(){
+  clearIn();
+  document.getElementById('trRes').innerHTML = '<div class="tr-em">Terjemahan akan muncul di sini<br><small>Lengkap dengan hanzi, pinyin, dan arti</small></div>';
+  trResult = { chinese:'', pinyin:'', indonesian:'' };
+}
+
+function startMic(){
+  if(trRecording && trRec){ try{ trRec.stop(); }catch(e){} return; }
+  if(location.protocol==='file:'){
+    snack('⚠️ Mikrofon butuh HTTPS/localhost.');
+    return;
+  }
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(!SR){ snack('⚠️ Browser tidak mendukung input suara.'); return; }
+  trRec = new SR();
+  trRec.lang = trDir==='id2zh' ? 'id-ID' : 'zh-CN';
+  trRec.interimResults = false;
+  trRec.continuous = false;
+  trRec.onstart = function(){ trRecording = true; document.getElementById('trMk').classList.add('rec'); snack('🎤 Mendengarkan…'); };
+  trRec.onresult = function(e){ document.getElementById('trIn').value = e.results[0][0].transcript; upCC(); snack('✓ Suara tertangkap'); };
+  trRec.onerror = function(e){ if(e.error==='not-allowed') snack('❌ Izin mikrofon ditolak.'); else snack('⚠️ Error: '+e.error); };
+  trRec.onend = function(){ trRecording = false; document.getElementById('trMk').classList.remove('rec'); };
+  try{ trRec.start(); }catch(e){ snack('⚠️ Tidak bisa memulai mikrofon'); }
+}
+
+/* ============ KEYBOARD ============ */
+document.addEventListener('keydown', function(e){
+  var isInput = (e.target.tagName==='INPUT' || e.target.tagName==='TEXTAREA');
+  var trOpen = document.getElementById('trOv').classList.contains('on');
+  if(e.key==='Escape' && trOpen){ closeTR(); return; }
+  if(isInput) return;
+  if(e.key==='ArrowRight') nextPg();
+  if(e.key==='ArrowLeft') prevPg();
+});
+
+/* ============ INIT ============ */
+(function init(){
+  try{
+    var saved = parseInt(localStorage.getItem('mandarin_page'));
+    if(saved>=1 && saved<=TOTAL) currentPage = saved;
+  }catch(e){}
+  renderToc();
+  renderPage();
+  updateNav();
+  updateProgress();
+  if('speechSynthesis' in window){
+    window.speechSynthesis.getVoices();
+    setTimeout(loadVoices, 300);
+  }
+})();
+</script>
+</body>
+</html>
